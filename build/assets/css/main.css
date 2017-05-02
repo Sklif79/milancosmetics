@@ -1,0 +1,471 @@
+@import "slick.css";
+@import "slick-theme.css";
+@import "jquery.fancybox.css";
+@import "reset.css";
+
+/************************* Fonts *************************/
+/* font-family: "GothamProRegular"; */
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "GothamProMedium"; */
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "GothamProLight"; */
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight/GothamProLight.eot");
+    src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "GothamProBold"; */
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/************************* Общие стили *************************/
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    font-family: GothamProRegular, sans-serif;
+}
+
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+img {
+    outline: none;
+}
+
+img:focus {
+    outline: none;
+}
+
+.slick-slide img {
+    max-width: 100%;
+}
+
+a {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.basic_width {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.clearfix_:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/************************* header *************************/
+.header {
+    height: 119px;
+    background: url("../images/header-bg.png") 50% 100% repeat-x;
+}
+
+.header-logo-wrap {
+    height: 100px;
+    width: 438px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+}
+
+.header-logo-wrap__link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-logo-wrap__image {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.header-logo-wrap__image-wrap {
+    float: left;
+    width: 46%;
+}
+
+.header-logo-wrap__slogan {
+    float: right;
+    width: 46%;
+    line-height: 1rem;
+    font-size: 0.875rem;
+    position: relative;
+    padding-top: 34px;
+    padding-left: 18px;
+    font-family: GothamProMedium, sans-serif;
+    letter-spacing: -.06rem;
+    text-transform: uppercase;
+}
+
+.header-logo-wrap__slogan::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 60px;
+    background-color: #7f7f7f;
+    left: -20px;
+    top: 20px;
+}
+
+.soc-bl {
+    float: left;
+    width: 68px;
+    height: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 21px;
+    margin-top: 25px;
+}
+
+.soc-bl_link {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.soc-bl_link.vk {
+    background: url("../images/vk.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 12px;
+}
+
+.soc-bl_link.vk:hover {
+    background: url("../images/vk-hover.png") 50% 50% no-repeat;
+    width: 19px;
+    height: 12px;
+}
+
+.soc-bl_link.fb {
+    background: url("../images/facebook.png") 50% 50% no-repeat;
+    width: 11px;
+    height: 18px;
+}
+
+.soc-bl_link.fb:hover {
+    background: url("../images/facebook-hover.png") 50% 0 no-repeat;
+    width: 11px;
+    height: 18px;
+}
+
+.soc-bl_link.inst {
+    background: url("../images/insta.png") 50% 50% no-repeat;
+    width: 19px;
+    height: 19px;
+}
+
+.soc-bl_link.inst:hover {
+    background: url("../images/insta-hover.png") 50% 50% no-repeat;
+    width: 19px;
+    height: 19px;
+}
+
+.search {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.buy-link {
+    float: right;
+    height: 30px;
+    border: 1px solid #dcdcdc;
+    padding: 0 11px 0 25px;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 28px;
+    line-height: 28px;
+    font-size: 0.875rem;
+    color: #808080;
+}
+
+.buy-link::before {
+    position: absolute;
+    content: '';
+    background: url("../images/marker.png") 50% 50% no-repeat;
+    width: 10px;
+    height: 14px;
+    left: 10px;
+    top: 7px;
+}
+
+.buy-link:hover {
+    background-image: -webkit-linear-gradient( right, rgb(88,81,219) 0%, rgb(229,18,131) 100%);
+    background-image: linear-gradient( 270deg, rgb(88,81,219) 0%, rgb(229,18,131) 100%);
+    border-color: #fff;
+    color: #fff;
+}
+
+.buy-link:hover.buy-link::before {
+    background: url('../images/marker-hover.png') 50% 50% no-repeat;
+}
+
+/************************* nav *************************/
+.nav {
+    height: 50px;
+    background-image: -webkit-linear-gradient( right, rgb(88,81,219) 0%, rgb(131,58,180) 50%, rgb(229,18,131) 100%);
+    background-image: linear-gradient( 270deg, rgb(88,81,219) 0%, rgb(131,58,180) 50%, rgb(229,18,131) 100%);
+}
+
+.navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 50px;
+}
+
+.navigation__item {
+    height: 100%;
+}
+
+.navigation__link {
+    font-family: GothamProMedium, sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.navigation__link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/************************* index-page *************************/
+.slider-index-item-wrap {
+    position: relative;
+    border: 1px solid #000;
+    background-color: #fafafa;
+}
+
+.slider-index-item {
+    /*padding-top: 34.84626647144949%;*/
+    height: 474px;
+    position: relative;
+}
+
+.slider-index__left {
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.slider-index-item__title {
+    position: absolute;
+    font-size: 2.25rem;
+    font-family: GothamProMedium,sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    top: 140px;
+}
+
+.slider-index-item__description {
+    position: absolute;
+    font-size: 2.25rem;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    top: 187px;
+}
+
+.slider-index__right {
+    float: right;
+}
+
+.slider-index .slick-dots {
+    bottom: 25px;
+}
+
+.slider-index .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #7d7d7d;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slider-index .slick-dots li:hover {
+    background-color: #7d7d7d;
+}
+
+.slider-index .slick-dots li.slick-active {
+    border: 2px solid #333333;
+    background-color: #333333;
+}
+
+.slider-index .slick-dots li button:before,.slider-index  .slick-dots li button {
+    display: none;
+}
+
+.slider-next {
+    width: 50px;
+    height: 100%;
+    background: url('../images/slider-next.png') 50% 50% no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.slider-next:hover {
+    background: url('../images/slider-next-hover.png') 50% 50% no-repeat;
+}
+
+.slider-prev {
+    width: 50px;
+    height: 100%;
+    background: url('../images/slider-prev.png') 50% 50% no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.slider-prev:hover {
+    background: url('../images/slider-prev-hover.png') 50% 50% no-repeat;
+}
+
+.btn-square {
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333333;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 35px;
+    font-size:0.875rem;
+    font-family: GothamProMedium, sans-serif;
+}
+
+.btn-square:hover {
+    color: #fff;
+}
+
+.slider-index-item__link-wrap {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 305px;
+}
+
+
+
+
+
+
+/************************* footer *************************/
+.footer {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
