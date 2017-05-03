@@ -32,29 +32,29 @@ $(document).ready(function () {
 
 
     //************************** sliders *********************************
-    // $('.slider-partners').slick({
-    //     slidesToShow: 5,
-    //     slidesToScroll: 1,
-    //     dots: false,
-    //     nextArrow: '<div class="slider-next"></div>',
-    //     prevArrow: '<div class="slider-prev"></div>',
-    //     arrows: true,
-    //     responsive: [
-    //         {
-    //             breakpoint: 1200,
-    //             settings: {
-    //                 slidesToShow: 4
-    //             }
-    //         },
-
-    //         {
-    //             breakpoint: 690,
-    //             settings: {
-    //                 slidesToShow: 1
-    //             }
-    //         }
-    //     ]
-    // });
+    $('.slider-index').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        nextArrow: '<div class="slider-next"></div>',
+        prevArrow: '<div class="slider-prev"></div>',
+        arrows: true,
+        // responsive: [
+        //     {
+        //         breakpoint: 1200,
+        //         settings: {
+        //             slidesToShow: 4
+        //         }
+        //     },
+        //
+        //     {
+        //         breakpoint: 690,
+        //         settings: {
+        //             slidesToShow: 1
+        //         }
+        //     }
+        // ]
+    });
 
 
 
