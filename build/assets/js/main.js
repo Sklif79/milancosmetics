@@ -1,11 +1,21 @@
 $(document).ready(function () {
 
+    buttonUp();
+
+    //анимашки социальных кнопок
+    $('.sc-btns__el').hover(function () {
+        $(this).children('.sc-btns__el-hidden-line').show(300);
+        $(this).children('.sc-btns__el-hidden').show(300);
+
+    }, function () {
+        $(this).children('.sc-btns__el-hidden-line').hide(300);
+        $(this).children('.sc-btns__el-hidden').hide(300);
+    });
+
 
     // validatePopups();
 
     // $('.expo__item-title').setMaxHeights();
-
-
 
 
     // $('a.modalbox').fancybox({
@@ -24,11 +34,6 @@ $(document).ready(function () {
     //     ellipsis: "",
     //     tolerance: 1
     // });
-
-
-
-
-
 
 
     //************************** sliders *********************************
@@ -56,15 +61,46 @@ $(document).ready(function () {
         // ]
     });
 
-
-
-
-
-
+    $('.slider-news').slick({
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        dots: false,
+        nextArrow: '<div class="slider-next-news"></div>',
+        prevArrow: '<div class="slider-prev-news"></div>',
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1366,
+                settings: {
+                    slidesToShow: 6
+                }
+            },
+            //
+            //     {
+            //         breakpoint: 690,
+            //         settings: {
+            //             slidesToShow: 1
+            //         }
+            //     }
+        ]
+    });
 });
 
 
+function buttonUp() {
 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1000) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+
+    $('#toTop').click(function () {
+        $('html, body').animate({scrollTop: 0}, 500);
+    });
+}
 
 
 //плагин обрезки текста
