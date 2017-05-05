@@ -1,16 +1,20 @@
 $(document).ready(function () {
 
+    $('img.search-img').on('click', function () {
+        $('form.search-form').toggleClass('show-search-form');
+    });
+
     buttonUp();
 
     //анимашки социальных кнопок
-    $('.sc-btns__el').hover(function () {
-        $(this).children('.sc-btns__el-hidden-line').show(300);
-        $(this).children('.sc-btns__el-hidden').show(300);
-
-    }, function () {
-        $(this).children('.sc-btns__el-hidden-line').hide(300);
-        $(this).children('.sc-btns__el-hidden').hide(300);
-    });
+    // $('.sc-btns__el').hover(function () {
+    //     $(this).children('.sc-btns__el-hidden-line').show('fast');
+    //     $(this).children('.sc-btns__el-hidden').show('fast');
+    //
+    // }, function () {
+    //     $(this).children('.sc-btns__el-hidden-line').hide('fast');
+    //     $(this).children('.sc-btns__el-hidden').hide('fast');
+    // });
 
 
     // validatePopups();
@@ -70,11 +74,11 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-                breakpoint: 1366,
+                breakpoint: 1378,
                 settings: {
-                    slidesToShow: 6
+                    slidesToShow: 5
                 }
-            },
+            }
             //
             //     {
             //         breakpoint: 690,
