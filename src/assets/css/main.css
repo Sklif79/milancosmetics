@@ -4,7 +4,6 @@
 @import "reset.css";
 
 /************************* Fonts *************************/
-/* font-family: "GothamProRegular"; */
 @font-face {
     font-family: "GothamProRegular";
     src: url("../fonts/GothamProRegular/GothamProRegular.eot");
@@ -15,7 +14,6 @@
     font-weight: normal;
 }
 
-/* font-family: "GothamProMedium"; */
 @font-face {
     font-family: "GothamProMedium";
     src: url("../fonts/GothamProMedium/GothamProMedium.eot");
@@ -26,7 +24,6 @@
     font-weight: normal;
 }
 
-/* font-family: "GothamProLight"; */
 @font-face {
     font-family: "GothamProLight";
     src: url("../fonts/GothamProLight/GothamProLight.eot");
@@ -37,7 +34,6 @@
     font-weight: normal;
 }
 
-/* font-family: "GothamProBold"; */
 @font-face {
     font-family: "GothamProBold";
     src: url("../fonts/GothamProBold/GothamProBold.eot");
