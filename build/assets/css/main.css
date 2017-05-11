@@ -4,7 +4,6 @@
 @import "reset.css";
 
 /************************* Fonts *************************/
-/* font-family: "GothamProRegular"; */
 @font-face {
     font-family: "GothamProRegular";
     src: url("../fonts/GothamProRegular/GothamProRegular.eot");
@@ -15,7 +14,6 @@
     font-weight: normal;
 }
 
-/* font-family: "GothamProMedium"; */
 @font-face {
     font-family: "GothamProMedium";
     src: url("../fonts/GothamProMedium/GothamProMedium.eot");
@@ -26,7 +24,6 @@
     font-weight: normal;
 }
 
-/* font-family: "GothamProLight"; */
 @font-face {
     font-family: "GothamProLight";
     src: url("../fonts/GothamProLight/GothamProLight.eot");
@@ -37,7 +34,6 @@
     font-weight: normal;
 }
 
-/* font-family: "GothamProBold"; */
 @font-face {
     font-family: "GothamProBold";
     src: url("../fonts/GothamProBold/GothamProBold.eot");
@@ -117,7 +113,7 @@ a:hover {
     text-align: center;
     height: 24px;
     font-size: 1.25rem;
-    padding: 30px 272px 19px;
+    padding: 27px 272px 19px;
     text-transform: uppercase;
 }
 
@@ -387,7 +383,8 @@ a:hover {
 
 .bread-crumbs__list {
     float: left;
-    padding-top: 34px;
+    padding-top: 30px;
+    letter-spacing: -0.02rem;
 }
 
 .bread-crumbs__item {
@@ -453,6 +450,7 @@ a.bread-crumbs__link:hover {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-left: 10px;
 }
 
 .prev-pagination, .next-pagination {
@@ -465,13 +463,22 @@ a.bread-crumbs__link:hover {
     text-align: center;
     width: 115px;
     position: relative;
+
+}
+
+.next-pagination {
+    padding-right: 16px;
+}
+
+.prev-pagination {
+    padding-left: 16px;
 }
 
 .prev-pagination::before {
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 19px;
+    left: 24px;
     background: url("../images/pagination-prev.png") 50% 50% no-repeat;
     width: 7px;
     height: 11px;
@@ -616,7 +623,7 @@ a.bread-crumbs__link:hover {
     border: 2px solid #333;
     text-align: center;
     display: inline-block;
-    padding: 0 35px;
+    padding: 0 33px;
     font-size: 0.875rem;
     font-family: GothamProMedium, sans-serif;
     -webkit-transition: 0.2s;
@@ -648,6 +655,7 @@ a.bread-crumbs__link:hover {
     text-align: center;
     position: absolute;
     top: 305px;
+    padding-left: 8px;
 }
 
 .partners {
@@ -970,6 +978,8 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
     margin-top: 14px;
     line-height: 18px;
+    max-height: 54px;
+    overflow: hidden;
 }
 
 .slider-news__link {
@@ -1431,6 +1441,7 @@ a.bread-crumbs__link:hover {
     display: none;
     background: url("../images/toUp2.png") 50% 50% no-repeat;
     cursor: pointer;
+    z-index: 1000;
 }
 
 #toTop:hover {
@@ -1448,10 +1459,15 @@ a.bread-crumbs__link:hover {
 
 .category-item {
     position: relative;
+    width: 20%;
+    overflow: hidden;
 }
 
 .category-item__img {
-    max-width: 100%;
+    /*max-width: 100%;*/
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .category-overlay {
@@ -1480,14 +1496,14 @@ a.bread-crumbs__link:hover {
 
 .category-item__title {
     position: absolute;
-    bottom: 35px;
+    bottom: 32px;
     color: #fff;
     font-family: GothamProBold, sans-serif;
     font-size: 1.125rem;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    padding: 0 102px;
+    padding: 0 17%;
     line-height: 20px;
     height: 40px;
     display: -webkit-box;
@@ -1515,7 +1531,7 @@ a.bread-crumbs__link:hover {
     height: 1px;
     position: absolute;
     left: 50%;
-    bottom: 75px;
+    bottom: 74px;
 }
 
 .category-item__line::before {
@@ -1554,7 +1570,7 @@ a.bread-crumbs__link:hover {
 
 .category-overlay__text {
     position: absolute;
-    bottom: 28px;
+    bottom: 26px;
     font-family: GothamProLight, sans-serif;
     font-size: 0.875rem;
     color: #fff;
@@ -1568,6 +1584,14 @@ a.bread-crumbs__link:hover {
     opacity: 1;
     -webkit-transition-delay: .25s;
     transition-delay: .25s;
+}
+
+.category-item__lnk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .hair .category-overlay__gradient {
@@ -1593,6 +1617,11 @@ a.bread-crumbs__link:hover {
 .care .category-overlay__gradient {
     background-image: -webkit-linear-gradient(bottom, #55d1ff, transparent 50%);
     background-image: linear-gradient(to top, #55d1ff, transparent 50%);
+}
+
+.false-gradient {
+    background-image: -webkit-linear-gradient(left, #d44384 0%, #d44384 20%, #ff5855 20%, #ff5855 40%, #ff8155 40%, #ff8155 60%, #ff8155 80%, #55d1ff 80%, #55d1ff 100%);
+    background-image: linear-gradient(to right, #d44384 0%, #d44384 20%, #ff5855 20%, #ff5855 40%, #ff8155 40%, #ff8155 60%, #ff8155 80%, #55d1ff 80%, #55d1ff 100%)
 }
 
 /************************* select-brand *************************/
@@ -1624,7 +1653,7 @@ a.bread-crumbs__link:hover {
 }
 
 .select-brand-wrap {
-    height: 290px;
+    height: 288px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1638,7 +1667,8 @@ a.bread-crumbs__link:hover {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-    padding-left: 60px;
+    padding-left: 54px;
+    padding-right: 44px;
 }
 
 .select-brand-item {
@@ -1664,7 +1694,7 @@ a.bread-crumbs__link:hover {
 }
 
 .select-brand__img {
-    height: 100px;
+    height: 96px;
     position: relative;
 }
 
@@ -1683,7 +1713,7 @@ a.bread-crumbs__link:hover {
     line-height: 16px;
     padding: 0 5px;
     text-align: center;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .select-brand__description {
@@ -1707,18 +1737,23 @@ a.bread-crumbs__link:hover {
     font-family: GothamProMedium, sans-serif;
     text-transform: uppercase;
     position: absolute;
-    /*width: 290px;*/
+    font-size: 0.875rem;
     text-align: center;
     color: #b3b3b3;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    left: -45px;
+    left: -52px;
 }
 
 /************************* catalog *************************/
 .catalog {
-    padding: 25px 0 70px;
+    padding: 59px 0 70px;
+}
+
+.catalog .basic_width {
+    max-width: 1250px;
+    padding: 0;
 }
 
 .catalog-wrap {
@@ -1737,8 +1772,8 @@ a.bread-crumbs__link:hover {
 
 .catalog-item-wrap {
     position: relative;
-    width: 32.9%;
-    min-height: 510px;
+    width: 31.4%;
+    min-height: 441px;
     margin-bottom: 30px;
 }
 
@@ -1751,7 +1786,7 @@ a.bread-crumbs__link:hover {
 
 .catalog-item__img {
     position: relative;
-    padding-bottom: 100%;
+    padding-bottom: 73.4%;
     border: 1px solid #f2f2f2;
 }
 
@@ -1763,8 +1798,8 @@ a.bread-crumbs__link:hover {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transition: 0s;
+    transition: 0s;
 }
 
 .catalog-item:hover .catalog-item__img-overlay {
@@ -1782,20 +1817,21 @@ a.bread-crumbs__link:hover {
     color: #333;
     text-transform: uppercase;
     position: absolute;
-    top: 50%;
+    top: 48.5%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
     cursor: pointer;
 }
 
 .catalog-item__img-overlay-btn:hover {
-    background-color: #333333;
+    background-image: -webkit-linear-gradient(right, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
+    background-image: linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
+    border: none;
     color: #fff;
+    line-height: 46px;
 }
 
 .catalog-item__img-overlay-btn span {
@@ -1823,10 +1859,10 @@ a.bread-crumbs__link:hover {
 .catalog-item__brand {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
     width: 100px;
     height: 50px;
-    max-width: 100%;
+    max-width: 77px;
 }
 
 .catalog-item__title {
@@ -1845,14 +1881,15 @@ a.bread-crumbs__link:hover {
     line-height: 20px;
     max-height: 35px;
     font-size: 0.875rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 13px;
+    margin-top: 13px;
     overflow: hidden;
 }
 
 .catalog-item__rest {
     font-family: GothamProLight, sans-serif;
     color: #808080;
+    font-size: 0.875rem;
 }
 
 .catalog-item-visible {
@@ -1866,6 +1903,7 @@ a.bread-crumbs__link:hover {
     flex-wrap: wrap;
     /*display: flex;*/
     display: none;
+    padding-bottom: 9px;
 }
 
 .catalog-item:hover .catalog-item-hidden {
@@ -1873,7 +1911,10 @@ a.bread-crumbs__link:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .catalog-item:hover {
@@ -1882,12 +1923,12 @@ a.bread-crumbs__link:hover {
 }
 
 .catalog-item-hidden__el {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
     border: 2px solid #e6e6e6;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 12px;
     position: relative;
     -webkit-transition: 0.2s;
     transition: 0.2s;
@@ -1942,24 +1983,19 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
     color: #333;
     text-transform: uppercase;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
 }
 
 .catalog-item-hidden__more-btn:hover {
-    background-color: #333333;
+    background-image: -webkit-linear-gradient(right, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
+    background-image: linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
     color: #fff;
+    border: none;
+    line-height: 35px;
 }
 
 .catalog-description__wrap {
     min-height: 125px;
-    padding: 23px 10px 25px;
-}
-
-.catalog-item__brand {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    padding: 21px 22px 31px;
 }
 
 .catalog-item-hidden__el-lnk {
