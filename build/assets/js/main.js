@@ -50,7 +50,7 @@ $(document).ready(function () {
 
 
     //************************** sliders *********************************
-    $('.slider-index').slick({
+    $('div.slider-index').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
@@ -74,8 +74,19 @@ $(document).ready(function () {
         // ]
     });
 
-    $('.slider-news').slick({
+    $('div.similar-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
+
+    $('div.slider-news').slick({
         slidesToShow: 8,
+        centerMode: true,
         slidesToScroll: 1,
         dots: false,
         nextArrow: '<div class="slider-next-news"></div>',
