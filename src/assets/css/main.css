@@ -107,6 +107,15 @@ a:hover {
     text-transform: uppercase;
 }
 
+.fancybox-close {
+    background: url("../images/close-btn.png") 50% 50% no-repeat;
+    width: 24px;
+    height: 24px;
+    right: -44px;
+    top: 0;
+}
+
+
 /************************* header *************************/
 .header {
     height: 119px;
@@ -1739,8 +1748,14 @@ a.bread-crumbs__link:hover {
 
 /************************* products *************************/
 .products {
-    padding-top: 40px;
+    padding-top: 43px;
     padding-bottom: 50px;
+}
+
+.products .basic_width {
+    max-width: 1240px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .products-promo {
@@ -1750,14 +1765,15 @@ a.bread-crumbs__link:hover {
 
 .products-promo img {
     float: left;
-    padding-right: 40px;
+    padding-right: 126px;
     padding-bottom: 30px;
-    padding-left: 40px;
-    margin-top: -10px;
+    padding-left: 71px;
+    margin-top: -7px;
 }
 
 .products-promo p {
-    margin-top: 25px;
+    margin-top: 19px;
+    padding-right: 20px;
 }
 
 .products-promo strong {
@@ -1768,14 +1784,14 @@ a.bread-crumbs__link:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .products-item-wrap {
     position: relative;
-    width: 22%;
+    width: 21.9%;
     min-height: 350px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .products-item {
@@ -1786,13 +1802,12 @@ a.bread-crumbs__link:hover {
     top: 0;
     text-align: center;
     border: 1px solid #e6e6e6;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .products-item__img {
     position: relative;
-    padding-top: 81%;
-
+    padding-top: 75%;
 }
 
 .products-item__img img {
@@ -1810,8 +1825,8 @@ a.bread-crumbs__link:hover {
     padding: 0 20px;
     max-height: 34px;
     overflow: hidden;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-bottom: 16px;
+    margin-top: 45px;
 }
 
 .product-item__info {
@@ -1902,6 +1917,10 @@ a.bread-crumbs__link:hover {
     left: 0;
 }
 
+.products-item__overlay-promo {
+    display: none;
+}
+
 .products-item-wrap.new .products-item__overlay-promo,
 .products-item-wrap.hit .products-item__overlay-promo {
     display: block;
@@ -1929,6 +1948,8 @@ a.bread-crumbs__link:hover {
 /************************* card *************************/
 .basic_width.card {
     max-width: 1302px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .card {
@@ -1937,14 +1958,17 @@ a.bread-crumbs__link:hover {
 }
 
 .aside {
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 42.5%;
+    min-width: 541px;
+}
+
+.aside .bread-crumbs {
+    left: 0;
 }
 
 .card-main {
     flex-grow: 1;
-    padding-left: 20px;
+    padding-left: 64px;
+    line-height: 16px;
 }
 
 .card-main .h1 {
@@ -1953,12 +1977,13 @@ a.bread-crumbs__link:hover {
     padding-right: 0;
     max-width: 510px;
     height: auto;
+    line-height: 24px;
 }
 
 .card-image {
     position: relative;
-    padding-bottom: 82%;
-    border: 1px solid #e5e5e5;
+    padding-bottom: 76.5%;
+    border: 2px solid #e5e5e5;
     margin-bottom: 82px;
 }
 
@@ -2000,9 +2025,13 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
 }
 
+.similar-slider__item-wrap {
+    display: flex;
+}
+
 .similar-slider {
     height: 199px;
-    border: 1px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     margin-top: 12px;
     overflow: hidden;
 }
@@ -2015,7 +2044,7 @@ a.bread-crumbs__link:hover {
     min-width: 199px;
     height: 199px;
     position: relative;
-    margin-right: 30px;
+    margin-right: 31px;
 }
 
 .similar-slider__img img {
@@ -2028,14 +2057,15 @@ a.bread-crumbs__link:hover {
 
 .similar-slider__description {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
 }
 
 .similar-slider__title {
     font-size: 0.875rem;
     text-transform: uppercase;
+    margin-top: 49px;
     margin-bottom: 20px;
 }
 
@@ -2045,8 +2075,8 @@ a.bread-crumbs__link:hover {
 }
 
 .similar-slider .slick-dots {
-    top: 0;
-    right: 24px;
+    top: 5px;
+    right: 25px;
     width: 15px;
     height: 100%;
     display: flex;
@@ -2056,12 +2086,16 @@ a.bread-crumbs__link:hover {
 
 .similar-slider .slick-dots li {
     display: block;
+    width: 14px;
+    height: 18px;
 }
 
 .similar-slider .slick-dots li button:before {
-    font-size: 0.8125rem;
+    font-size: 11px;
     color: #b3b3b3;
     opacity: 1;
+    width: 10px;
+    height: 10px;
 }
 
 .similar-slider .slick-dots li.slick-active button:before {
@@ -2073,19 +2107,13 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
 }
 
-.card-main__features {
-    display: flex;
-    margin-bottom: 25px;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
 .card-main__features-manufacturer {
-    flex-grow: 1;
+    margin-right: 27px;
+    float: left;
 }
 
 .card-main__features-country {
-    flex-grow: 4;
+    float: left;
 }
 
 .card-main__features-article span {
@@ -2094,29 +2122,31 @@ a.bread-crumbs__link:hover {
 }
 
 .card-main__features-article {
-    flex-grow: 2;
+    float: right;
+    margin-right: 82px;
 }
 
 .card-main__features-logo {
     position: relative;
-    bottom: 30px;
-    flex-grow: 1;
+    bottom: 44px;
+    float: right;
+    margin-right: 5px;
 }
 
 .card-main>div:not(.card-main__features) {
-    border-top: 1px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 28px;
 }
 
 .card-main h4 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-family: GothamProMedium,sans-serif;
     text-rendering: geometricPrecision ;
 }
 
 .card-main__features-btns {
-    margin-top: 25px;
+    margin-top: 23px;
     display: flex;
     font-size: 0.875rem;
     font-family: GothamProMedium, sans-serif;
@@ -2128,8 +2158,9 @@ a.bread-crumbs__link:hover {
     display: inline-block;
     padding-left: 55px;
     position: relative;
-    margin-right: 55px;
+    margin-right: 54px;
     color: #5850db;
+    line-height: 46px;
 }
 
 .palette::before {
@@ -2138,8 +2169,8 @@ a.bread-crumbs__link:hover {
     background: url("../images/card-palette.png") 50% 50% no-repeat;
     width: 39px;
     height: 39px;
-    left: 0;
-    top: -10px;
+    left: 1px;
+    top: 3px;
 }
 
 .palette span {
@@ -2156,9 +2187,9 @@ a.bread-crumbs__link:hover {
 }
 
 .download-pdf {
-    padding-left: 55px;
+    padding-left: 46px;
     border: 2px solid #5851db;
-    padding-right: 22px;
+    padding-right: 19px;
     height: 40px;
     line-height: 36px;
     position: relative;
@@ -2171,8 +2202,8 @@ a.bread-crumbs__link:hover {
     background: url("../images/pdf.png") 50% 50% no-repeat;
     width: 17px;
     height: 20px;
-    left: 22px;
-    top: 6px;
+    left: 19px;
+    top: 8px;
 }
 
 .download-pdf:hover {
@@ -2187,6 +2218,7 @@ a.bread-crumbs__link:hover {
 .card-main-half-wrap {
     display: flex;
     justify-content: space-between;
+    font-size: 0.8125rem;
 }
 
 .card-main__half {
@@ -2198,17 +2230,17 @@ a.bread-crumbs__link:hover {
     font-family: GothamProMedium, sans-serif;
     font-size: 0.875rem;
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 }
 
 .card-main__half h4::after {
     position: absolute;
     content: '';
-    width: 82px;
+    width: 80px;
     height: 2px;
     background-color: #5851db;
-    bottom: -10px;
-    left: 0;
+    bottom: -7px;
+    left: 2px;
 }
 
 .card-main-action {

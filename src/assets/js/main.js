@@ -8,11 +8,27 @@ $(document).ready(function () {
 
     resizeWindow();
 
+    $('.products-item__title').setMaxHeights();
+
+    $('a.palette').fancybox({
+        closeBtn: true,
+        padding: 0,
+        helpers: {
+            overlay: {
+                css: {
+                    'background': 'rgba(0,0,0,0.5)'
+                }
+            }
+        }
+    });
+
     function resizeWindow() {
         $(window).resize(
             function () {
-                categoryFullHeight();
-                window.location.reload();
+                if ($('.category').length) {
+                    categoryFullHeight();
+                    window.location.reload();
+                }
             }
         );
     }
@@ -80,7 +96,7 @@ $(document).ready(function () {
         dots: true,
         arrows: false,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 4000
     });
 
@@ -151,6 +167,16 @@ function lineTooltip() {
         }
     );
 }
+
+//максимальная высота
+$.fn.setMaxHeights = function () {
+    var maxHeight = this.map(function (i, e) {
+        return $(e).height();
+    }).get();
+
+    return this.height(Math.max.apply(this, maxHeight));
+};
+
 
 
 
