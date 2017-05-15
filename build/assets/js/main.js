@@ -1,10 +1,23 @@
 $(document).ready(function () {
 
+    $("div.tab-content-item").hide(); // Скрытое содержимое
+    $("div.nav-tab:first").attr("id","current"); // Какой таб показать первым
+    $("#tab1").fadeIn(); // Показ первого контента таба
+
+    $('div.nav-tab').click(function(e) {
+        // e.preventDefault();
+        $("div.tab-content-item").hide(); //Скрыть всё содержимое
+        $("div.nav-tab").attr("id",""); //Сброс идентификаторов
+        $(this).attr("id","current"); // Активация идентификаторов
+        $('#' + $(this).attr('title')).fadeIn(); // Показать содержимое текущей вкладки
+    });
+
     searchHeader();
 
     lineTooltip();
 
-    categoryFullHeight();
+    categoryFullHeight('category');
+    categoryFullHeight('special-offers');
 
     resizeWindow();
 
@@ -25,8 +38,7 @@ $(document).ready(function () {
     function resizeWindow() {
         $(window).resize(
             function () {
-                if ($('.category').length) {
-                    categoryFullHeight();
+                if ($('.category').length || $('.special-offers').length) {
                     window.location.reload();
                 }
             }
@@ -34,14 +46,6 @@ $(document).ready(function () {
     }
 
 
-    function categoryFullHeight() {
-        if ($('.category').length) {
-            var categoryHeight = $('div.wrapper').height() - $('nav.nav').height() - $('header.header').height();
-
-            $('div.category-item').height(categoryHeight);
-            console.log(categoryHeight);
-        }
-    }
 
 
     buttonUp();
@@ -176,3 +180,13 @@ $.fn.setMaxHeights = function () {
 
     return this.height(Math.max.apply(this, maxHeight));
 };
+
+function categoryFullHeight(el) {
+    console.log(el);
+    if ($('.' + el).length) {
+        var categoryHeight = $('div.wrapper').height() - $('nav.nav').height() - $('header.header').height();
+
+        $('div.' + el + '-item').height(categoryHeight);
+        console.log(categoryHeight);
+    }
+}
