@@ -1,17 +1,4 @@
 $(document).ready(function () {
-
-    $("div.tab-content-item").hide(); // Скрытое содержимое
-    $("div.nav-tab:first").attr("id","current"); // Какой таб показать первым
-    $("#tab1").fadeIn(); // Показ первого контента таба
-
-    $('div.nav-tab').click(function(e) {
-        // e.preventDefault();
-        $("div.tab-content-item").hide(); //Скрыть всё содержимое
-        $("div.nav-tab").attr("id",""); //Сброс идентификаторов
-        $(this).attr("id","current"); // Активация идентификаторов
-        $('#' + $(this).attr('title')).fadeIn(); // Показать содержимое текущей вкладки
-    });
-
     searchHeader();
 
     lineTooltip();
