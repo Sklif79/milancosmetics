@@ -115,6 +115,35 @@ $(document).ready(function () {
             //     }
         ]
     });
+
+
+    $('div.photo-page-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        nextArrow: '<div class="slider-next-news"></div>',
+        prevArrow: '<div class="slider-prev-news"></div>',
+        infinite: true,
+        //autoplay: true,
+        autoplaySpeed: 4000,
+        asNavFor: '.photo-page-slider__nav'
+    });
+
+    $('div.photo-page-slider__nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        nextArrow: '<div class="slider-next-news"></div>',
+        prevArrow: '<div class="slider-prev-news"></div>',
+        infinite: true,
+        focusOnSelect: true,
+        centerMode: true,
+        //autoplay: true,
+        autoplaySpeed: 4000,
+        asNavFor: '.photo-page-slider'
+    });
 });
 
 
