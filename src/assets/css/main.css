@@ -334,13 +334,15 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-family: GothamProLight, sans-serif;
-    font-size: 0.75rem;
+    font-size: 0;
     color: #333;
     text-transform: uppercase;
 }
 
 .nav > ul > li {
     position: relative;
+    height: 50px;
+    font-size: 0.75rem;
 }
 
 .nav > ul > li.active::before {
@@ -393,8 +395,8 @@ a:hover {
     background-color: rgba(101,16,57,0.9);
 
     z-index: -1;
-    transition-delay: 0.2s;
-    transition-duration: 0.2s;
+    /*transition-delay: 0.2s;*/
+    /*transition-duration: 0.2s;*/
     opacity: 0;
 }
 
@@ -410,20 +412,23 @@ a:hover {
 }
 
 .nav li:hover ul {
-    /*display: block;*/
     opacity: 1;
     z-index: 1;
-
-    transition-delay: 0s;
-    transition-duration: 0s;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .nav ul ul a {
-    padding: 12px 17px;
-    display: block;
-    color: #fff;
-    white-space: nowrap;
-    border-bottom: 1px solid rgba(255,255,255,.15);
+     padding: 12px 17px;
+     display: block;
+     color: #fff;
+     white-space: nowrap;
+     border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.nav ul ul > li:hover {
+    background-color: rgba(101,16,57,1);
+
 }
 
 /************************* bread-crumbs *************************/
@@ -611,7 +616,7 @@ a.bread-crumbs__link:hover {
     display: inline-block;
     width: 14px;
     height: 14px;
-    border: 2px solid #7d7d7d;
+    border: 2px solid rgba(90,15,51,.5);
     border-radius: 50%;
     margin: 0 5px;
     padding: 0;
@@ -620,11 +625,12 @@ a.bread-crumbs__link:hover {
 
 .slider-index .slick-dots li:hover {
     background-color: #7d7d7d;
+    border-color: #7d7d7d;
 }
 
 .slider-index .slick-dots li.slick-active {
-    border: 2px solid #333333;
-    background-color: #333333;
+    border: 2px solid #5a0f33;
+    background-color: #5a0f33;
 }
 
 .slider-index .slick-dots li button:before, .slider-index .slick-dots li button {
@@ -666,18 +672,19 @@ a.bread-crumbs__link:hover {
     text-transform: uppercase;
     height: 40px;
     line-height: 36px;
-    color: #333;
-    border: 2px solid #333;
+    color: #fff;
+    border: 2px solid transparent;
     text-align: center;
     display: inline-block;
     padding: 0 33px;
     font-size: 0.875rem;
-    font-family: GothamProMedium, sans-serif;
+    font-family: GothamProLight, sans-serif;
     transition: 0.2s;
+    background-color: #651039;
 }
 
 .theme_dark {
-    background-color: #333333;
+    background-color: #651039;
     color: #ffffff;
 }
 
@@ -692,8 +699,9 @@ a.bread-crumbs__link:hover {
 }
 
 .theme_dark:hover, .btn-square:hover {
-    color: #fff;
-    background-color: #000000;
+    color: #651039;
+    border: 2px solid #651039;
+    background-color: transparent;
 }
 
 .slider-index-item__link-wrap {
@@ -706,34 +714,73 @@ a.bread-crumbs__link:hover {
 
 .partners {
     padding: 39px 0 47px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    text-align: center;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*flex-wrap: wrap;*/
 }
 
-.partners-item {
-    flex-basis: 11%;
+.partners-wrap {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.partners-items-wrap {
     width: 10%;
-    height: 70px;
-    text-align: center;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     font-size: 0;
 }
 
-.partners__img {
-    display: none;
+.partners-item {
+    /*flex-basis: 11%;*/
+    /*width: 10%;*/
+
+    height: 70px;
+    /*text-align: center;*/
+    margin-bottom: 20px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*font-size: 0;*/
+    position: relative;
 }
 
-.partners-item:hover .partners__img-gray {
-    display: none;
+.partners-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.partners-item:hover .partners__img {
-    display: block;
+.partners-item img:first-of-type {
+    opacity: 0;
+    transition: 0.2s;
 }
+
+.partners-item:hover img:first-of-type {
+    z-index: 1;
+    opacity: 1;
+}
+
+.partners .slider-prev {
+
+}
+
+.partners .slider-next {
+
+}
+
+/*.partners__img {*/
+    /*display: none;*/
+/*}*/
+
+/*.partners-item:hover .partners__img-gray {*/
+    /*display: none;*/
+/*}*/
+
+/*.partners-item:hover .partners__img {*/
+    /*display: block;*/
+/*}*/
 
 .middle-nav {
     display: flex;
@@ -766,7 +813,7 @@ a.bread-crumbs__link:hover {
 
 .middle-nav__text {
     font-family: GothamProLight, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     position: absolute;
     bottom: 46px;
@@ -875,19 +922,21 @@ a.bread-crumbs__link:hover {
 }
 
 .index-news__title {
-    font-family: GothamProBold, sans-serif;
-    font-size: 2.375rem;
+    /*font-family: GothamProBold, sans-serif;*/
+    font-size: 2rem;
     position: relative;
-    line-height: 57px;
+    /*line-height: 57px;*/
     display: inline-block;
+    letter-spacing: -.03rem;
 }
+
 
 .index-news__title::before {
     position: absolute;
     content: '';
     width: 50px;
     height: 2px;
-    background-color: #2c2c2c;
+    background-color: #560e31;
     left: -79px;
     top: 30px;
 }
@@ -897,7 +946,7 @@ a.bread-crumbs__link:hover {
     content: '';
     width: 50px;
     height: 2px;
-    background-color: #2c2c2c;
+    background-color: #560e31;
     right: -79px;
     top: 30px;
 }
@@ -907,6 +956,15 @@ a.bread-crumbs__link:hover {
     right: 30px;
     top: 12px;
     padding: 0 28px;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #382d2a;
+}
+
+.index-news__btn:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }
 
 .index-news {
@@ -1045,10 +1103,11 @@ a.bread-crumbs__link:hover {
 
 .about-company__l .header-logo-wrap {
     box-shadow: none;
-    background-color: transparent;
+    /*background-color: transparent;*/
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    background-image: none;
 }
 
 .about-company__l .header-logo-wrap__image {
@@ -1068,8 +1127,9 @@ a.bread-crumbs__link:hover {
     text-align: left;
     padding-top: 29px;
     padding-left: 40px;
-    letter-spacing: -.03rem;
+    letter-spacing: .025rem;
     width: 51%;
+    color: #333;
 }
 
 .about-company__l .header-logo-wrap__slogan::before {
@@ -1082,7 +1142,8 @@ a.bread-crumbs__link:hover {
 .sc-btns {
     display: flex;
     font-family: GothamProLight, sans-serif;
-    color: #fff;
+    color: #67103a;
+    border-top: 1px solid #f0e7eb;
 }
 
 .sc-btns__el {
@@ -1104,17 +1165,17 @@ a.bread-crumbs__link:hover {
     margin-right: 20px;
 }
 
-.sc-btns__el.vk {
-    background-color: #45668e;
-}
+/*.sc-btns__el.vk {*/
+    /*background-color: #45668e;*/
+/*}*/
 
-.sc-btns__el.fb {
-    background-color: #3b5998;
-}
+/*.sc-btns__el.fb {*/
+    /*background-color: #3b5998;*/
+/*}*/
 
-.sc-btns__el.inst {
-    background-image: linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
-}
+/*.sc-btns__el.inst {*/
+    /*background-image: linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);*/
+/*}*/
 
 .sc-btns__el-hidden {
     width: 0;
@@ -1146,7 +1207,7 @@ a.bread-crumbs__link:hover {
     top: 0;
     bottom: 0;
     width: 1px;
-    background-color: #fff;
+    background-color: #67103a;
 }
 
 .sc-btns__el:hover .sc-btns__el-hidden-line::before {
@@ -1181,12 +1242,14 @@ a.bread-crumbs__link:hover {
 
 .footer-top {
     height: 189px;
-    background-color: #2b2b2b;
+    /*background-color: #440a26;*/
     display: flex;
     justify-content: space-between;
     font-size: 0.875rem;
-
+    background-image: linear-gradient( to right, rgb(65,10,37) 0%, rgb(80,13,46) 16%, rgb(95,16,54) 100%);
+    /*box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.22);*/
 }
+
 
 .footer-top-wrap {
     width: 100%;
@@ -1211,7 +1274,10 @@ a.bread-crumbs__link:hover {
     background: url("../images/footer-top-bg.png") 100% 44% no-repeat;
     display: block;
     padding: 30px 35px 20px 50px;
+    /*background-image: linear-gradient( 90deg, rgb(65,10,37) 0%, rgb(80,13,46) 16%, rgb(95,16,54) 100%);*/
+    box-shadow: inset 0px 10px 20px 0px rgba(0, 0, 0, 0.22);
 }
+
 
 .subscribe .btn-square {
     width: 100%;
@@ -1277,7 +1343,7 @@ a.bread-crumbs__link:hover {
 
 .footer-bottom {
     height: 39px;
-    background-color: #333333;
+    background-color: #3a0720;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1327,8 +1393,8 @@ a.bread-crumbs__link:hover {
 }
 
 #toTop {
-    width: 61px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     position: fixed;
     bottom: 318px;
     right: 30px;
@@ -1397,7 +1463,7 @@ a.bread-crumbs__link:hover {
     font-family: GothamProBold, sans-serif;
     font-size: 1.125rem;
     text-transform: uppercase;
-    width: 100%;
+    width: 265px;
     text-align: center;
     padding: 0 17%;
     line-height: 20px;
@@ -1406,6 +1472,8 @@ a.bread-crumbs__link:hover {
     justify-content: center;
     align-items: center;
     transition: 0.2s;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .category-item:hover .category-item__title,
@@ -1479,25 +1547,31 @@ a.bread-crumbs__link:hover {
     height: 100%;
 }
 
-.hair .category-overlay__gradient {
-    background-image: linear-gradient(to top, #d44384, transparent 50%);
+.category-overlay__gradient {
+    background-image: linear-gradient(to top, #68113a, transparent 50%);
 }
 
-.face .category-overlay__gradient {
-    background-image: linear-gradient(to top, #ff5855, transparent 50%);
-}
 
-.manicure .category-overlay__gradient {
-    background-image: linear-gradient(to top, #ff8155, transparent 50%);
-}
 
-.visage .category-overlay__gradient {
-    background-image: linear-gradient(to top, #558dff, transparent 50%);
-}
+/*.hair .category-overlay__gradient {*/
+    /*background-image: linear-gradient(to top, #d44384, transparent 50%);*/
+/*}*/
 
-.care .category-overlay__gradient {
-    background-image: linear-gradient(to top, #55d1ff, transparent 50%);
-}
+/*.face .category-overlay__gradient {*/
+    /*background-image: linear-gradient(to top, #ff5855, transparent 50%);*/
+/*}*/
+
+/*.manicure .category-overlay__gradient {*/
+    /*background-image: linear-gradient(to top, #ff8155, transparent 50%);*/
+/*}*/
+
+/*.visage .category-overlay__gradient {*/
+    /*background-image: linear-gradient(to top, #558dff, transparent 50%);*/
+/*}*/
+
+/*.care .category-overlay__gradient {*/
+    /*background-image: linear-gradient(to top, #55d1ff, transparent 50%);*/
+/*}*/
 
 .false-gradient {
     background-image: linear-gradient(to right, #d44384 0%, #d44384 20%, #ff5855 20%, #ff5855 40%, #ff8155 40%, #ff8155 60%, #ff8155 80%, #55d1ff 80%, #55d1ff 100%)

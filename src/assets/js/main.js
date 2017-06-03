@@ -81,6 +81,16 @@ $(document).ready(function () {
         // ]
     });
 
+    $('div.partners-wrap').slick({
+        slidesToShow: 9,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        nextArrow: '<div class="slider-next"></div>',
+        prevArrow: '<div class="slider-prev"></div>',
+        infinite: false
+    });
+
     $('div.similar-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
