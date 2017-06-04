@@ -183,11 +183,20 @@ function searchHeader() {
 function lineTooltip() {
     $('a.catalog-item-hidden__el-lnk').mouseenter(
         function () {
+            var pos = $(this).offset().left;
+            var half = $('body').width() / 2;
+
             $('a.catalog-item-hidden__el-lnk').next('.catalog-item-hidden__more').hide();
-            $(this).next('.catalog-item-hidden__more').show();
+
+            //смещение балуна, если он дальше середины
+            if ( pos > half) {
+                $(this).next('.catalog-item-hidden__more').addClass('shift').show();
+            } else  {
+                $(this).next('.catalog-item-hidden__more').show();
+            }
+
             var hideEl = $(this).next('.catalog-item-hidden__more').outerHeight() + 25;
             $(this).next('.catalog-item-hidden__more').css({'top': '-' + hideEl + 'px'});
-            console.log(hideEl);
         }
     );
 

@@ -102,7 +102,7 @@ a:hover {
     font-family: GothamProBold, sans-serif;
     text-align: center;
     font-size: 1.25rem;
-    padding: 27px 0 19px;
+    padding: 23px 0 19px;
     text-transform: uppercase;
     max-width: 800px;
     line-height: 24px;
@@ -350,7 +350,7 @@ a:hover {
     content: '';
     position: absolute;
     border-style: solid;
-    border-width: 11px 11px 0 11px;
+    border-width: 9px 9px 0 9px;
     border-color: #520d2e transparent transparent transparent;
     left: 50%;
     transform: translateX(-50%);
@@ -434,27 +434,28 @@ a:hover {
 
 /************************* bread-crumbs *************************/
 .breadcrumbs-title-wrap {
-    min-height: 72px;
+    min-height: 71px;
     position: relative;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .bread-crumbs {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+    font-family: GothamProLight, sans-serif;
     position: absolute;
-    left: 30px;
+    left: 29px;
     top: 0;
 }
 
 .bread-crumbs__list {
     float: left;
-    padding-top: 30px;
-    letter-spacing: -0.02rem;
+    padding-top: 29px;
+    /*letter-spacing: -0.02rem;*/
 }
 
 .bread-crumbs__item {
     float: left;
-    margin-right: 13px;
+    margin-right: 15px;
     position: relative;
 }
 
@@ -467,7 +468,7 @@ a:hover {
     position: absolute;
     width: 2px;
     height: 2px;
-    right: -7px;
+    right: -8px;
     top: 6px;
     background-color: #666;
 }
@@ -488,7 +489,7 @@ a.bread-crumbs__link:hover {
 }
 
 .active .bread-crumbs__link {
-    font-family: GothamProMedium, sans-serif;
+    font-family: GothamProRegular, sans-serif;
 
 }
 
@@ -514,7 +515,7 @@ a.bread-crumbs__link:hover {
     text-transform: uppercase;
     color: #333;
     border-bottom: 3px solid #cccccc;
-    line-height: 50px;
+    line-height: 52px;
     text-align: center;
     width: 115px;
     position: relative;
@@ -554,7 +555,7 @@ a.bread-crumbs__link:hover {
     font-size: 1.25rem;
     color: #333;
     border-bottom: 3px solid #cccccc;
-    line-height: 50px;
+    line-height: 52px;
     display: inline-block;
     text-align: center;
     width: 70px;
@@ -938,7 +939,7 @@ a.bread-crumbs__link:hover {
     text-align: center;
     background: url('../images/news/news-bg.png') 50% 50% no-repeat;
     height: 56px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 .index-news__title {
@@ -989,7 +990,7 @@ a.bread-crumbs__link:hover {
 }
 
 .index-news {
-    margin-bottom: 75px;
+    margin-bottom: 76px;
 }
 
 .index-news .slick-slide {
@@ -1101,7 +1102,7 @@ a.bread-crumbs__link:hover {
 .about-company {
     font-family: GothamProLight, sans-serif;
     font-size: 0.875rem;
-    padding-bottom: 77px;
+    padding-bottom: 46px;
 }
 
 .about-company p {
@@ -1131,13 +1132,15 @@ a.bread-crumbs__link:hover {
     /*background-color: transparent;*/
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: -3px;
     background-image: none;
+    margin-left: 8px;
+    padding-top: 0;
 }
 
 .about-company__l .header-logo-wrap__image {
     margin-left: 18px;
-    margin-top: 0;
+    margin-top: 2px;
 }
 
 .about-company__l p {
@@ -1150,11 +1153,12 @@ a.bread-crumbs__link:hover {
 
 .about-company__l .header-logo-wrap__slogan {
     text-align: left;
-    padding-top: 29px;
-    padding-left: 40px;
-    letter-spacing: .025rem;
-    width: 51%;
+    padding-top: 30px;
+    padding-left: 41px;
+    letter-spacing: .09em;
+    width: 48%;
     color: #333;
+    line-height: 17px;
 }
 
 .about-company__l .header-logo-wrap__slogan::before {
@@ -1724,12 +1728,12 @@ a.bread-crumbs__link:hover {
 
 /************************* catalog *************************/
 .catalog {
-    padding: 59px 0 70px;
+    padding: 59px 0 76px;
 }
 
 .catalog .basic_width {
     max-width: 1250px;
-    padding: 0;
+    padding: 0 0 5px;
 }
 
 .catalog-wrap {
@@ -1742,7 +1746,7 @@ a.bread-crumbs__link:hover {
     position: relative;
     width: 31.4%;
     min-height: 441px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .catalog-item {
@@ -1828,7 +1832,7 @@ a.bread-crumbs__link:hover {
 }
 
 .catalog-item__title {
-    font-family: GothamProMedium, sans-serif;
+    /*font-family: GothamProMedium, sans-serif;*/
     line-height: 20px;
     display: inline;
     max-height: 40px;
@@ -1840,6 +1844,7 @@ a.bread-crumbs__link:hover {
 }
 
 .catalog-item__description {
+    font-family: GothamProLight, sans-serif;
     line-height: 20px;
     max-height: 35px;
     font-size: 0.875rem;
@@ -1905,6 +1910,11 @@ a.bread-crumbs__link:hover {
     display: none;
 }
 
+.catalog-item-hidden__more.shift {
+    right: -28px;
+    left: auto;
+}
+
 .catalog-item-hidden__more::after {
     position: absolute;
     content: '';
@@ -1912,6 +1922,11 @@ a.bread-crumbs__link:hover {
     border-top-color: #fff;
     bottom: -29px;
     left: 32px;
+}
+
+.shift.catalog-item-hidden__more::after {
+    right: 32px;
+    left: auto;
 }
 
 .catalog-item-hidden__more-title {
@@ -1995,13 +2010,14 @@ a.bread-crumbs__link:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 35px;
+    padding-bottom: 13px;
 }
 
 .products-item-wrap {
     position: relative;
-    width: 21.9%;
+    width: 22.17%;
     min-height: 350px;
-    margin-bottom: 35px;
+    margin-bottom: 29px;
 }
 
 .products-item {
@@ -2012,12 +2028,19 @@ a.bread-crumbs__link:hover {
     top: 0;
     text-align: center;
     border: 1px solid #e6e6e6;
-    padding-bottom: 15px;
+    padding-bottom: 27px;
+}
+
+.products-item .catalog-item__brand {
+    max-width: 57px;
+    height: 40px;
+    top: 1px;
+    right: 12px;
 }
 
 .products-item__img {
     position: relative;
-    padding-top: 75%;
+    padding-top: 78%;
 }
 
 .products-item__img img {
@@ -2040,25 +2063,31 @@ a.bread-crumbs__link:hover {
 }
 
 .product-item__info {
-    padding: 0 40px;
+    padding: 0 50px;
     line-height: 16px;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     max-height: 33px;
     overflow: hidden;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
+    margin-top: 30px;
+    text-transform: capitalize;
 }
 
 .product-item__description {
-    font-size: 0.75rem;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #999;
-    display: none;
+    font-family: GothamProLight, sans-serif;
+    font-size: 0.8125rem;
+    line-height: 16px;
+    /*text-transform: uppercase;*/
+    color: #808080;
+    padding: 0 50px;
+    max-height: 33px;
+    overflow: hidden;
+    /*display: none;*/
 }
 
-.products-item-wrap:hover .product-item__description {
-    display: block;
-}
+/*.products-item-wrap:hover .product-item__description {*/
+    /*display: block;*/
+/*}*/
 
 .products-item-wrap:hover .products-item {
     z-index: 11;
@@ -2075,16 +2104,21 @@ a.bread-crumbs__link:hover {
 }
 
 .products-item__overlay-more {
+    font-family: GothamProLight, sans-serif;
+    font-size: 0.8125rem;
     position: absolute;
     top: 50%;
     left: 50%;
+    letter-spacing: 0.12rem;
     transform: translate(-50%, -50%);
     color: #fff;
     text-transform: uppercase;
-    padding: 0 45px;
+    /*padding: 0 45px;*/
     height: 45px;
+    width: 183px;
     line-height: 45px;
-    background-image: linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
+    /*background-image: linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);*/
+    background-color: #67103a;
 }
 
 .products-item:hover {
@@ -2105,17 +2139,20 @@ a.bread-crumbs__link:hover {
 
 .products-item__overlay-promo {
     position: absolute;
-    width: 180px;
+    /*width: 180px;*/
     height: 40px;
-    line-height: 38px;
+    line-height: 40px;
+    padding: 0 20px;
     font-family: GothamProMedium, sans-serif;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: #4c4c4c;
-    border: 1px solid #e6e6e6;
+    /*border: 1px solid #e6e6e6;*/
     bottom: -20px;
+    white-space: nowrap;
     left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase;
+    color: #67103a;
 }
 
 .products-item__overlay-promo-line {
@@ -2159,6 +2196,7 @@ a.bread-crumbs__link:hover {
     max-width: 1302px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 70px;
 }
 
 .card {
@@ -2180,28 +2218,42 @@ a.bread-crumbs__link:hover {
     line-height: 16px;
 }
 
-.card-main .h1 {
-    text-align: left;
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 510px;
-    height: auto;
-    line-height: 24px;
+.card-main h1 {
+    font-family: GothamProBold,sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 17px;
+}
+
+.card-main h2 {
+    font-family: GothamProMedium,sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #808080;
+    letter-spacing:0;
+    margin-bottom: 18px;
 }
 
 .card-image {
     position: relative;
     padding-bottom: 76.5%;
     border: 2px solid #e5e5e5;
-    margin-bottom: 82px;
+    margin-bottom: 84px;
 }
 
 .card-image img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
     max-width: 100%;
+}
+
+.card-image .catalog-item__brand {
+    width: 105px;
+    max-width: 105px;
+    top: 14px;
 }
 
 .action {
@@ -2211,12 +2263,14 @@ a.bread-crumbs__link:hover {
     text-transform: uppercase;
     font-family: GothamProMedium, sans-serif;
     font-size: 0.875rem;
-    color: #e41283;
+    color: #67103a;
     transform: translateX(-50%);
-    width: 182px;
+    /*width: 182px;*/
+    white-space: nowrap;
     height: 42px;
-    line-height: 38px;
-    border: 2px solid #e41283;
+    line-height: 44px;
+    /*border: 2px solid #e41283;*/
+    padding: 0 27px;
     text-align: center;
     background-color: #fff;
 }
@@ -2230,7 +2284,7 @@ a.bread-crumbs__link:hover {
 }
 
 .similar {
-    font-family: GothamProMedium, sans-serif;
+    font-family: GothamProBold, sans-serif;
     font-size: 0.875rem;
 }
 
@@ -2239,7 +2293,7 @@ a.bread-crumbs__link:hover {
 }
 
 .similar-slider {
-    height: 199px;
+    height: 201px;
     border: 2px solid #e5e5e5;
     margin-top: 12px;
     overflow: hidden;
@@ -2274,13 +2328,28 @@ a.bread-crumbs__link:hover {
 .similar-slider__title {
     font-size: 0.875rem;
     text-transform: uppercase;
-    margin-top: 49px;
-    margin-bottom: 20px;
+    margin-top: 26px;
+    margin-bottom: 17px;
 }
 
 .similar-slider__info {
     font-family: GothamProRegular, sans-serif;
     font-size: 0.875rem;
+    width: 135px;
+    line-height: 16px;
+    margin-bottom: 17px;
+    max-height: 48px;
+    overflow: hidden;
+}
+
+.similar-slider__info-more {
+    font-family: GothamProRegular, sans-serif;
+    font-size: 0.875rem;
+    color: #808080;
+    line-height: 16px;
+    width: 170px;
+    max-height: 48px;
+    overflow: hidden;
 }
 
 .similar-slider .slick-dots {
@@ -2301,7 +2370,7 @@ a.bread-crumbs__link:hover {
 
 .similar-slider .slick-dots li button:before {
     font-size: 11px;
-    color: #b3b3b3;
+    color: #b3879c;
     opacity: 1;
     width: 10px;
     height: 10px;
@@ -2309,15 +2378,24 @@ a.bread-crumbs__link:hover {
 
 .similar-slider .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: #646464;
+    color: #67103a;
 }
 
 .card-main {
     font-size: 0.875rem;
+    letter-spacing: -.03rem;
+    padding-top: 27px;
+}
+
+.card-main__features {
+    font-family: GothamProLight, sans-serif;
+    font-size: 0.8125rem;
+    line-height: 16px;
+    padding-bottom: 20px;
 }
 
 .card-main__features-manufacturer {
-    margin-right: 27px;
+    margin-right: 64px;
     float: left;
 }
 
@@ -2326,13 +2404,13 @@ a.bread-crumbs__link:hover {
 }
 
 .card-main__features-article span {
-
-    font-family: GothamProMedium, sans-serif;
+    font-family: GothamProRegular, sans-serif;
+    margin-left: 5px;
 }
 
 .card-main__features-article {
-    float: right;
-    margin-right: 82px;
+    float: left;
+    margin-left: 63px;
 }
 
 .card-main__features-logo {
@@ -2349,9 +2427,9 @@ a.bread-crumbs__link:hover {
 }
 
 .card-main h4 {
-    margin-bottom: 15px;
-    font-family: GothamProMedium, sans-serif;
-    text-rendering: geometricPrecision;
+    margin-bottom: 16px;
+    font-family: GothamProBold, sans-serif;
+    /*letter-spacing: 0;*/
 }
 
 .card-main__features-btns {
@@ -2361,6 +2439,7 @@ a.bread-crumbs__link:hover {
     font-family: GothamProMedium, sans-serif;
     text-transform: uppercase;
     align-items: center;
+    letter-spacing: normal;
 }
 
 .palette {
@@ -2368,7 +2447,7 @@ a.bread-crumbs__link:hover {
     padding-left: 55px;
     position: relative;
     margin-right: 54px;
-    color: #5850db;
+    color: #67103a;
     line-height: 46px;
 }
 
@@ -2383,7 +2462,7 @@ a.bread-crumbs__link:hover {
 }
 
 .palette span {
-    background: linear-gradient(to right, #5851db 1px, transparent 1px) 0 bottom repeat-x;
+    background: linear-gradient(to right, #67103a 1px, transparent 1px) 0 bottom repeat-x;
     background-size: 2px 1px;
 }
 
@@ -2392,17 +2471,17 @@ a.bread-crumbs__link:hover {
 }
 
 .palette:hover {
-    color: #5850db;
+    color: #67103a;
 }
 
 .download-pdf {
     padding-left: 46px;
-    border: 2px solid #5851db;
+    border: 2px solid #67103a;
     padding-right: 19px;
     height: 40px;
     line-height: 36px;
     position: relative;
-    color: #5850db;
+    color: #67103a;
 }
 
 .download-pdf::before {
@@ -2416,7 +2495,7 @@ a.bread-crumbs__link:hover {
 }
 
 .download-pdf:hover {
-    background-color: #5850db;
+    background-color: #67103a;
     color: #fff;
 }
 
@@ -2428,6 +2507,7 @@ a.bread-crumbs__link:hover {
     display: flex;
     justify-content: space-between;
     font-size: 0.8125rem;
+    letter-spacing: 0;
 }
 
 .card-main__half {
@@ -2436,7 +2516,7 @@ a.bread-crumbs__link:hover {
 }
 
 .card-main__half h4 {
-    font-family: GothamProMedium, sans-serif;
+    font-family: GothamProBold, sans-serif;
     font-size: 0.875rem;
     position: relative;
     margin-bottom: 22px;
@@ -2447,7 +2527,7 @@ a.bread-crumbs__link:hover {
     content: '';
     width: 80px;
     height: 2px;
-    background-color: #5851db;
+    background-color: #67103a;
     bottom: -7px;
     left: 2px;
 }
@@ -2455,6 +2535,7 @@ a.bread-crumbs__link:hover {
 .card-main-action {
     display: flex;
     justify-content: space-between;
+    margin-top: -3px;
 }
 
 .card-main-action__half {
@@ -2508,7 +2589,7 @@ a.bread-crumbs__link:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    font-family: GothamProMedium, sans-serif;
+    font-family: GothamProBold, sans-serif;
     font-size: 0.875rem;
     color: #fff;
     text-align: center;
@@ -2529,7 +2610,7 @@ a.bread-crumbs__link:hover {
 
 /************************* learn-more *************************/
 .learn-more {
-    margin-top: 28px;
+    margin-top: 37px;
     padding-bottom: 50px;
 }
 
@@ -2539,25 +2620,25 @@ a.bread-crumbs__link:hover {
     padding-right: 17px;
 }
 
-.learn-more-top-wrap {
-    display: flex;
-    flex-grow: 1;
-    text-align: center;
-}
+/*.learn-more-top-wrap {*/
+    /*display: flex;*/
+    /*flex-grow: 1;*/
+    /*text-align: center;*/
+/*}*/
 
 .learn-more-info {
     display: flex;
     justify-content: space-between;
 }
 
-.learn-more-top-wrap img {
-    max-width: 100%;
-    padding-right: 30px;
-    padding-bottom: 42px;
-}
+/*.learn-more-top-wrap img {*/
+    /*max-width: 100%;*/
+    /*padding-right: 30px;*/
+    /*padding-bottom: 42px;*/
+/*}*/
 
 .learn-more-info_el {
-    width: 49.5%;
+    width: 50%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -2569,23 +2650,25 @@ a.bread-crumbs__link:hover {
 
 .learn-more__date {
     padding-left: 34px;
-    background: url('../images/learn-more-calendar.png') 10% 40% no-repeat,
-    linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
+    background: url('../images/learn-more-calendar.png') 12% 40% no-repeat #67103a;
+    /*linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);*/
+    margin-right: 1px;
 
 }
 
 .learn-more__loc {
-    padding-left: 24px;
-    background: url('../images/learn-more-loc.png') 10% 40% no-repeat,
-    linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);
+    padding-left: 22px;
+    background: url('../images/learn-more-loc.png') 8% 47% no-repeat #67103a;
+    /*linear-gradient(270deg, rgb(88, 81, 219) 0%, rgb(131, 58, 180) 50%, rgb(229, 18, 131) 100%);*/
 }
 
 .learn-more-form {
     font-size: 0.875rem;
     border: 1px solid #e6e6e6;
     margin-top: 30px;
-    padding: 26px 29px;
+    padding: 24px 29px 27px;
     line-height: 19px;
+    text-align: center;
 }
 
 .learn-more-form__title {
@@ -2604,12 +2687,14 @@ a.bread-crumbs__link:hover {
 .learn-more__txt {
     font-size: 0.875rem;
     line-height: 19px;
+    clear: both;
+    padding-top: 53px;
 }
 
 .learn-more-form .submit-button {
     display: block;
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 27px;
     height: 40px;
     line-height: 36px;
     border: 2px solid #333;
@@ -2636,6 +2721,19 @@ a.bread-crumbs__link:hover {
     list-style: decimal;
     padding-left: 15px;
 }
+
+
+.learn-more img {
+    max-width: 580px;
+    float: left;
+    width: 44.5468509984639%;
+}
+
+.learn-more-form-wrap {
+    float: right;
+    width: 52.99539170506912%;
+}
+
 
 /************************* tabs *************************/
 .nav-tabs-wrap {
