@@ -61,6 +61,7 @@ textarea{
     border: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
+    width: 100%;
 }
 button,
 input[type="button"],

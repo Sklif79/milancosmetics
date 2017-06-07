@@ -1,0 +1,203 @@
+//= templates/header.html
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<div class="breadcrumbs-title-wrap  clearfix_">
+    <div class="bread-crumbs clearfix_">
+        <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item">
+                <a href="" class="bread-crumbs__link">Главная</a>
+            </li>
+            <li class="bread-crumbs__item active">
+                <span class="bread-crumbs__link">Продукция</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="shops">
+    <h1 class="h1">Где купить</h1>
+
+    <div class="line_gray"></div>
+
+    <div class="shops-tab">
+        <a href="#">Интернет-магазины</a>
+        <img src="assets/images/slash.png" alt="">
+        <a href="#" class="active">Магазины</a>
+    </div>
+
+    <div class="shops-inner">
+
+        <div class="shops-aside">
+            <div class="aside-subscribe">
+                <p>
+                    <b>Подпишитесь,</b> и узнавайте
+                    первыми о новых акциях
+                    и ближайших семинарах!
+                </p>
+
+                <form action="" method="post" name="" class="subscribe-form">
+                    <input type="text" placeholder="Электронная почта" class="subscribe__input">
+                    <input type="submit" class="subscribe__submit" value="">
+                </form>
+            </div>
+
+            <div class="products-aside-slider">
+                <!---->
+                <div class="products-slider-item">
+                    <div class="products-slider__links">
+                        <span>Новинки</span>
+                        <a href="">Все новинки</a>
+                    </div>
+                    <div class="products-slider__img">
+                        <img src="assets/images/aside-slider.png" alt="">
+                    </div>
+                    <div class="products-slider__title">
+                        KAARAL
+                    </div>
+                    <div class="products-slider__info">
+                        SILK HIDROLIZED POST<br>
+                        COLOR CREAM
+                    </div>
+                    <a href="" class="products-slider__lnk"></a>
+                </div>
+
+                <!---->
+                <div class="products-slider-item">
+                    <div class="products-slider__links">
+                        <span>Новинки</span>
+                        <a href="">Все новинки</a>
+                    </div>
+                    <div class="products-slider__img">
+                        <img src="assets/images/aside-slider.png" alt="">
+                    </div>
+                    <div class="products-slider__title">
+                        KAARAL
+                    </div>
+                    <div class="products-slider__info">
+                        SILK HIDROLIZED POST<br>
+                        COLOR CREAM
+                    </div>
+                    <a href="" class="products-slider__lnk"></a>
+                </div>
+
+                <!---->
+                <div class="products-slider-item">
+                    <div class="products-slider__links">
+                        <span>Новинки</span>
+                        <a href="">Все новинки</a>
+                    </div>
+                    <div class="products-slider__img">
+                        <img src="assets/images/aside-slider.png" alt="">
+                    </div>
+                    <div class="products-slider__title">
+                        KAARAL
+                    </div>
+                    <div class="products-slider__info">
+                        SILK HIDROLIZED POST<br>
+                        COLOR CREAM
+                    </div>
+                    <a href="" class="products-slider__lnk"></a>
+                </div>
+
+            </div>
+
+            <div class="products-aside-slider">
+                <!---->
+                <div class="products-slider-item">
+                    <div class="products-slider__links">
+                        <span>Хиты продаж</span>
+                        <a href="">Все хиты</a>
+                    </div>
+                    <div class="products-slider__img">
+                        <img src="assets/images/aside-slider.png" alt="">
+                    </div>
+                    <div class="products-slider__title">
+                        KAARAL
+                    </div>
+                    <div class="products-slider__info">
+                        SILK HIDROLIZED POST<br>
+                        COLOR CREAM
+                    </div>
+                    <a href="" class="products-slider__lnk"></a>
+                </div>
+
+                <!---->
+                <div class="products-slider-item">
+                    <div class="products-slider__links">
+                        <span>Хиты продаж</span>
+                        <a href="">Все хиты</a>
+                    </div>
+                    <div class="products-slider__img">
+                        <img src="assets/images/aside-slider.png" alt="">
+                    </div>
+                    <div class="products-slider__title">
+                        KAARAL
+                    </div>
+                    <div class="products-slider__info">
+                        SILK HIDROLIZED POST<br>
+                        COLOR CREAM
+                    </div>
+                    <a href="" class="products-slider__lnk"></a>
+                </div>
+
+                <!---->
+                <div class="products-slider-item">
+                    <div class="products-slider__links">
+                        <span>Хиты продаж</span>
+                        <a href="">Все хиты</a>
+                    </div>
+                    <div class="products-slider__img">
+                        <img src="assets/images/aside-slider.png" alt="">
+                    </div>
+                    <div class="products-slider__title">
+                        KAARAL
+                    </div>
+                    <div class="products-slider__info">
+                        SILK HIDROLIZED POST<br>
+                        COLOR CREAM
+                    </div>
+                    <a href="" class="products-slider__lnk"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="shops-content">
+            <div class="personal-contacts-aside__region">
+                Ваш регион:
+
+                <div class="region">
+                    <span>Минск</span>
+                    <ul>
+                        <li><a href="#">Минск2</a></li>
+                        <li><a href="#">Минск3</a></li>
+                        <li><a href="#">Минск4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="map" class="shop-map"></div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<script>
+    var myMap;
+    ymaps.ready(function () {
+        myMap = new ymaps.Map('map', {
+            center: [53.924981896189166, 27.630578552856463],
+            zoom: 16,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        })
+    });
+
+</script>
+
+//= templates/footer.html

@@ -10,6 +10,12 @@ $(document).ready(function () {
 
     $('.products-item__title').setMaxHeights();
 
+    //отправить файл
+    $(".label-wrap-file input[type=file]").change(function(){
+        var filename = $(this).val().replace(/.*\\/, "");
+        $("#filename").val(filename);
+    });
+
     $('a.palette').fancybox({
         closeBtn: true,
         padding: 0,
@@ -63,22 +69,7 @@ $(document).ready(function () {
         dots: true,
         nextArrow: '<div class="slider-next"></div>',
         prevArrow: '<div class="slider-prev"></div>',
-        arrows: true,
-        // responsive: [
-        //     {
-        //         breakpoint: 1200,
-        //         settings: {
-        //             slidesToShow: 4
-        //         }
-        //     },
-        //
-        //     {
-        //         breakpoint: 690,
-        //         settings: {
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
+        arrows: true
     });
 
     $('div.partners-wrap').slick({
@@ -116,16 +107,8 @@ $(document).ready(function () {
                     slidesToShow: 5
                 }
             }
-            //
-            //     {
-            //         breakpoint: 690,
-            //         settings: {
-            //             slidesToShow: 1
-            //         }
-            //     }
         ]
     });
-
 
     $('div.photo-page-slider').slick({
         slidesToShow: 1,
@@ -154,6 +137,20 @@ $(document).ready(function () {
         autoplaySpeed: 4000,
         asNavFor: '.photo-page-slider'
     });
+
+    $('div.products-aside-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        // arrows: false,
+        infinite: true,
+        nextArrow: '<div class="slider-next-aside"></div>',
+        prevArrow: '<div class="slider-prev-aside"></div>'
+        // autoplay: true,
+        // autoplaySpeed: 4000
+    });
+
+
 });
 
 

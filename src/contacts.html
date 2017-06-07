@@ -55,8 +55,6 @@
             </div>
             <a href="" class="contacts-info__lnk">Наши вакансии</a>
         </div>
-
-
     </div>
 
     <div class="personal-contacts-wrap">
@@ -206,8 +204,8 @@
                         <span>Минск</span>
                         <ul>
                             <li><a href="#">Минск2</a></li>
-                            <li><a href="#">Минск3 fd gf fdgdf</a></li>
-                            <li><a href="#">Минск4 fgfgf</a></li>
+                            <li><a href="#">Минск3</a></li>
+                            <li><a href="#">Минск4</a></li>
                         </ul>
                     </div>
                 </div>
@@ -235,36 +233,38 @@
 
         </div>
     </div>
+</div>
 
+<div class="career">
+    <img src="assets/images/contacts-bg.jpg" alt="">
+    <div class="career-skew-overlay"></div>
+
+    <div class="career-content">
+        <div class="career-title">Карьера в MilanCosmetics</div>
+        <div class="career-btn">Вакансии</div>
+    </div>
 </div>
 
 <script>
-    ymaps.ready(init);
-
-    function init() {
-        var mapObj = {
+    var myMap;
+    ymaps.ready(function () {
+        myMap = new ymaps.Map('map', {
             center: [53.924981896189166, 27.630578552856463],
             zoom: 16,
             controls: []
-        };
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+            myPlacemark = new ymaps.Placemark([53.925571018390954, 27.63840660185236], {
+                hintContent: 'улица Филимонова, 55к3'
+            }, {
+                preset: 'islands#redDotIconWithCaption',
 
-
-        var myMap = new ymaps.Map('map', mapObj, {
-                searchControlProvider: 'yandex#search'
-            }),
-            objectManager = new ymaps.ObjectManager({
-                // Чтобы метки начали кластеризоваться, выставляем опцию.
-                clusterize: false,
-                // ObjectManager принимает те же опции, что и кластеризатор.
-                gridSize: 32,
-                geometry: {
-                    type: "Point", // тип геометрии - точка
-                    coordinates: [53.92689422912721, 27.638453518524177] // координаты точки
-                }
             });
 
-        myMap.geoObjects.add(objectManager);
-    }
+        myMap.geoObjects.add(myPlacemark);
+    });
+
 </script>
 
 //= templates/footer.html
