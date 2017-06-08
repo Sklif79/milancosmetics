@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+    $('.popup').on("click", "span.select-all", function () {
+        $(this).parent().parent('.price-selection').find('.checkbox').prop('checked', true);
+    });
+
+    $('.popup').on("click", "span.reset-all", function () {
+        $(this).parent().parent('.price-selection').find('.checkbox').prop('checked', false);
+    });
+
+    customPlaceholderInit();
+
     searchHeader();
 
     lineTooltip();
@@ -11,18 +22,18 @@ $(document).ready(function () {
     $('.products-item__title').setMaxHeights();
 
     //отправить файл
-    $(".label-wrap-file input[type=file]").change(function(){
+    $(".label-wrap-file input[type=file]").change(function () {
         var filename = $(this).val().replace(/.*\\/, "");
         $("#filename").val(filename);
     });
 
-    $('a.palette').fancybox({
+    $('a.palette, a.modalbox').fancybox({
         closeBtn: true,
         padding: 0,
         helpers: {
             overlay: {
                 css: {
-                    'background': 'rgba(0,0,0,0.5)'
+                    'background': 'rgba(51,51,51,0.7)'
                 }
             }
         }
@@ -37,8 +48,6 @@ $(document).ready(function () {
             }
         );
     }
-
-
 
 
     buttonUp();
@@ -186,9 +195,9 @@ function lineTooltip() {
             $('a.catalog-item-hidden__el-lnk').next('.catalog-item-hidden__more').hide();
 
             //смещение балуна, если он дальше середины
-            if ( pos > half) {
+            if (pos > half) {
                 $(this).next('.catalog-item-hidden__more').addClass('shift').show();
-            } else  {
+            } else {
                 $(this).next('.catalog-item-hidden__more').show();
             }
 
@@ -220,6 +229,61 @@ function categoryFullHeight(el) {
 
         $('div.' + el + '-item').height(categoryHeight);
         console.log(categoryHeight);
+    }
+}
+
+//инпуты
+function customPlaceholderInit() {
+    var els = $('.custom-placeholder-wrap');
+    els.each(function () {
+        $(this).on('click', clickHandler);
+        $(this).find('input, textarea').on('focus', focusHandler);
+    });
+
+    textareaDetect();
+
+    function textareaDetect() {
+        els.each(function () {
+            var textarea = $(this).find('textarea');
+            if (textarea.length) {
+                $(this).find('.custom-placeholder').addClass('textarea-custom-placeholder');
+            }
+        });
+    }
+
+    function clickHandler(e) {
+        var el = findParent($(e.target), 'custom-placeholder-wrap'),
+            input = el.find('input, textarea');
+        el.addClass('custom-placeholder-active');
+        input
+            .focus()
+            .focusout(function () {
+                var val = $(this).val().trim();
+                if (!val) {
+                    el.removeClass('custom-placeholder-active');
+                }
+            });
+    }
+
+    function focusHandler(e) {
+        var el = findParent($(e.target), 'custom-placeholder-wrap');
+        el.addClass('custom-placeholder-active');
+        $(e.target).focusout(function () {
+            var val = $(this).val().trim();
+            if (!val) {
+                el.removeClass('custom-placeholder-active');
+            }
+        });
+    }
+}
+
+function findParent(el, class_) {
+    var parent = el.parent();
+    if (parent.hasClass(class_)) {
+        return parent;
+    }
+    else {
+        return findParent(parent, class_);
     }
 }
 

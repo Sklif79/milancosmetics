@@ -1,5 +1,4 @@
 //= templates/header.html
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 <div class="breadcrumbs-title-wrap  clearfix_">
     <div class="bread-crumbs clearfix_">
@@ -20,9 +19,9 @@
     <div class="line_gray"></div>
 
     <div class="shops-tab">
-        <a href="#">Интернет-магазины</a>
+        <a href="#" class="active">Интернет-магазины</a>
         <img src="assets/images/slash.png" alt="">
-        <a href="#" class="active">Магазины</a>
+        <a href="#">Магазины</a>
     </div>
 
     <div class="shops-inner">
@@ -188,8 +187,8 @@
                             <div class="personal-contacts__person-name">
                                 Фешн-Косметикс
                             </div>
-                            <div class="personal-contacts__person-post">
-                                г. Минск, ул. Фроликова 55
+                            <div class="personal-contacts__link">
+                                <a href="">www.fashion-cosmetics.by</a>
                             </div>
                         </div>
                     </div>
@@ -210,8 +209,8 @@
                             <div class="personal-contacts__person-name">
                                 Фешн-Косметикс
                             </div>
-                            <div class="personal-contacts__person-post">
-                                г. Минск, ул. Фроликова 55
+                            <div class="personal-contacts__link">
+                                <a href="">www.fashion-cosmetics.by</a>
                             </div>
                         </div>
                     </div>
@@ -232,8 +231,8 @@
                             <div class="personal-contacts__person-name">
                                 Фешн-Косметикс
                             </div>
-                            <div class="personal-contacts__person-post">
-                                г. Минск, ул. Фроликова 55
+                            <div class="personal-contacts__link">
+                                <a href="">www.fashion-cosmetics.by</a>
                             </div>
                         </div>
                     </div>
@@ -254,8 +253,8 @@
                             <div class="personal-contacts__person-name">
                                 Фешн-Косметикс
                             </div>
-                            <div class="personal-contacts__person-post">
-                                г. Минск, ул. Фроликова 55
+                            <div class="personal-contacts__link">
+                                <a href="">www.fashion-cosmetics.by</a>
                             </div>
                         </div>
                     </div>
@@ -276,8 +275,8 @@
                             <div class="personal-contacts__person-name">
                                 Фешн-Косметикс
                             </div>
-                            <div class="personal-contacts__person-post">
-                                г. Минск, ул. Фроликова 55
+                            <div class="personal-contacts__link">
+                                <a href="">www.fashion-cosmetics.by</a>
                             </div>
                         </div>
                     </div>
@@ -298,8 +297,8 @@
                             <div class="personal-contacts__person-name">
                                 Фешн-Косметикс
                             </div>
-                            <div class="personal-contacts__person-post">
-                                г. Минск, ул. Фроликова 55
+                            <div class="personal-contacts__link">
+                                <a href="">www.fashion-cosmetics.by</a>
                             </div>
                         </div>
                     </div>
@@ -309,29 +308,9 @@
                         +375 (44) 589-69-78
                     </div>
                 </div>
-            </div>
-
-            <div class="shop-map-wrap">
-                <div id="map" class="shop-map"></div>
             </div>
         </div>
     </div>
 
-
 </div>
-
-<script>
-    var myMap;
-    ymaps.ready(function () {
-        myMap = new ymaps.Map('map', {
-            center: [53.924981896189166, 27.630578552856463],
-            zoom: 8,
-            controls: []
-        }, {
-            searchControlProvider: 'yandex#search'
-        })
-    });
-
-</script>
-
 //= templates/footer.html
