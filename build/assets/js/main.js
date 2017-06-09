@@ -1,12 +1,17 @@
 $(document).ready(function () {
 
-    $('.popup').on("click", "span.select-all", function () {
-        $(this).parent().parent('.price-selection').find('.checkbox').prop('checked', true);
+    $('div.catalog-item-hidden').slideUp(0);
+    $('div.catalog-item').mouseenter (function () {
+        $(this).find('div.catalog-item-hidden').slideDown(2000);
     });
 
-    $('.popup').on("click", "span.reset-all", function () {
-        $(this).parent().parent('.price-selection').find('.checkbox').prop('checked', false);
+    $('.catalog-item').mouseleave (function () {
+        $(this).find('div.catalog-item-hidden').slideUp(2000);
     });
+
+    cropText($('.aside-news__txt'), 300);
+
+    checkUnccheck();
 
     customPlaceholderInit();
 
@@ -49,26 +54,7 @@ $(document).ready(function () {
         );
     }
 
-
     buttonUp();
-
-
-    // $('a.modalbox').fancybox({
-    //     closeBtn: true,
-    //     padding: 0,
-    //     helpers: {
-    //         overlay: {
-    //             css: {
-    //                 'background': 'rgba(0,0,0,0.5)'
-    //             }
-    //         }
-    //     }
-    // });
-
-    // $(".expo__item-news, .news-item__text").dotdotdot({
-    //     ellipsis: "",
-    //     tolerance: 1
-    // });
 
 
     //************************** sliders *********************************
@@ -192,23 +178,23 @@ function lineTooltip() {
             var pos = $(this).offset().left;
             var half = $('body').width() / 2;
 
-            $('a.catalog-item-hidden__el-lnk').next('.catalog-item-hidden__more').hide();
+            $('a.catalog-item-hidden__el-lnk').next('.catalog-item-hidden-wrap').hide();
 
             //смещение балуна, если он дальше середины
             if (pos > half) {
-                $(this).next('.catalog-item-hidden__more').addClass('shift').show();
+                $(this).next('.catalog-item-hidden-wrap').addClass('shift').show();
             } else {
-                $(this).next('.catalog-item-hidden__more').show();
+                $(this).next('.catalog-item-hidden-wrap').show();
             }
 
-            var hideEl = $(this).next('.catalog-item-hidden__more').outerHeight() + 25;
-            $(this).next('.catalog-item-hidden__more').css({'top': '-' + hideEl + 'px'});
+            var hideEl = $(this).next('.catalog-item-hidden-wrap').outerHeight();
+            $(this).next('.catalog-item-hidden-wrap').css({'top': '-' + hideEl + 'px'});
         }
     );
 
-    $('div.catalog-item, .catalog-item-hidden__more').mouseleave(
+    $('div.catalog-item, .catalog-item-hidden-wrap').mouseleave(
         function () {
-            $('a.catalog-item-hidden__el-lnk').next('.catalog-item-hidden__more').hide();
+            $('a.catalog-item-hidden__el-lnk').next('.catalog-item-hidden-wrap').hide();
         }
     );
 }
@@ -285,4 +271,26 @@ function findParent(el, class_) {
     else {
         return findParent(parent, class_);
     }
+}
+
+//обрезка текста
+function cropText(item, size) {
+
+    item.each(function () {
+        var newsText = $(this).text();
+        if (newsText.length > size) {
+            item.text(newsText.slice(0, size));
+        }
+    });
+}
+
+// выбрать/отменить все input
+function checkUnccheck() {
+    $('.popup').on("click", "span.select-all", function () {
+        $(this).parent().parent('.price-selection').find('.checkbox').prop('checked', true);
+    });
+
+    $('.popup').on("click", "span.reset-all", function () {
+        $(this).parent().parent('.price-selection').find('.checkbox').prop('checked', false);
+    });
 }

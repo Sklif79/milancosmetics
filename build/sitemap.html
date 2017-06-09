@@ -113,53 +113,54 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="sitemap">
 
-<div class="sitemap">
+        <h1>КАРТА САЙТА</h1>
 
-    <h1>КАРТА САЙТА</h1>
+        <div class="line_gray"></div>
 
-    <div class="line_gray"></div>
-
-    <div class="sitemap-wrap">
-        <ul>
-            <li><a href="#">Главная</a>
-                <ul>
-                    <li><a href="#">Категории</a>
-                        <ul>
-                            <li><a href="#">Линейки</a>
-                                <ul>
-                                    <li><a href="#">Товары</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">Обучение</a></li>
-            <li><a href="#">Спецпредложения</a>
-                <ul>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Новинки</a></li>
-                    <li><a href="#">Хиты продаж</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Новости</a>
-                <ul>
-                    <li><a href="#">События</a></li>
-                    <li><a href="#">Фото</a></li>
-                    <li><a href="#">Видео</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Сотрудничество</a></li>
-            <li><a href="#">Контакты</a>
-                <ul>
-                    <li><a href="#">Вакансии</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Где купить</a></li>
-            <li><a href="#">Карта сайта</a></li>
-            <li><a href="#">Ошибка 404</a></li>
-        </ul>
+        <div class="sitemap-wrap">
+            <ul>
+                <li><a href="#">Главная</a>
+                    <ul>
+                        <li><a href="#">Категории</a>
+                            <ul>
+                                <li><a href="#">Линейки</a>
+                                    <ul>
+                                        <li><a href="#">Товары</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Обучение</a></li>
+                <li><a href="#">Спецпредложения</a>
+                    <ul>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хиты продаж</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Новости</a>
+                    <ul>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Фото</a></li>
+                        <li><a href="#">Видео</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Контакты</a>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">Ошибка 404</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 
@@ -250,7 +251,13 @@
     </div>
 </footer>
 
-<!-- popup -->
+<!-- popup calendar -->
+<div id="calendar-popup" class="popup">
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=miledianru%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FMinsk"
+            style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- popup registration-->
 <form action="" method="post" name="" id="price-popup" class="popup">
     <div class="price__title">
         Регистрация
@@ -602,7 +609,7 @@
             </div>
 
             <div class="price-selection-el">
-                <div class="price-selection-item">
+                <div class="price-selection-item item_margin">
                     <div class="price-selection-item__title">
                         <span>
                             Для лица
@@ -628,7 +635,6 @@
                         <span class="input-title">Beard Club</span>
                     </label>
                 </div>
-
                 <div class="price-selection-item">
                     <div class="price-selection-item__title">
                         <span>
@@ -664,16 +670,18 @@
             <span class="checkbox-custom"></span>
             <span class="input-title">Получать уведомление о ближайших акциях и семинарах</span>
         </label>
-    </div>
 
-    <label class="field__label custom-placeholder-wrap">
+        <label class="field__label custom-placeholder-wrap price-popup-textarea">
     <span class="block">
         <textarea class="field custom-textarea" placeholder=""></textarea>
     </span>
-        <span class="custom-placeholder textarea-custom-placeholder">Введите сообщение...</span>
-    </label>
+            <span class="custom-placeholder textarea-custom-placeholder">Введите сообщение...</span>
+        </label>
+    </div>
 
-
+    <div class="price-popup-submit">
+        <input type="submit" class="price-popup__submit" value="Зарегистрироваться">
+    </div>
 </form>
 
 <script src="assets/js/libs.js"></script>

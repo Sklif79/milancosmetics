@@ -85,7 +85,13 @@
     </div>
 </footer>
 
-<!-- popup -->
+<!-- popup calendar -->
+<div id="calendar-popup" class="popup">
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=miledianru%40gmail.com&amp;color=%2329527A&amp;ctz=Europe%2FMinsk"
+            style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<!-- popup registration-->
 <form action="" method="post" name="" id="price-popup" class="popup">
     <div class="price__title">
         Регистрация
@@ -437,7 +443,7 @@
             </div>
 
             <div class="price-selection-el">
-                <div class="price-selection-item">
+                <div class="price-selection-item item_margin">
                     <div class="price-selection-item__title">
                         <span>
                             Для лица
@@ -463,7 +469,6 @@
                         <span class="input-title">Beard Club</span>
                     </label>
                 </div>
-
                 <div class="price-selection-item">
                     <div class="price-selection-item__title">
                         <span>
@@ -499,16 +504,18 @@
             <span class="checkbox-custom"></span>
             <span class="input-title">Получать уведомление о ближайших акциях и семинарах</span>
         </label>
-    </div>
 
-    <label class="field__label custom-placeholder-wrap">
+        <label class="field__label custom-placeholder-wrap price-popup-textarea">
     <span class="block">
         <textarea class="field custom-textarea" placeholder=""></textarea>
     </span>
-        <span class="custom-placeholder textarea-custom-placeholder">Введите сообщение...</span>
-    </label>
+            <span class="custom-placeholder textarea-custom-placeholder">Введите сообщение...</span>
+        </label>
+    </div>
 
-
+    <div class="price-popup-submit">
+        <input type="submit" class="price-popup__submit" value="Зарегистрироваться">
+    </div>
 </form>
 
 <script src="assets/js/libs.js"></script>
