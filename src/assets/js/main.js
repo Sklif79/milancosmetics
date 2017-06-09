@@ -2,11 +2,16 @@ $(document).ready(function () {
 
     $('div.catalog-item-hidden').slideUp(0);
     $('div.catalog-item').mouseenter (function () {
-        $(this).find('div.catalog-item-hidden').slideDown(2000);
+        $(this).css({'z-index':'11'}).find('div.catalog-item-hidden').slideDown(100);
     });
 
     $('.catalog-item').mouseleave (function () {
-        $(this).find('div.catalog-item-hidden').slideUp(2000);
+        $(this).css({'z-index':'12'}).find('div.catalog-item-hidden').slideUp(100);
+        var self = $(this);
+        setTimeout(function () {
+            self.css({'z-index':''});
+        }, 100);
+
     });
 
     cropText($('.aside-news__txt'), 300);
@@ -182,9 +187,9 @@ function lineTooltip() {
 
             //смещение балуна, если он дальше середины
             if (pos > half) {
-                $(this).next('.catalog-item-hidden-wrap').addClass('shift').show();
+                $(this).next('.catalog-item-hidden-wrap').addClass('shift').fadeIn(400);
             } else {
-                $(this).next('.catalog-item-hidden-wrap').show();
+                $(this).next('.catalog-item-hidden-wrap').fadeIn(400);
             }
 
             var hideEl = $(this).next('.catalog-item-hidden-wrap').outerHeight();
