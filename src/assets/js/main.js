@@ -17,10 +17,11 @@ $(document).ready(function () {
     $('.product-item__info').setMaxHeights();
     $('.product-item__description').setMaxHeights();
     $('.catalog-item__title').setMaxHeights();
+    $('.catalog-item__description').setMaxHeights();
     $('.news-item__txt').setMaxHeights();
 
     cropText($('.aside-news__txt'), 300);
-    cropText($('.slider-news__preview'), 300);
+    cropText($('.catalog-item__description'), 300);
     //cropText($('.news-item__txt'), 85);
 
     checkUnccheck();
