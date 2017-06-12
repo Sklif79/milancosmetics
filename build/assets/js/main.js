@@ -182,6 +182,10 @@ function searchHeader() {
     $('img.search-img').on('click', function () {
         $('form.search-form').toggleClass('show-search-form');
     });
+
+    $('.search-form__close').on('click', function () {
+        $(this).parent('form.search-form').removeClass('show-search-form');
+    });
 }
 
 //тултипы линеек продукции
