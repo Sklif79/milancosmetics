@@ -87,7 +87,22 @@ $(document).ready(function () {
         arrows: true,
         nextArrow: '<div class="slider-next"></div>',
         prevArrow: '<div class="slider-prev"></div>',
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 6
+                }
+            },
+
+            {
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 
     $('div.similar-slider').slick({

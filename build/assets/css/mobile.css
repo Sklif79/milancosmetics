@@ -1,0 +1,161 @@
+/************************* 640px *************************/
+@media screen and (max-width: 640px){
+    .header {
+        height: 67px;
+    }
+
+    .header-logo-wrap__slogan {
+        display: none;
+    }
+
+    .header-logo-wrap {
+        height: 67px;
+        background: none;
+        width: auto;
+    }
+
+    .header-logo-wrap__image-wrap {
+        float: none;
+        width: auto;
+    }
+
+    .header-logo-wrap__image {
+        width: 104px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+
+    .slider-index-item__title, .slider-index-item__description {
+        font-size: 0.875rem;
+        display: inline;
+        width: auto;
+        white-space: nowrap;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        padding: 0 7px;
+        background-color: rgba(255, 255, 255, 0.7);
+        line-height: 1rem;
+    }
+
+    .slider-index__left {
+        margin-top: 11px;
+        margin-left: 8px;
+        width: 56%;
+    }
+
+    .slider-index__right {
+        width: 50%;
+        left: 42px;
+    }
+
+    .slider-index-item__title {
+        top: 24%;
+    }
+
+    .slider-index-item__description {
+        top: 33%;
+    }
+
+    .slider-index-item__link-wrap {
+        top: 52%;
+    }
+
+    .btn-square {
+        height: 34px;
+        line-height: 32px;
+        padding: 0 19px;
+    }
+
+    .slider-index .slick-dots {
+        bottom: 9px;
+    }
+
+    .slider-index .slick-dots li {
+        width: 11px;
+        height: 11px;
+        margin: 0 4px;
+    }
+
+    .partners-item img {
+        max-height: 40px;
+    }
+
+    .slider-next, .slider-next:hover {
+        background-position: 61% 49%;
+    }
+
+    .slider-prev, .slider-prev:hover {
+        background-position: 39% 49%;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .partners-item {
+        margin-bottom: 13px;
+        height: 40px;
+    }
+
+    .partners {
+        padding: 17px 0 24px;
+    }
+
+    .partners-wrap {
+        width: 80%;
+    }
+
+    .partners .slider-prev {
+        background-size: 7px auto;
+        width: 30px;
+        left: -12%;
+    }
+
+    .partners .slider-next {
+        background-size: 7px auto;
+        width: 30px;
+        right: -5%;
+    }
+
+    .partners .slider-prev, .partners .slider-prev:hover {
+        background-position: 56% 53%;
+    }
+
+    .partners .next, .partners .slider-next:hover {
+        background-position: 55% 53%;
+    }
+
+    .partners .slick-slide {
+        margin-right: 20px;
+    }
+
+    .partners {
+        margin-right: -20px;
+    }
+
+    .middle-nav {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .middle-nav__products, .middle-nav__training {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        height: 173px;
+    }
+
+    .middle-nav__text {
+        font-size: 1.25rem;
+    }
+
+
+}
+
+/************************* 480px *************************/
+@media screen and (max-width: 480px){
+
+}
