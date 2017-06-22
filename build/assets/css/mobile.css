@@ -1,5 +1,5 @@
 /************************* 640px *************************/
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
     .header {
         height: 67px;
     }
@@ -139,6 +139,7 @@
         -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        margin-bottom: 27px;
     }
 
     .middle-nav__products, .middle-nav__training {
@@ -152,10 +153,260 @@
         font-size: 1.25rem;
     }
 
+    .index-news__title::before {
+        left: -45px;
+        top: 31px;
+    }
+
+    .index-news__title::after {
+        right: -45px;
+        top: 31px;
+    }
+
+    .index-news-title-wrap {
+        margin-bottom: 5px;
+    }
+
+    .about-company {
+        padding-bottom: 10px;
+    }
+
+    .about-company p, .about-company strong {
+        font-size: 0.75rem;
+        line-height: 14px;
+        margin-bottom: 14px;
+    }
+
+    .about-company__l {
+        padding-bottom: 16px;
+    }
+
+    .about-company__l .header-logo-wrap__slogan {
+        display: block;
+    }
+
+    .about-company__l .header-logo-wrap__image-wrap {
+        width: 100%;
+        float: none;
+    }
+
+    .about-company__l .header-logo-wrap__slogan {
+        width: 155px;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        padding-left: 0;
+        font-size: 0.8125rem;
+        letter-spacing: -0.03rem;
+        line-height: 15px;
+        padding-top: 34px;
+    }
+
+    .about-company__l .header-logo-wrap {
+        height: auto;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .about-company__l .header-logo-wrap__slogan::before {
+        width: 86px;
+        height: 1px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 14px;
+    }
+
+    .about-company__l p {
+        font-size: 0.75rem;
+        line-height: 14px;
+        letter-spacing: -0.03rem;
+        padding: 0 27px;
+        margin-top: 16px;
+    }
+
+    .about-company__l .header-logo-wrap__image {
+        width: 127px;
+    }
+
+    .sc-btns__el {
+        height: 50px;
+    }
+
+    .sc-btns__el span {
+        display: none;
+    }
+
+    .sc-btns__el img {
+        margin-right: 0;
+    }
+
+    .footer-top-wrap {
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 41px 14px 40px 26px;
+    }
+
+    .footer-top__el:not(.subscribe) {
+        border: 2px solid #fff;
+        width: 100%;
+        margin-bottom: 19px;
+        height: 50px;
+        border-radius: 50px;
+        padding-bottom: 0;
+        font-size: 0.8125rem;
+
+    }
+
+    .footer-top__el:nth-of-type(3) {
+        margin-bottom: 0;
+    }
+
+    .footer-top__adress, .footer-top__schedule, .footer-top__phone {
+        padding-left: 60px;
+        padding-right: 10px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+    .footer-top__adress {
+        background: url("../images/footer-loc.png") -2px 50% no-repeat;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .footer-top__schedule {
+        background: url("../images/footer-time.png") -2px 50% no-repeat;
+    }
+
+    .footer-top__phone {
+        background: url("../images/footer-phone-ico.png") -2px 50% no-repeat;
+    }
+
+    .subscribe {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .subscribe form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe__description {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe__mail {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .subscribe__mail-input {
+        text-align: center;
+    }
+
+    .subscribe .btn-square {
+        height: 40px;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer-copyright span {
+        display: inline;
+    }
+
+    .footer-copyright {
+        padding-left: 0;
+    }
+
+    .footer-bottom__el {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom__el.footer-dev {
+        text-align: center;
+    }
 
 }
 
 /************************* 480px *************************/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
+    .basic_width {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
+    .slider-news {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .slider-next-news, .slider-prev-news {
+        width: 40px;
+    }
+
+    .slider-prev-news, .slider-prev-news:hover {
+        background: url("../images/slider-prev-white_m.png") 50% 50% no-repeat;
+    }
+
+    .slider-next-news, .slider-next-news:hover {
+        background: url("../images/slider-next-white_m.png") 50% 50% no-repeat;
+    }
+
+    .slider-news__image {
+        padding-bottom: 81.5%;
+    }
+
+    .footer-top__el:not(.subscribe) {
+        text-align: left;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+
+    }
+
+    .footer-top__schedule, .footer-top__phone {
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
 }
