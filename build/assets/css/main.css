@@ -47,7 +47,7 @@
 /************************* Общие стили *************************/
 html,
 body {
-    height: 100%;
+    /*height: 100%;*/
     font-size: 16px;
     color: #333;
     font-family: GothamProRegular, sans-serif;
@@ -217,6 +217,12 @@ h1 {
     background-color: #e4e4e4;
     left: -20px;
     top: 20px;
+}
+
+.header-mobile-ico {
+    margin-right: 24px;
+    display: none;
+    cursor: pointer;
 }
 
 .soc-bl {
@@ -809,16 +815,6 @@ a.bread-crumbs__link:hover {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
-
-.partners-item img:first-of-type {
-    opacity: 0;
-    /*transition: 0.2s;*/
-}
-
-.partners-item:hover img:first-of-type {
-    z-index: 1;
-    opacity: 1;
 }
 
 .partners .slider-prev {
