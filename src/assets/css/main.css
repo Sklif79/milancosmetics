@@ -189,11 +189,94 @@ h1 {
     top: 20px;
 }
 
+/** mobile-menu **/
 .header-mobile-ico {
     margin-right: 24px;
     display: none;
     cursor: pointer;
 }
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    /*right: 0;*/
+    bottom: 0;
+    width: 320px;
+    background-color: #67103a;
+    color: #fff;
+    z-index: 1000;
+    padding: 13px 0;
+    font-size: 0.875rem;
+    transition: 0.4s;
+}
+
+.mobile-menu-header {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-header__backward {
+    padding-right: 27px;
+    padding-left: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background: url("../images/backward.png") 100% 50% no-repeat;
+    cursor: pointer;
+}
+
+.mobile-menu a {
+    color: #fff;
+}
+
+.show-menu {
+    right: 0;
+}
+
+.mobile-menu-form {
+    width: 54%;
+    height: 35px;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mobile-menu-form__search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(250,250,250,0.3);
+    color: #fff;
+    padding: 0 16px;
+}
+
+.mobile-menu-form__search::-webkit-input-placeholder {
+    color: #fff;
+}
+.mobile-menu-form__search:-moz-placeholder {
+    color: #fff;
+}
+.mobile-menu-form__search::-moz-placeholder {
+    color: #fff;
+}
+.mobile-menu-form__search:-ms-input-placeholder {
+    color: #fff;
+}
+
+.mobile-menu-form input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+/**/
 
 .soc-bl {
     width: 68px;
@@ -1326,9 +1409,6 @@ a.bread-crumbs__link:hover {
 .subscribe__mail-input:focus:-ms-input-placeholder{
     color:transparent;
 }
-.subscribe__mail-input:focus::placeholder{
-    color:transparent;
-}
 
 .footer-top__adress {
     background: url("../images/footer-marker.png") 50% 50% no-repeat;
@@ -1448,7 +1528,7 @@ a.bread-crumbs__link:hover {
 
 .category-item__img {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
 }
 
@@ -1626,6 +1706,26 @@ a.bread-crumbs__link:hover {
     box-shadow: 0 0 145px 0 rgba(0, 0, 0, 1);
 }
 
+.select-brand-more {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 77px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    background: #ededed;
+    text-transform: uppercase;
+    font-family: GothamProMedium, sans-serif;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    cursor: pointer;
+}
+
 .select-brand-wrap {
     height: 288px;
     display: flex;
@@ -1667,6 +1767,7 @@ a.bread-crumbs__link:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 
 .select-brand__country {
@@ -1706,9 +1807,62 @@ a.bread-crumbs__link:hover {
     left: -52px;
 }
 
+.select-brand-wrapper {
+    position: relative;
+}
+
+.select-brand-wrapper::after {
+    font-family: GothamProMedium, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #b3b3b3;
+    transform: rotate(-90deg);
+    left: -52px;
+    content: 'выберите бренд';
+    top: 50%;
+}
+
+
+/*сделано для слайдера*/
+.select-brand-wrap {
+    padding-left: 41px;
+    padding-right: 31px;
+
+}
+
+.select-brand-item {
+    margin: 26px 13px;
+    flex-basis: auto;
+}
+
+.select-brand-wrap .slick-track {
+    padding-left: 13px;
+}
+
+.select-brand-wrap .slider-prev-aside {
+    background: url("../images/aside-slider-prev.png") 50% 50% no-repeat;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+}
+
+.select-brand-wrap .slider-next-aside {
+    background: url("../images/aside-slider-next.png") 50% 50% no-repeat;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 7px;
+    cursor: pointer;
+}
+/*----------------------------------*/
 /************************* catalog *************************/
 .catalog {
     padding: 59px 58px 78px;
+    position: relative;
 }
 
 .catalog .basic_width {
@@ -4631,11 +4785,6 @@ a.bread-crumbs__link:hover {
 .shops-list .personal-contacts-item {
     justify-content: flex-start;
 }
-
-/*.shops-list .personal-contacts__schedule {*/
-    /*margin-left: 15.38461538461538%;*/
-/*}*/
-
 .personal-contacts__link a {
     color: rgba(103, 16, 58, 1);
     border-bottom: 1px solid rgba(103, 16, 58, 0.4);

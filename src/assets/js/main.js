@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    var heightBrand = $('.select-brand-wrapper').height();
+
+    // $('body').on('click', '.select-brand-more', function () {
+    //     $('.select-brand-wrapper').toggleClass('select-brand-limiter');
+    // });
+
 
     mobileMenu();
 
@@ -22,10 +28,12 @@ $(document).ready(function () {
 
     lineTooltip();
 
-    categoryFullHeight('category');
-    categoryFullHeight('special-offers');
+    if ($(document).width() > 1301) {
+        categoryFullHeight('category');
+        categoryFullHeight('special-offers');
 
-    resizeWindow();
+        resizeWindow();
+    }
 
     hoverImage($('div.partners-item img'));
 
@@ -186,6 +194,18 @@ $(document).ready(function () {
         // autoplaySpeed: 4000
     });
 
+    if ( $(document).width() > 1042 ) {
+        $('div.select-brand-wrap').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            nextArrow: '<div class="slider-next-aside"></div>',
+            prevArrow: '<div class="slider-prev-aside"></div>'
+            // autoplay: true,
+            // autoplaySpeed: 4000
+        });
+    }
+
 
 });
 
@@ -254,7 +274,6 @@ $.fn.setMaxHeights = function () {
 };
 
 function categoryFullHeight(el) {
-    console.log(el);
     if ($('.' + el).length) {
         var categoryHeight = $('div.wrapper').height() - $('nav.nav').height() - $('header.header').height();
 
