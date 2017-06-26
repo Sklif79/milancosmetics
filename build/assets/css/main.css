@@ -47,7 +47,7 @@
 /************************* Общие стили *************************/
 html,
 body {
-    /*height: 100%;*/
+    height: 100%;
     font-size: 16px;
     color: #333;
     font-family: GothamProRegular, sans-serif;
@@ -232,7 +232,7 @@ h1 {
     right: -320px;
     /*right: 0;*/
     bottom: 0;
-    width: 320px;
+    width: 290px;
     background-color: #67103a;
     color: #fff;
     z-index: 1000;
@@ -688,7 +688,7 @@ a.bread-crumbs__link:hover {
 .prev-pagination::before {
     content: '';
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: 24px;
     background: url("../images/pagination-prev.png") 50% 50% no-repeat;
     width: 7px;
@@ -2156,6 +2156,10 @@ a.bread-crumbs__link:hover {
     right: 7px;
     cursor: pointer;
 }
+
+.select-brand-more {
+    display: none;
+}
 /*----------------------------------*/
 /************************* catalog *************************/
 .catalog {
@@ -2201,6 +2205,8 @@ a.bread-crumbs__link:hover {
     /*padding-bottom: 73.4%;*/
     border: 1px solid #f2f2f2;
     height: 290px;
+    overflow: hidden;
+    padding: 10px;
 }
 
 .catalog-item__img-overlay {
@@ -2260,7 +2266,18 @@ a.bread-crumbs__link:hover {
     height: 100%;
 }
 
-.catalog-item__img img, .catalog-item-hidden__el img {
+.catalog-item__img img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.catalog-item-hidden__el img {
     position: absolute;
     max-width: 100%;
     top: 50%;
@@ -2295,7 +2312,7 @@ a.bread-crumbs__link:hover {
 .catalog-item__description {
     font-family: GothamProLight, sans-serif;
     line-height: 20px;
-    max-height: 35px;
+    max-height: 38px;
     font-size: 0.875rem;
     margin-bottom: 13px;
     margin-top: 13px;
@@ -2443,14 +2460,21 @@ a.bread-crumbs__link:hover {
 .products-promo {
     font-size: 0.875rem;
     line-height: 19px;
+    padding: 0 64px;
+}
+
+.products-promo div {
+    padding-left: 353px;
 }
 
 .products-promo img {
     float: left;
-    padding-right: 126px;
-    padding-bottom: 30px;
-    padding-left: 71px;
-    margin-top: -7px;
+    /*margin-right: 126px;*/
+    /*margin-bottom: 30px;*/
+    /*padding-left: 71px;*/
+    /*margin-left: 7px;*/
+    /*margin-top: -7px;*/
+    margin: -26px 126px 30px 68px;
 }
 
 .products-promo p {
@@ -2508,6 +2532,7 @@ a.bread-crumbs__link:hover {
     position: relative;
     /*padding-top: 78%;*/
     height: 213px;
+    padding: 10px;
 }
 
 .products-item__img img {
@@ -2518,6 +2543,7 @@ a.bread-crumbs__link:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     max-width: 100%;
+    max-height: 100%;
 }
 
 .products-item__title {
@@ -2532,7 +2558,7 @@ a.bread-crumbs__link:hover {
 }
 
 .product-item__info {
-    padding: 0 50px;
+    padding: 0 10px;
     line-height: 16px;
     font-size: 0.8125rem;
     max-height: 33px;
@@ -2547,7 +2573,7 @@ a.bread-crumbs__link:hover {
     font-size: 0.8125rem;
     line-height: 16px;
     color: #808080;
-    padding: 0 50px;
+    padding: 0 10px;
     max-height: 33px;
     overflow: hidden;
 }
@@ -2698,6 +2724,12 @@ a.bread-crumbs__link:hover {
     -ms-flex: none;
     flex: none;
     width: 541px;
+    /*width: 29.35431361909929%;*/
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    /*max-width: 541px;*/
+    /*min-width: 330px;*/
 }
 
 .aside .bread-crumbs {
@@ -2711,6 +2743,7 @@ a.bread-crumbs__link:hover {
     flex-grow: 1;
     padding-left: 64px;
     line-height: 16px;
+    margin-top: -80px;
 }
 
 .card-main h1 {
@@ -2734,20 +2767,24 @@ a.bread-crumbs__link:hover {
 
 .card-image {
     position: relative;
-    padding-bottom: 76.5%;
+    /*padding-bottom: 76.5%;*/
     border: 2px solid #e5e5e5;
     margin-bottom: 84px;
     margin-top: -14px;
+    /*padding: 10px;*/
 }
 
 .card-image img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -55%);
-    -ms-transform: translate(-50%, -55%);
-    transform: translate(-50%, -55%);
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -55%);*/
     max-width: 100%;
+    /*max-height: 100%;*/
+}
+
+.card-image.mobile {
+    display: none;
 }
 
 .card-image .catalog-item__brand {
@@ -2917,6 +2954,7 @@ a.bread-crumbs__link:hover {
 .card-main__features-manufacturer {
     margin-right: 64px;
     float: left;
+    max-width: 200px;
 }
 
 .card-main__features-country {
@@ -2957,6 +2995,9 @@ a.bread-crumbs__link:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     font-size: 0.875rem;
     font-family: GothamProMedium, sans-serif;
     text-transform: uppercase;
@@ -2974,6 +3015,7 @@ a.bread-crumbs__link:hover {
     margin-right: 54px;
     color: #67103a;
     line-height: 46px;
+    min-width: 194px;
 }
 
 .palette::before {
@@ -3010,6 +3052,7 @@ a.bread-crumbs__link:hover {
     color: #67103a;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    min-width: 168px;
 }
 
 .download-pdf::before {
