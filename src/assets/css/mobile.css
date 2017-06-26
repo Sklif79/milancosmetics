@@ -398,7 +398,11 @@
     }
 
     .bread-crumbs__list {
-        padding-top: 13px;
+        padding-top: 12px;
+    }
+
+    .bread-crumbs__item {
+        line-height: 15px;
     }
 
     .breadcrumbs-title-wrap {
@@ -603,6 +607,195 @@
         padding-bottom: 29px;
     }
 
+    .card {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .card-image {
+        height: 162px;
+        width: 100%;
+        margin: 4px 0 0;
+    }
+
+    .card-image .catalog-item__brand {
+        width: 66px;
+    }
+
+    .card-main {
+        display: flex;
+        flex-direction: column;
+        order: 0;
+    }
+
+    .card-main > * {
+        order: 20;
+    }
+
+    .card-image.mobile {
+        order: 0;
+    }
+
+    .card-main .card-main__features {
+        order: 0;
+        margin-top: 16px;
+        margin-bottom: 6px;
+        flex-direction: row-reverse;
+        /*justify-content: space-around;*/
+    }
+
+    .card-main__features-country, .card-main__features-article {
+        width: 50%;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .card h1 {
+        padding: 0;
+        font-size: 0.875rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .card-main h2 {
+        text-align: center;
+        font-size: 0.75rem;
+        padding-bottom: 12px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .card-main__features-btns {
+        margin-top: 15px;
+        justify-content: center;
+        margin-bottom: -8px;
+    }
+
+    .card-main__features-article {
+        margin-left: 0;
+        font-family: GothamProRegular, sans-serif;
+    }
+
+    .card-main__features-article span {
+        font-family: GothamProMedium, sans-serif;
+    }
+
+    .card-main__features-manufacturer {
+        display: none;
+    }
+
+    .action {
+        height: 20px;
+        line-height: 20px;
+        bottom: -10px;
+        /*letter-spacing: 0;*/
+    }
+
+    .download-pdf {
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 34px;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .download-pdf::before {
+        left: calc(50% - 63px);
+    }
+
+    .card .card-main .card-main-half-wrap {
+        flex-direction: column;
+        padding-bottom: 22px;
+    }
+
+    .card-main__half {
+        width: 100%;
+        margin-bottom: 33px;
+    }
+
+    .card-main__half:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .card-main-action__half {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card-main > div:not(.card-main__features) {
+        padding-top: 7px;
+        /*padding-bottom: 36px;*/
+    }
+
+    .card-main__half h4 {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    .card-main__half h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-main h4 {
+        text-align: center;
+    }
+
+    .card-main .similar {
+        margin-top: -16px;
+        text-align: center;
+    }
+    
+    .similar-slider__item {
+        text-align: left;
+    }
+
+    .similar-slider {
+        /*height: 152px;*/
+        min-height: 152px;
+    }
+
+    .similar-slider__img {
+        min-width: 0;
+        width: 104px;
+        height: 152px;
+        flex: none;
+        margin-right: 10px;
+    }
+
+    .similar-slider__info, .similar-slider__info-more {
+        font-size: 0.8125rem;
+    }
+
+    .similar-slider__description {
+        padding-right: 10px;
+        padding-top: 24px;
+        padding-bottom: 38px;
+    }
+
+    .similar-slider__info {
+        margin-bottom: 11px;
+    }
+
+    .similar-slider .slick-dots {
+        height: 20px;
+        width: 100%;
+        left: 0;
+        flex-direction: row;
+        top: auto;
+        bottom: 18px;
+    }
+
+    .similar-slider .slick-dots li button {
+        width: 14px;
+        height: 14px;
+    }
+
+    .similar-slider  .slick-dots li {
+        margin: 0 2px;
+    }
+
+
 }
 
 /************************* 480px *************************/
@@ -641,5 +834,9 @@
 
     .footer-top__schedule, .footer-top__phone {
         align-items: flex-start;
+    }
+
+    .similar-slider__description span {
+        display: block;
     }
 }
