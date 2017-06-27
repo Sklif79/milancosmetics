@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('.products-promo p').liTextLength({
             length: 120,                                    //Видимое кол-во символов
             afterLength: '',                                //Текст после видимого содержания
-            fullText:true,                                    //Добавить ссылку для отображения скрытого текста
+            fullText: true,                                    //Добавить ссылку для отображения скрытого текста
             moreText: '<div class="more-title">Читать далее...</div>',                //Текст ссылки до показа скрытого содержания
             lessText: '<div class="more-title">Свернуть</div>'    //Текст ссылки после показа скрытого содержанияДобавить ссылку для отображения скрытого текста
         });
@@ -37,10 +37,9 @@ $(document).ready(function () {
         catalogShowHidden();
 
         categoryFullHeight('category');
-        categoryFullHeight('special-offers');
-
-
     }
+
+    categoryFullHeight('special-offers');
 
     resizeWindow();
 
@@ -283,10 +282,19 @@ $.fn.setMaxHeights = function () {
 };
 
 function categoryFullHeight(el) {
-    if ($('.' + el).length) {
-        var categoryHeight = $('div.wrapper').height() - $('nav.nav').height() - $('header.header').height();
+    if ( $('.' + el).length && $(document).width() > 640 ) {
+        var categoryHeight;
+
+        if ($(document).width() > 1041) {
+            categoryHeight = $('div.wrapper').height() - $('nav.nav').height() - $('header.header').height();
+        } else {
+            categoryHeight = $('div.wrapper').height() - $('header.header').height();
+        }
+
 
         $('div.' + el + '-item').height(categoryHeight);
+    } else {
+        return false;
     }
 }
 
@@ -449,63 +457,62 @@ function spoilarBrand() {
 }
 
 
-
-    //плагин
-    jQuery.fn.liTextLength = function (options) {
-        // настройки по умолчанию
-        var o = jQuery.extend({
-            length: 150,                                    //Видимое кол-во символов
-            afterLength: '...',                                //Текст после видимого содержания
-            fullText: true,                                    //Добавить ссылку для отображения скрытого текста
-            moreText: '<br>полный&nbsp;текст',                //Текст ссылки до показа скрытого содержания
-            lessText: '<br>скрыть&nbsp;полный&nbsp;текст'    //Текст ссылки после показа скрытого содержания
-        }, options);
-        return this.each(function () {
+//плагин
+jQuery.fn.liTextLength = function (options) {
+    // настройки по умолчанию
+    var o = jQuery.extend({
+        length: 150,                                    //Видимое кол-во символов
+        afterLength: '...',                                //Текст после видимого содержания
+        fullText: true,                                    //Добавить ссылку для отображения скрытого текста
+        moreText: '<br>полный&nbsp;текст',                //Текст ссылки до показа скрытого содержания
+        lessText: '<br>скрыть&nbsp;полный&nbsp;текст'    //Текст ссылки после показа скрытого содержания
+    }, options);
+    return this.each(function () {
+        var
+            $el = $(this),
+            elText = $.trim($el.text()),
+            elLength = elText.length;
+        if (elLength > o.length) {
             var
-                $el = $(this),
-                elText = $.trim($el.text()),
-                elLength = elText.length;
-            if (elLength > o.length) {
+                textSlice = $.trim(elText.substr(0, o.length)),
+                textSliced = $.trim(elText.substr(o.length));
+            if (textSlice.length < o.length) {
                 var
-                    textSlice = $.trim(elText.substr(0, o.length)),
-                    textSliced = $.trim(elText.substr(o.length));
-                if (textSlice.length < o.length) {
-                    var
-                        textVisible = textSlice,
-                        textHidden = $.trim(elText.substr(o.length));
-                } else {
-                    var
-                        arrSlice = textSlice.split(' '),
-                        popped = arrSlice.pop(),
-                        textVisible = arrSlice.join(' ') + ' ',
-                        textHidden = popped + textSliced + ' ';
-                }
-                ;
+                    textVisible = textSlice,
+                    textHidden = $.trim(elText.substr(o.length));
+            } else {
                 var
-                    $elTextHidden = $('<div>').addClass('elTextHidden').html(textHidden),
-                    $afterLength = $('<div>').addClass('afterLength').html(o.afterLength + ' '),
-                    $more = $('<div>').addClass('more').html(o.moreText);
-                $el.text(textVisible).append($afterLength).append($elTextHidden);
-                var displayStyle = $elTextHidden.css('display');
-                $elTextHidden.hide();
-                if (o.fullText) {
-                    $el.append($more);
-                    $more.click(function () {
-                        if ($elTextHidden.is(':hidden')) {
-                            $elTextHidden.css({display: displayStyle});
-                            $more.html(o.lessText);
-                            $afterLength.hide();
-                        } else {
-                            $elTextHidden.hide();
-                            $more.html(o.moreText);
-                            $afterLength.show();
-                        }
-                        ;
-                        return false;
-                    });
-                } else {
-                    $elTextHidden.remove();
-                }
+                    arrSlice = textSlice.split(' '),
+                    popped = arrSlice.pop(),
+                    textVisible = arrSlice.join(' ') + ' ',
+                    textHidden = popped + textSliced + ' ';
             }
-        });
-    };
+            ;
+            var
+                $elTextHidden = $('<div>').addClass('elTextHidden').html(textHidden),
+                $afterLength = $('<div>').addClass('afterLength').html(o.afterLength + ' '),
+                $more = $('<div>').addClass('more').html(o.moreText);
+            $el.text(textVisible).append($afterLength).append($elTextHidden);
+            var displayStyle = $elTextHidden.css('display');
+            $elTextHidden.hide();
+            if (o.fullText) {
+                $el.append($more);
+                $more.click(function () {
+                    if ($elTextHidden.is(':hidden')) {
+                        $elTextHidden.css({display: displayStyle});
+                        $more.html(o.lessText);
+                        $afterLength.hide();
+                    } else {
+                        $elTextHidden.hide();
+                        $more.html(o.moreText);
+                        $afterLength.show();
+                    }
+                    ;
+                    return false;
+                });
+            } else {
+                $elTextHidden.remove();
+            }
+        }
+    });
+};

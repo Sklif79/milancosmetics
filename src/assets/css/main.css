@@ -1519,17 +1519,28 @@ a.bread-crumbs__link:hover {
     position: relative;
     width: 20%;
     overflow: hidden;
-    min-height: 410px;
+    min-height: 182px;
 }
 
 .special-offers-item {
     width: 33.33%;
 }
 
+.special-offers-item img {
+
+}
+
+.special-offers-item img:nth-of-type(2) {
+    padding: 40px;
+    max-width: 100%;
+    max-height:100%;
+}
+
 .category-item__img {
     position: absolute;
     left: 0;
     top: 0;
+    width: 100%;
 }
 
 .special-offers__img {
@@ -2202,7 +2213,7 @@ a.bread-crumbs__link:hover {
     position: relative;
     /*padding-top: 78%;*/
     height: 213px;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .products-item__img img {
@@ -2838,6 +2849,8 @@ a.bread-crumbs__link:hover {
 .learn-more-info {
     display: flex;
     justify-content: space-between;
+    float: right;
+    width: 68%;
 }
 
 .learn-more-info_el {
@@ -2946,6 +2959,8 @@ a.bread-crumbs__link:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    /*max-height: 100%;*/
+    /*max-width: 100%;*/
 }
 
 /*.learn-more img {*/
@@ -2967,6 +2982,7 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
     text-align: center;
     padding-bottom: 13px;
+    white-space: nowrap;
 }
 
 .nav-tab {
@@ -4559,6 +4575,7 @@ a.bread-crumbs__link:hover {
     position: absolute;
     right: 30px;
     top: 22px;
+    z-index: 10;
 }
 
 .shops-tab a {
@@ -5071,6 +5088,26 @@ a.bread-crumbs__link:hover {
     transition: 0.2s;
 }
 
+.shops-btn-more {
+    color: #67103a;
+    border: 2px solid #67103a;
+    height: 50px;
+    line-height: 46px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: GothamProMedium, sans-serif;
+    transition: 0.2s;
+    max-width: 290px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.calendar-btn.mobile-link {
+    display: none;
+}
+
 .calendar-btn::before {
     position: absolute;
     content: '';
@@ -5094,7 +5131,7 @@ a.bread-crumbs__link:hover {
     transition: 0.2s;
 }
 
-.calendar-btn:hover {
+.calendar-btn:hover, .shops-btn-more:hover {
     color: #fff;
     background-color: #67103a;
 }
@@ -5207,9 +5244,9 @@ a.bread-crumbs__link:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    max-width: 100%;
     transform: translate(-50%,-50%);
-
+    /*max-height: 100%;*/
+    max-width: 100%;
 }
 
 .seminar-img__title {
@@ -5223,7 +5260,6 @@ a.bread-crumbs__link:hover {
     text-transform: uppercase;
     padding: 0 15px;
     background-color: rgba(51,51,51,0.7);
-
 }
 
 .seminar-last-wrap {

@@ -361,7 +361,7 @@
     }
 
     .category-item {
-        padding-top: 59.375%;
+        /*padding-top: 59.375%;*/
         width: 100%;
     }
 
@@ -415,8 +415,11 @@
         /*padding-left: 14px;*/
         /*padding-right: 14px;*/
         /*padding-bottom: 11px;*/
-        padding: 2px 14px 4px;
+        /*padding: 2px 14px 4px;*/
+        padding-top: 2px;
+        padding-bottom: 4px;
         margin-left: 0;
+        line-height: 20px;
     }
 
     .select-brand {
@@ -603,8 +606,12 @@
         height: 110px;
     }
 
-    .products {
+    .products, .new-products {
         padding-bottom: 29px;
+    }
+
+    .new-products h1, .products h1 {
+        margin-left: 15px;
     }
 
     .card {
@@ -795,6 +802,124 @@
         margin: 0 2px;
     }
 
+    .learn .shops-tab {
+        left: 14px;
+        top: 81px;
+    }
+
+    .shops-tab {
+        white-space: nowrap;
+    }
+
+    .calendar-btn.mobile-link {
+        top: 38px;
+        left: 14px;
+    }
+
+    .shops-inner {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .learn .shops-inner {
+        padding-top: 92px;
+    }
+
+    .seminar {
+        flex-direction: column-reverse;
+    }
+
+    .seminar-img {
+        width: 100%;
+        /*height: 152px;*/
+        padding-top: 52%;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .seminar-info h2 {
+        font-size: 0.875rem;
+        line-height: 16px;
+    }
+
+    .seminar-info {
+        padding: 15px 20px 25px;
+    }
+
+    .seminar__date {
+        margin-top: 16px;
+    }
+
+    .seminar {
+        margin-bottom: 29px;
+    }
+
+    .seminar-last-wrap {
+        margin-top: 45px;
+    }
+
+    .learn-more {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .learn-more-img {
+        float: none;
+        width: calc(100% + 30px);
+        height: 183px;
+        margin-bottom: 1px;
+        margin-top: 10px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .learn-more-info {
+        width: calc(100% + 30px);
+
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .learn-more-info_el {
+        font-size: 0.875rem;
+    }
+
+    .learn-more-info {
+        height: 131px;
+    }
+
+    .learn-more-form {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .learn-more-form__title {
+        font-size: 0.875rem;
+    }
+
+    .learn-more-form-inputs {
+        flex-direction: column;
+    }
+
+    .learn-more-form-input {
+        width: 100%;
+    }
+
+    .learn-more-form-input:first-of-type {
+        margin-bottom: 14px;
+    }
+
+    .special-offers {
+        flex-direction: column;
+    }
+
+    .special-offers-item {
+        width: 100%;
+        padding-top: 59.375%;
+        min-height: 0;
+    }
+
 
 }
 
@@ -838,5 +963,72 @@
 
     .similar-slider__description span {
         display: block;
+    }
+
+    .shops-aside {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .shops-inner {
+        flex-direction: column-reverse;
+    }
+
+    .shops-btn-more {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .calendar-btn, .aside-calendar {
+        display: none;
+    }
+
+    .learn .shops-inner {
+        padding-bottom: 30px;
+    }
+
+    .aside-news {
+        margin-top: 30px;
+    }
+
+    .learn-more__date, .learn-more__loc {
+        background-position: 30px 50%;
+        padding-left: 39px;
+    }
+
+    .learn-more__date {
+        background-size: 45px;
+    }
+
+    .learn-more__loc {
+        background-size: 32px;
+    }
+
+    .learn-more-form {
+        margin-top: 15px;
+        padding-top: 21px;
+    }
+
+    .learn-more-form__title {
+        line-height: 17px;
+    }
+
+    .learn-more-form-inputs {
+        margin-top: 20px;
+    }
+
+    .learn-more-form .submit-button {
+        margin-bottom: 16px;
+    }
+
+    .learn-more-form span {
+        display: block;
+    }
+
+    .learn-more__txt {
+        line-height: 20px;
+        padding-top: 12px;
+        padding-bottom: 15px;
     }
 }
