@@ -361,7 +361,7 @@
     }
 
     .category-item {
-        /*padding-top: 59.375%;*/
+        padding-top: 59.375%;
         width: 100%;
     }
 
@@ -918,6 +918,14 @@
         width: 100%;
         padding-top: 59.375%;
         min-height: 0;
+    }
+
+    .hit-products h1 {
+        margin-left: 15px;
+    }
+
+    .bestseller {
+        display: none;
     }
 
 

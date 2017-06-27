@@ -37,9 +37,10 @@ $(document).ready(function () {
         catalogShowHidden();
 
         categoryFullHeight('category');
+        categoryFullHeight('special-offers');
     }
 
-    categoryFullHeight('special-offers');
+
 
     resizeWindow();
 

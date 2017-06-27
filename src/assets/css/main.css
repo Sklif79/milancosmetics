@@ -1519,15 +1519,16 @@ a.bread-crumbs__link:hover {
     position: relative;
     width: 20%;
     overflow: hidden;
-    min-height: 182px;
+    min-height: 410px;
 }
 
 .special-offers-item {
     width: 33.33%;
 }
 
-.special-offers-item img {
-
+.special-offers-item img:nth-of-type(1) {
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .special-offers-item img:nth-of-type(2) {
@@ -1540,7 +1541,6 @@ a.bread-crumbs__link:hover {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
 }
 
 .special-offers__img {
@@ -4182,7 +4182,7 @@ a.bread-crumbs__link:hover {
 .personal-contacts-aside__region {
     padding: 8px 36px 8px 26px;
     border: 1px solid #cccccc;
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 23px 0 28px;
     min-height: 40px;
     /*line-height: 38px;*/
