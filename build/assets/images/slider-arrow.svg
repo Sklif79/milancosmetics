@@ -1,0 +1,29 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Canvas.svg</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(703 145)">
+<g id="Ellipse 5">
+<use xlink:href="#path0_fill" transform="translate(-703 -145)" fill="#FFFFFF"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-703 -145)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-703 -145)" fill="#5C0F34"/>
+</g>
+</g>
+<g id="Group">
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -692 -130)" fill="#5C0F34"/>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path3_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -692 -130)" fill="#5C0F34"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 30 15C 30 23.2843 23.2843 30 15 30C 6.71573 30 0 23.2843 0 15C 0 6.71573 6.71573 0 15 0C 23.2843 0 30 6.71573 30 15Z"/>
+<path id="path1_stroke_2x" d="M 29 15C 29 22.732 22.732 29 15 29L 15 31C 23.8366 31 31 23.8366 31 15L 29 15ZM 15 29C 7.26801 29 1 22.732 1 15L -1 15C -1 23.8366 6.16344 31 15 31L 15 29ZM 1 15C 1 7.26801 7.26801 1 15 1L 15 -1C 6.16344 -1 -1 6.16344 -1 15L 1 15ZM 15 1C 22.732 1 29 7.26801 29 15L 31 15C 31 6.16344 23.8366 -1 15 -1L 15 1Z"/>
+<path id="path2_fill" d="M 0 0L 8 0L 8 1L 0 1L 0 0Z"/>
+<path id="path3_fill" d="M 0 0L 1 0L 1 8L 0 8L 0 0Z"/>
+</defs>
+</svg>

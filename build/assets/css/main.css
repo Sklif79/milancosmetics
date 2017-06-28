@@ -118,7 +118,8 @@ h1 {
     font-size: 1.25rem;
     padding: 23px 0;
     text-transform: uppercase;
-    max-width: 830px;
+    /*max-width: 830px;*/
+    max-width: 690px;
     line-height: 24px;
     margin: 0 auto;
 }
@@ -4832,12 +4833,19 @@ a.bread-crumbs__link:hover {
 
 }
 
+.brand-selector {
+    position: relative;
+    display: inline-block;
+    height: 38px;
+    line-height: 34px;
+}
+
 .region {
     display: inline-block;
     margin-left: 5px;
 }
 
-.region ul {
+.region ul, .brand-selector ul {
     position: absolute;
     background-color: #fff;
     top: 38px;
@@ -4847,19 +4855,29 @@ a.bread-crumbs__link:hover {
     display: none;
 }
 
-.region li {
+.brand-selector ul {
+    right: auto;
+    left: 0;
+}
+
+.region li, .brand-selector li {
     line-height: 38px;
 }
 
-.region li a {
+.brand-selector li {
+    white-space: nowrap;
+    font-size: 0.875rem;
+}
+
+.region li a, .brand-selector li a {
     padding: 0 20px;
 }
 
-.region li a:hover {
+.region li a:hover, .brand-selector li a:hover {
     background-color: #ccc;
 }
 
-.region a {
+.region a, .brand-selector a {
     color: #333;
     display: block;
 }
@@ -4869,12 +4887,25 @@ a.bread-crumbs__link:hover {
     z-index: 1;
 }
 
+.selecting-brand:hover ul{
+    display: block;
+    z-index: 100;
+    cursor: pointer;
+}
+
 .region span {
     border-bottom: 1px dotted #000;
     position: relative;
 }
 
-.region span::after {
+.brand-selector span {
+    border-bottom: 1px solid rgba(101, 15, 67, .4);
+    position: relative;
+    color: rgba(101, 15, 67, 1);
+    font-size: 0.875rem;
+}
+
+.region span::after, .brand-selector span::after {
     position: absolute;
     content: '';
     border-style: solid;
@@ -4882,6 +4913,10 @@ a.bread-crumbs__link:hover {
     border-color: #333 transparent transparent transparent;
     top: 7px;
     right: -12px;
+}
+
+.brand-selector span::after {
+    border-top-color: rgba(101, 15, 67, 1);
 }
 
 .personal-aside__img {
@@ -6347,4 +6382,8 @@ a.bread-crumbs__link:hover {
 
 .item_margin {
     margin-bottom: 28px;
+}
+
+.selecting-brand {
+    display: none;
 }

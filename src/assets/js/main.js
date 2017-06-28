@@ -8,6 +8,26 @@ $(document).ready(function () {
             moreText: '<div class="more-title">Читать далее...</div>',                //Текст ссылки до показа скрытого содержания
             lessText: '<div class="more-title">Свернуть</div>'    //Текст ссылки после показа скрытого содержанияДобавить ссылку для отображения скрытого текста
         });
+
+        $('div.action-more-item-wrap').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // dots: true,
+            nextArrow: '<div class="slider-next"></div>',
+            prevArrow: '<div class="slider-prev"></div>',
+            arrows: true
+        });
+    }
+
+    if ($(document).width() < 740) {
+        $('div.more-news-block').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // dots: true,
+            nextArrow: '<div class="slider-next"></div>',
+            prevArrow: '<div class="slider-prev"></div>',
+            arrows: true
+        });
     }
 
     spoilarBrand();
@@ -16,14 +36,12 @@ $(document).ready(function () {
 
     $('.product-item__info').setMaxHeights();
     $('.product-item__description').setMaxHeights();
-    //$('.catalog-item__title').setMaxHeights();
-    //$('.catalog-item__description').setMaxHeights();
     $('.catalog-item-wrap').setMaxHeights();
     $('.news-item__txt').setMaxHeights();
 
     cropText($('.aside-news__txt'), 300);
     cropText($('.catalog-item__description'), 300);
-    //cropText($('.news-item__txt'), 85);
+    // cropText($('.news-item__txt'), 85);
 
     checkUnccheck();
 

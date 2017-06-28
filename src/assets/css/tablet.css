@@ -149,6 +149,34 @@
         width: 100%;
     }
 
+    .action-more h1 {
+        max-width: 710px;
+    }
+
+    .action-more-items h2, .more-news h2 {
+        font-size: 1rem;
+    }
+
+    .action-more-wrap {
+        padding: 0 23px;
+    }
+
+    .action-more-item-wrap {
+        margin-left: -1.37%;
+        margin-right: -1.37%;
+        margin-top: 29px;
+    }
+
+    .action-more-item-wrap .card-main-action__half {
+        margin-left: 1.37%;
+        margin-right: 1.37%;
+        max-height: 140px;
+    }
+
+    .card-main-action__half img {
+        max-height: 100%;
+    }
+
 
 
 }
@@ -947,6 +975,148 @@
         padding-bottom: 48px;
     }
 
+    .action-page {
+        margin-top: 0;
+    }
+
+    .action-item__info {
+        padding-left: 24px;
+        padding-right: 24px;
+        line-height: 17px;
+        font-size: 0.8125rem;
+    }
+
+    .action-wrap {
+        margin-bottom: 7px;
+    }
+
+    .action-more {
+        margin-top: 0;
+        padding-bottom: 22px;
+    }
+
+    .card-main-action__txt {
+        padding: 10px 18px;
+    }
+
+    .action-more-items {
+        margin-top: 35px;
+    }
+
+    .action-more-items h2:after, .more-news h2:after {
+        height: 2px;
+        bottom: -12px;
+    }
+
+    .news {
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .news-wrap {
+        padding-left: 33px;
+        padding-right: 33px;
+        margin-top: 10px;
+        padding-bottom: 19px;
+    }
+
+    .news-item {
+        margin-left: 0;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        width: 33%;
+        flex-basis: auto;
+        padding-bottom: 21.8%;
+    }
+
+    .news h1 {
+        padding-bottom: 14px;
+    }
+
+    .more-news-block .news-item__txt, .news-item__txt {
+        font-size: 0.6875rem;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+    .news-item__info {
+        padding: 15px 10px;
+    }
+
+    .news-item:hover .news-item__overlay {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border: none;
+    }
+
+    .news-item.events:hover .event-txt,
+    .news-item.photo:hover .photo-txt,
+    .news-item.video:hover .video-txt {
+        width: 0;
+        margin-left: 0;
+    }
+
+    .news-inner-wrap {
+        margin-top: 0;
+    }
+
+    .news-inner.events-page img {
+        max-width: 376px;
+        float: left;
+        padding-left: 0;
+        padding-right: 29px;
+
+    }
+
+    .news-inner {
+        /*padding-top: 0;*/
+        /*padding-left: 24px;*/
+        /*padding-right: 24px;*/
+        /*padding-bottom: 2px;*/
+        padding: 0 24px 2px;
+    }
+
+    .more-news h2 {
+        margin-bottom: 33px;
+    }
+
+    .more-news-block {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .more-news-block .news-item {
+        padding-bottom: 19.3%;
+    }
+
+    .more-news {
+        padding-bottom: 31px;
+    }
+
+    .more-news-block .news-item:hover .news-item__info {
+        border-color: transparent;
+    }
+
+    .more-news-block .news-item {
+        /*flex-basis: auto;*/
+        padding-bottom: 19.5%;
+        width: 34%;
+        margin-right: 1px;
+    }
+
+    .more-news-block .news-item__info {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: none;
+    }
+
+
+
+
 
 }
 
@@ -1010,6 +1180,50 @@
         left: 22px;
         top: 70px;
     }
+
+    .news-item {
+        width: 49%;
+        padding-bottom: 32%;
+    }
+
+    .more-news-block {
+        display: block;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .more-news-block .news-item {
+        padding-bottom: 11%;
+    }
+
+    .more-news-block .news-item__txt {
+        font-size: 1rem;
+        line-height: 19px;
+    }
+
+    .more-news-block .news-item__info {
+        padding: 25px 80px;
+    }
+
+    .more-news-block .slider-next,
+    .more-news-block .slider-next:hover {
+        background: url("../images/news-arrow-right.png") 50% 50% no-repeat;
+        right: 25px;
+    }
+
+    .more-news-block .slider-prev,
+    .more-news-block .slider-prev:hover{
+        background: url("../images/news-arrow-left.png") 50% 50% no-repeat;
+        left: 25px;
+    }
+
+    .news-inner.events-page img {
+        float: none;
+        display: block;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+
 
 
 }
