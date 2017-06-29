@@ -755,6 +755,7 @@ a.bread-crumbs__link:hover {
     font-family: GothamProLight, sans-serif;
     transition: 0.2s;
     background-color: #651039;
+    cursor: pointer;
 }
 
 .theme_dark {

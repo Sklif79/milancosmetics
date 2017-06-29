@@ -852,6 +852,7 @@ a.bread-crumbs__link:hover {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     background-color: #651039;
+    cursor: pointer;
 }
 
 .theme_dark {

@@ -19,7 +19,7 @@ $(document).ready(function () {
         });
     }
 
-    if ($(document).width() < 740) {
+    if ($(document).width() < 731) {
         $('div.more-news-block').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -57,7 +57,6 @@ $(document).ready(function () {
         categoryFullHeight('category');
         categoryFullHeight('special-offers');
     }
-
 
 
     resizeWindow();
@@ -206,7 +205,22 @@ $(document).ready(function () {
         centerMode: true,
         //autoplay: true,
         autoplaySpeed: 4000,
-        asNavFor: '.photo-page-slider'
+        asNavFor: '.photo-page-slider',
+        responsive: [
+            {
+                breakpoint: 545,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            // {
+            //     breakpoint: 481,
+            //     settings: {
+            //         slidesToShow: 2
+            //     }
+            // }
+
+        ]
     });
 
     $('div.products-aside-slider').slick({
@@ -301,7 +315,7 @@ $.fn.setMaxHeights = function () {
 };
 
 function categoryFullHeight(el) {
-    if ( $('.' + el).length && $(document).width() > 640 ) {
+    if ($('.' + el).length && $(document).width() > 640) {
         var categoryHeight;
 
         if ($(document).width() > 1041) {

@@ -1197,6 +1197,123 @@
         border: none;
     }
 
+    .photo-page-wrap {
+        margin-top: 0;
+    }
+
+    .video-page {
+        margin-top: 0;
+    }
+
+    .news-inner-video-wrap {
+        padding: 0;
+        margin-top: 26px;
+    }
+
+    .news-inner-video {
+        width: 100%;
+        padding-bottom: 52.5%;
+    }
+
+    .cooperation-wrap {
+        margin-top: 0;
+    }
+
+    .cooperation {
+        padding: 0 24px 0;
+    }
+
+    .cooperation-img {
+        border-radius: 0;
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+
+    .cooperation-img {
+        margin-bottom: 25px;
+    }
+
+    .cooperation-img + p {
+        line-height: 18px;
+    }
+
+    .cooperation-points__el {
+        font-size: 0.8125rem;
+    }
+
+    .cooperation-points__el b {
+        font-size: 1.5rem;
+    }
+
+    .cooperation-points {
+        width: 100%;
+        margin-top: 43px;
+        margin-bottom: 41px;
+        padding-left: 0;
+    }
+
+    .cooperation-points__el:first-of-type {
+        margin-right: 0;
+    }
+
+    .cooperation-lnk {
+        height: 40px;
+        width: 232px;
+        line-height: 36px;
+        margin-bottom: 23px;
+    }
+
+    .cooperation-lnk span {
+        display: none;
+    }
+
+    .cooperation-slogan {
+        font-size: 0.875rem;
+        line-height: 23px;
+        margin-bottom: 46px;
+    }
+
+    .cooperation-slogan strong {
+        font-size: 1.125rem;
+    }
+
+    .cooperation h2, .cooperation ul {
+        margin-left: -24px;
+        margin-right: -24px;
+        border-radius: 0;
+    }
+
+    .contacts-wrap {
+        margin-top: 0;
+    }
+
+    .contacts-info {
+        position: static;
+        box-shadow: none;
+        padding: 15px 23px 33px;
+        width: 100%;
+    }
+
+    .contacts-map-wrap {
+        height: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .contacts-info-wrap > div {
+        width: 49%;
+    }
+
+    .contacts-map {
+        height: 295px;
+    }
 
 
 
