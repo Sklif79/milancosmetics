@@ -4220,8 +4220,7 @@ a.bread-crumbs__link:hover {
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
-
-
+    cursor: pointer;
 }
 
 .brand-selector {
@@ -4728,8 +4727,8 @@ a.bread-crumbs__link:hover {
 
 .shops .personal-contacts-aside__region {
     margin-bottom: 31px;
-    display: flex;
-    width: 241px;
+    /*display: flex;*/
+    /*width: 241px;*/
 }
 
 .shops .personal-contacts__person-post {
@@ -5040,7 +5039,7 @@ a.bread-crumbs__link:hover {
 }
 
 .error-page-wrap {
-    width: 530px;
+    max-width: 530px;
     margin: 33px auto 60px;
     display: flex;
     flex-direction: column;
@@ -5404,6 +5403,7 @@ a.bread-crumbs__link:hover {
     border: 2px solid #67103a;
     position: relative;
     margin-right: 10px;
+    flex: none;
 }
 
 .radio-custom,

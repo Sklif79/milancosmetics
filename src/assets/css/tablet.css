@@ -1379,6 +1379,32 @@
         padding-top: 0;
     }
 
+    .shops .personal-contacts-aside__region {
+        /*width: 222px;*/
+        margin-bottom: 22px;
+    }
+
+    .shops .personal-contacts-person {
+        width: 56.5%;
+    }
+
+    .shop-map-wrap {
+        margin-left: -23px;
+        margin-right: -23px;
+    }
+
+    .shop-map {
+        height: 365px;
+    }
+
+    .shops-list {
+        padding-bottom: 24px;
+    }
+
+    .shops-inner {
+        padding-bottom: 30px;
+    }
+
 
 
 
@@ -1452,6 +1478,52 @@
 
     .vacancy-form {
         padding-right: 0;
+    }
+
+    .search-page-form {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .search-page-form {
+        margin-top: 0;
+    }
+
+    .new-products.search-page h1 {
+        padding-bottom: 20px;
+    }
+
+    .search-page .products-wrap {
+        padding-top: 25px;
+    }
+
+    .new-products.search-page {
+        padding-bottom: 0;
+    }
+
+    .sitemap {
+        margin-top: 0;
+    }
+
+    .sitemap h1 {
+        padding-bottom: 0;
+    }
+
+    .sitemap-wrap {
+        padding: 11px 30px 34px;
+    }
+
+    .sitemap-wrap {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .error-page {
+        margin-top: 0;
+    }
+
+    .error-page-wrap {
+        margin: 18px auto 50px;
     }
 
 
@@ -1696,6 +1768,82 @@
 
     .contacts-details {
         margin-bottom: 29px;
+    }
+
+    .shops .shops-tab {
+        top: 43px;
+        right: calc(50% - 115px);
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+        /*right: auto;*/
+    }
+
+    .shops-inner {
+        padding-top: 44px;
+    }
+
+    .region-wrap {
+        text-align: center;
+    }
+
+    .shops-list .personal-contacts-item {
+
+    }
+
+    .shops .personal-contacts__schedule {
+        display: none;
+    }
+
+    .shops .personal-contacts-person {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .shops .personal-contacts__person-name::after {
+        transform: none;
+        left: 0;
+    }
+
+    .shops .shop-list__img {
+        flex: none;
+        margin-right: 23px;
+    }
+
+    .shops .personal-contacts-aside__region {
+        margin-bottom: 0;
+    }
+
+    .shops .personal-contacts-item {
+        border: none;
+        padding-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .shops .personal-contacts__person-post {
+        /*font-size: 0.75rem;*/
+        line-height: 16px;
+    }
+
+    .shops .personal-contacts__person-post span {
+        display: block;
+    }
+
+    .shop-map-wrap {
+        margin-top: 11px;
+    }
+
+    .shops-inner {
+        padding-bottom: 0;
+    }
+
+    .shop-map-wrap {
+        height: 216px;
+    }
+
+    .shops .personal-contacts__person-name::after {
+        height: 1px;
     }
 
 

@@ -76,6 +76,7 @@ $(document).ready(function () {
     $('a.palette, a.modalbox').fancybox({
         closeBtn: true,
         padding: 0,
+        margin: [60, 14, 0 ,14],
         helpers: {
             overlay: {
                 css: {

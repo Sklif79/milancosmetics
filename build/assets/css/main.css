@@ -4857,8 +4857,7 @@ a.bread-crumbs__link:hover {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
-
+    cursor: pointer;
 }
 
 .brand-selector {
@@ -5410,11 +5409,8 @@ a.bread-crumbs__link:hover {
 
 .shops .personal-contacts-aside__region {
     margin-bottom: 31px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 241px;
+    /*display: flex;*/
+    /*width: 241px;*/
 }
 
 .shops .personal-contacts__person-post {
@@ -5741,7 +5737,7 @@ a.bread-crumbs__link:hover {
 }
 
 .error-page-wrap {
-    width: 530px;
+    max-width: 530px;
     margin: 33px auto 60px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -6152,6 +6148,10 @@ a.bread-crumbs__link:hover {
     border: 2px solid #67103a;
     position: relative;
     margin-right: 10px;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
 }
 
 .radio-custom,
