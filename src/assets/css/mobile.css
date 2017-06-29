@@ -1313,9 +1313,8 @@
     }
 
     .vacancy {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 0;
+        padding: 0 15px 29px;
+
     }
 
     .vacancy-list h3::after {
@@ -1326,6 +1325,26 @@
 
     .vacancy-description {
         margin-top: 22px;
+    }
+
+    .vacancy-description h2 {
+        margin-bottom: 38px;
+    }
+
+    .vacancy-description b {
+        margin: 19px 0;
+    }
+
+    .vacancy-description li {
+        margin-bottom: 0;
+    }
+
+    .vacancy-description h3 {
+        margin-top: 32px;
+    }
+
+    .vacancy-description form {
+        margin-top: 28px;
     }
 
 

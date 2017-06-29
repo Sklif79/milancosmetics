@@ -4532,6 +4532,14 @@ a.bread-crumbs__link:hover {
     margin-top: 23px;
 }
 
+.vacancy .active, .vacancy-description strong {
+    font-family: GothamProBold, sans-serif;
+}
+
+.vacancy-description {
+    line-height: 19px;
+}
+
 .label-wrap input {
     height: 40px;
     line-height: 38px;
@@ -4720,6 +4728,8 @@ a.bread-crumbs__link:hover {
 
 .shops .personal-contacts-aside__region {
     margin-bottom: 31px;
+    display: flex;
+    width: 241px;
 }
 
 .shops .personal-contacts__person-post {
