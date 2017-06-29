@@ -1303,7 +1303,137 @@
         text-align: center;
     }
 
+    .contacts-wrap h1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+    .contacts-wrap h1 {
+        padding-bottom: 13px;
+    }
+
+    .personal-contacts-wrap {
+        margin-top: 0;
+    }
+
+    .personal-contacts-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .personal-contacts {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-bottom: 53px;
+    }
+
+    .aside-contact {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 13px;
+    }
+
+    .personal-contacts-aside__region {
+        margin: 23px 0 20px;
+        padding: 8px 36px 8px 27px;
+    }
+
+    .personal-contacts-item-wrap {
+        margin-top: 9px;
+    }
+
+    .personal-contacts-aside__name{
+        font-size: 1rem;
+    }
+
+    .personal-contacts-info-wrap {
+        padding-top: 22px;
+    }
+
+    .personal-contacts-aside__post {
+        padding-top: 21px;
+        padding-bottom: 18px;
+    }
+
+    .personal-contacts-aside__post span,
+    .personal-contacts-aside__schedule span,
+    .personal-contacts__contact span{
+        display: block;
+    }
+
+    .personal-contacts-aside__schedule {
+        margin-bottom: 21px;
+    }
+
+    .aside-contact {
+        padding-bottom: 0;
+    }
+
+    .personal-contacts {
+        margin-top: 23px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 32px;
+    }
+
+    .personal-contacts h2:after {
+        bottom: -14px;
+    }
+
+    .personal-contacts h2 {
+        margin-bottom: 23px;
+    }
+
+    .personal-contacts__person-post {
+        margin-bottom: 16px;
+    }
+
+    .personal-contacts-item {
+        margin-bottom: 25px;
+    }
+
+    .career-btn {
+        margin-left: 0;
+    }
+
+    .vacancy-wrap h1 {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
+    }
+
+    .vacancy-img__overlay {
+        font-size: 1rem;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .vacancy-list img {
+        display: none;
+    }
+
+    .vacancy-list {
+        border-radius: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 20px 15px 18px;
+    }
+
+    .vacancy {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+    }
+
+    .vacancy-list h3::after {
+        right: 0;
+        /*left: -15px;*/
+        width: auto;
+    }
+
+    .vacancy-description {
+        margin-top: 22px;
+    }
 
 
 
@@ -1494,5 +1624,19 @@
         margin-right: -15px;
     }
 
+    .contacts-map {
+        height: 211px;
+    }
 
+}
+
+/************************* 370px *************************/
+@media screen and (max-width: 370px) {
+    .vacancy-link {
+        display: block;
+    }
+
+    .contacts-info__img {
+        float: left;
+    }
 }

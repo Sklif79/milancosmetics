@@ -4602,11 +4602,16 @@ a.bread-crumbs__link:hover {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    color: rgba(101, 16, 57, 1);
 
 }
 
 .contacts-info__img {
     min-width: 76px;
+}
+
+.contacts-info__img img {
+    width: 41px;
 }
 
 .contacts-address {
@@ -4632,6 +4637,27 @@ a.bread-crumbs__link:hover {
 
 .contacts-details {
     margin-bottom: 25px;
+    position: relative;
+}
+
+.contacts-details__info {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: -150px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    font-size: 0.875rem;
+    font-family: GothamProRegular, sans-serif;
+    text-transform: none;
+    line-height: 19px;
+    display: none;
+}
+
+.block {
+    display: block;
 }
 
 .contacts-info__lnk {
@@ -4665,6 +4691,7 @@ a.bread-crumbs__link:hover {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding-bottom: 40px;
+    margin-top: 42px;
 }
 
 .personal-contacts h2 {
@@ -4936,6 +4963,14 @@ a.bread-crumbs__link:hover {
     font-size: 0.8125rem;
     line-height: 16px;
     color: #666;
+}
+
+.personal-contacts-aside__post span {
+    display: block;
+}
+
+.personal-contacts-aside__schedule span {
+    display: block;
 }
 
 .personal-contacts-aside__schedule {
@@ -6369,6 +6404,30 @@ a.bread-crumbs__link:hover {
 
 .price-popup-submit {
     text-align: center;
+}
+
+.vacancy-link {
+    display: none;
+}
+
+.contacts-details__info {
+    color: #333;
+}
+
+.contacts-info__el span, .contacts-info__el a {
+    position: relative;
+    border-bottom: 1px solid rgba(101, 16, 57, 0.4);
+    color: rgba(101, 16, 57, 1);
+}
+
+.contacts-details span::after {
+    position: absolute;
+    content: '';
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: rgba(101, 16, 57, 1) transparent transparent transparent;
+    top: 6px;
+    right: -14px;
 }
 
 /************************* modifiers *************************/

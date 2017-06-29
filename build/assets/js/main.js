@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    detailsInfo();
+
     if ($(document).width() < 641) {
         $('.products-promo p').liTextLength({
             length: 120,                                    //Видимое кол-во символов
@@ -441,6 +443,23 @@ function catalogShowHidden() {
         setTimeout(function () {
             self.css({'z-index': ''});
         }, 100);
+    });
+}
+
+//окно реквизитов
+function detailsInfo() {
+    $('div.contacts-info').on('click', 'div.contacts-details span', function () {
+        $(this).next().toggleClass('block');
+    });
+
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest("div.contacts-details").length &&
+            $("div.contacts-details__info").hasClass("block")) {
+
+            $("div.contacts-details__info").removeClass("block");
+            e.stopPropagation();
+            e.preventDefault();
+        }
     });
 }
 

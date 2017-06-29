@@ -177,6 +177,101 @@
         max-height: 100%;
     }
 
+    .contacts-info__img {
+        min-width: 67px;
+    }
+
+    .personal-contacts-wrap {
+        flex-direction: column-reverse;
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 25px;
+    }
+
+    .personal-contacts-aside {
+        margin: 0;
+        width: 100%;
+    }
+
+    .personal-aside__img {
+        /*float: left;*/
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .personal-contacts-item-wrap {
+        display: flex;
+    }
+
+    .personal-contacts-item {
+        margin-bottom: 45px;
+    }
+
+    .personal-contacts-aside__title, .personal-contacts-aside__name,
+    .personal-contacts-aside__contact {
+        font-size: 1rem;
+    }
+
+    .aside-contact {
+        padding-top: 18px;
+        padding-left: 30px;
+        padding-right: 21px;
+    }
+
+    .personal-contacts-aside__title {
+        display: inline-block;
+        letter-spacing: -0.01rem;
+        float: left;
+        margin-top: 11px;
+    }
+
+    .personal-contacts-aside__region {
+        float: right;
+        margin-top: 0;
+        margin-bottom: 0;
+        /*margin-left: 23px;*/
+        padding: 8px 28px 8px 13px;
+    }
+
+    .personal-contacts-item-wrap {
+        /*clear: both;*/
+        text-align: left;
+        margin-top: 18px;
+    }
+
+    .personal-contacts-info-wrap {
+        padding-top: 24px;
+    }
+
+    .personal-contacts-aside__post {
+        padding-top: 13px;
+        padding-bottom: 15px;
+    }
+
+    .personal-contacts-aside__post span, .personal-contacts-aside__schedule span {
+        display: inline;
+    }
+
+    .personal-contacts-aside__schedule {
+        margin-bottom: 14px;
+    }
+
+    .personal-contacts__schedule {
+        display: none;
+    }
+
+    .personal-contacts h2 {
+        margin-bottom: 50px;
+    }
+
+    .personal-contacts__contact span {
+        display: block;
+    }
+
+    .personal-contacts-person {
+        width: 62.294%;
+    }
+
 
 
 }
@@ -1207,7 +1302,7 @@
     .contacts-info {
         position: static;
         box-shadow: none;
-        padding: 15px 23px 33px;
+        padding: 11px 23px 26px;
         width: 100%;
     }
 
@@ -1215,14 +1310,140 @@
         height: auto;
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     }
 
     .contacts-info-wrap > div {
-        width: 49%;
+        /*width: 49%;*/
+    }
+
+    .contacts-info-wrap {
+        display: flex;
+        flex-wrap: wrap;
+
+        /*justify-content: space-between;*/
     }
 
     .contacts-map {
         height: 295px;
+    }
+
+    .vacancy-link {
+        display: flex;
+    }
+
+    .vacancy-link span {
+        flex-wrap: nowrap;
+    }
+
+    .contacts-info__el {
+        /*display: inline-flex;*/
+        order: 10;
+        width: 47%;
+        flex-basis: auto;
+    }
+
+    .contacts-info__el:nth-of-type(3),
+    .contacts-info__el:nth-of-type(4) {
+        width: 43%;
+        margin-left: 5%;
+    }
+
+    .contacts-info__lnk {
+        display: none;
+    }
+
+    .contacts-address {
+        order: 1;
+    }
+
+    .contacts-mail {
+        order: 2;
+    }
+
+    .contacts-phones {
+        order: 3;
+    }
+
+
+
+
+
+
+
+
+
+    .career {
+        height: 176px;
+    }
+
+    .career img {
+        height: 176px;
+    }
+
+    .career-skew-overlay {
+        width: 561px;
+        transform: skew(-17deg);
+        margin-left: 27px;
+    }
+
+    .career-title {
+        font-size: 1.125rem;
+    }
+
+    .career-content {
+        margin-left: 69px;
+        margin-top: 72px;
+    }
+
+    .career-btn {
+        margin-left: 28px;
+    }
+
+    .vacancy-link {
+        width: 100%;
+    }
+
+    .contacts-details__info {
+        right: -10px;
+        left: -10px;
+    }
+
+    .vacancy {
+        flex-direction: column;
+        padding: 24px 24px 50px;
+    }
+
+    .vacancy-description, .vacancy-list-wrap {
+        width: 100%;
+    }
+
+    .vacancy-description {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .vacancy-wrap {
+        margin-top: 0;
+    }
+
+    .vacancy-img {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .vacancy-list img {
+        top: 0;
+        right: 25px;
+    }
+
+    .vacancy-description h3 {
+        margin-top: 51px;
+    }
+
+    .vacancy-form {
+        padding-right: 0;
     }
 
 
@@ -1333,6 +1554,145 @@
         padding-right: 0;
         margin: 0 auto;
     }
+
+    .contacts-info__el {
+        width: 100%;
+    }
+
+    .contacts-info__el:nth-of-type(3),
+    .contacts-info__el:nth-of-type(4) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contacts-map {
+        /*height: 522px;*/
+    }
+
+    .personal-contacts-aside__title {
+        float: none;
+    }
+
+    .personal-contacts-aside__region {
+        float: none;
+    }
+
+    .contacts-map-wrap {
+        /*box-shadow: none;*/
+    }
+
+    .aside-contact {
+        border: none;
+    }
+
+    .personal-contacts-aside__region {
+        margin: 25px 0;
+    }
+
+    .personal-contacts-item-wrap {
+        display: block;
+        text-align: center;
+    }
+
+    .personal-contacts-aside__title,
+    .personal-contacts-aside__name,
+    .personal-contacts-aside__contact {
+        font-size: 0.875rem;
+    }
+
+    .personal-contacts h2 {
+        font-size: 1.375rem;
+        text-align: center;
+    }
+
+    .personal-contacts h2:after,
+    .personal-contacts__person-name::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .personal-contacts-item {
+        flex-direction: column;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding-top: 30px;
+        margin-bottom: 27px;
+    }
+
+    .personal-contacts-item:first-of-type {
+        border: none;
+    }
+
+    .personal-contacts-person {
+        flex-direction: column;
+    }
+
+    .personal-contacts__img {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .personal-contacts {
+        margin-left: -24px;
+        margin-right: -24px;
+        border-top: 1px solid #ccc;
+        padding-top: 36px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .career-content {
+        flex-direction: column;
+    }
+
+    .career, .career img {
+        height: 235px;
+    }
+
+    .career-skew-overlay {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .career-content {
+        margin-left: 0;
+        margin-top: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .career-title {
+        margin-bottom: 19px;
+    }
+
+    .personal-aside__img {
+        margin-right: 0;
+    }
+
+    .contacts-info {
+        padding: 16px 12px 24px 17px;
+    }
+
+    .contacts-mail {
+        order: 4;
+    }
+
+    .contacts-address {
+        margin-bottom: 22px;
+    }
+
+    .contacts-mail {
+        margin-bottom: 33px;
+    }
+
+    .contacts-details {
+        margin-bottom: 29px;
+    }
+
+
+
+
 
 
 
