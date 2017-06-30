@@ -1,26 +1,6 @@
 $(document).ready(function () {
 
-    $('body').on('click', 'div.scroll-tabs', function () {
-        var elemAnim = $(this).prev('div.nav-tabs-scroll-wrap'),
-
-            animateOption = {
-                duration: 500,
-                easing: 'linear'
-            },
-
-            docWidth = $(document).width() - 50;
-
-        elemAnim.toggleClass('active');
-        $(this).toggleClass('active');
-
-        var widthScroll = +elemAnim.width() - docWidth + 'px';
-
-        if (elemAnim.hasClass('active')) {
-            elemAnim.animate({'left': '-' + widthScroll}, animateOption);
-        } else {
-            elemAnim.animate({'left': '0'}, animateOption);
-        }
-    });
+    tabsScroll();
 
     detailsInfo();
 
@@ -477,7 +457,16 @@ function detailsInfo() {
 // мобильное меню
 function mobileMenu() {
     $(document).on('click', 'div.header-mobile-ico', function () {
+        var documentMaxHeight =
+                $('div.mobile-menu-header').outerHeight(true)+
+                $('div.mobile-menu ul').outerHeight(true)+
+                $('div.mobile-menu-social-wrap').outerHeight(true) + 200 + "px";
+
+        console.log(documentMaxHeight);
+
         $('div.mobile-menu').addClass('show-menu');
+        $('div.body-overlay').addClass('active');
+        $('body').css({"max-height":documentMaxHeight, "overflow":"hidden"});
 
 
         $(document).on('click', function (e) {
@@ -487,6 +476,8 @@ function mobileMenu() {
             ) {
 
                 $('div.mobile-menu').removeClass('show-menu');
+                $('div.body-overlay').removeClass('active');
+                $('body').css({"max-height":"none", "overflow":"visible"});
                 e.preventDefault();
                 e.stopPropagation();
             }
@@ -495,6 +486,8 @@ function mobileMenu() {
 
     $('div.mobile-menu-header__backward').on('click', function () {
         $('div.mobile-menu').removeClass('show-menu');
+        $('div.body-overlay').removeClass('active');
+        $('body').css({"max-height":"none", "overflow":"visible"});
     });
 }
 
@@ -517,6 +510,31 @@ function spoilarBrand() {
             }
         });
     }
+}
+
+//анимашка верхних табов
+function tabsScroll() {
+    $('body').on('click', 'div.scroll-tabs', function () {
+        var elemAnim = $(this).prev('div.nav-tabs-scroll-wrap'),
+
+            animateOption = {
+                duration: 500,
+                easing: 'linear'
+            },
+
+            docWidth = $(document).width() - 50;
+
+        elemAnim.toggleClass('active');
+        $(this).toggleClass('active');
+
+        var widthScroll = +elemAnim.width() - docWidth + 'px';
+
+        if (elemAnim.hasClass('active')) {
+            elemAnim.animate({'left': '-' + widthScroll}, animateOption);
+        } else {
+            elemAnim.animate({'left': '0'}, animateOption);
+        }
+    });
 }
 
 
