@@ -108,7 +108,6 @@ h1 {
     font-size: 1.25rem;
     padding: 23px 0;
     text-transform: uppercase;
-    /*max-width: 830px;*/
     max-width: 690px;
     line-height: 24px;
     margin: 0 auto;
@@ -201,9 +200,8 @@ h1 {
     position: fixed;
     top: 0;
     right: -320px;
-    /*right: 0;*/
     bottom: 0;
-    width: 290px;
+    width: 295px;
     background-color: #67103a;
     color: #fff;
     z-index: 1000;
@@ -229,8 +227,82 @@ h1 {
     cursor: pointer;
 }
 
-.mobile-menu a {
+.mobile-menu ul {
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+.mobile-menu li {
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-top: 1px solid #333;
+}
+
+.mobile-menu li:last-of-type {
+    border-bottom: 1px solid #333;
+}
+
+.mobile-menu li a {
     color: #fff;
+    padding: 0 15px;
+
+}
+
+.mobile-menu .buy-link {
+    display: inline-block;
+    margin-right: 0;
+    height: 30px;
+    line-height: 28px;
+    margin-left: 15px;
+    width: 116px;
+}
+
+.mobile-menu-social-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu .soc-bl {
+    margin-right: 0;
+    height: 27px;
+    margin-top: 3px;
+    width: auto;
+}
+
+.mobile-menu .soc-bl .soc-bl_link {
+    margin-right: 12px;
+}
+
+.mobile-menu-social-wrap .soc-bl_link.vk {
+    background: url("../images/vk-mobile.png") 50% 50% no-repeat;
+    width: 24px;
+    height: 16px;
+}
+
+.mobile-menu-social-wrap .soc-bl_link.fb {
+    background: url("../images/fb-mobile.png") 50% 50% no-repeat;
+    width: 13px;
+    height: 23px;
+}
+
+.mobile-menu-social-wrap .soc-bl_link.inst {
+    background: url("../images/inst-mobile.png") 50% 50% no-repeat;
+    width: 26px;
+    height: 27px;
+}
+
+.scroll-tabs {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    width: 40px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, transparent, #fff 30%);
+    display: none;
 }
 
 .show-menu {
@@ -238,7 +310,7 @@ h1 {
 }
 
 .mobile-menu-form {
-    width: 54%;
+    width: 60%;
     height: 35px;
     border-radius: 35px;
     overflow: hidden;
@@ -363,7 +435,6 @@ h1 {
     position: absolute;
     right: 0;
     top: 0;
-    /*display: inline-block;*/
 }
 
 .buy-link {
@@ -873,8 +944,6 @@ a.bread-crumbs__link:hover {
     text-transform: uppercase;
     position: absolute;
     bottom: 46px;
-    /*width: 100%;*/
-    /*left: 0;*/
     text-align: center;
     transition: 0.2s;
     display: inline;
@@ -1060,9 +1129,7 @@ a.bread-crumbs__link:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    /*background-color: rgba(0, 0, 0, 0.2);*/
     background-image: linear-gradient(transparent 50%, black);
-
     opacity: 1;
     transition: .2s;
 }
@@ -1074,21 +1141,13 @@ a.bread-crumbs__link:hover {
     width: 100%;
     height: 100%;
     content: '';
-    /*background-color: rgba(0, 0, 0, 0.2);*/
     background-image: linear-gradient(transparent 40%, black);
-
     opacity: 0;
     transition: .2s;
 }
 
-.slider-news__item:hover .slider-news__image-overlay {
-    /*opacity: 0;*/
-}
-
 .slider-news__item:hover .slider-news__image-overlay::after {
-    /*background-image: linear-gradient(transparent 60%, black);*/
     opacity: 1;
-    /*z-index: 100;*/
 }
 
 .slider-news__image img {
@@ -1122,7 +1181,6 @@ a.bread-crumbs__link:hover {
     font-family: GothamProRegular, sans-serif;
     font-size: 0.8125rem;
     margin-top: 11px;
-    /*line-height: 18px;*/
     max-height: 64px;
     overflow: hidden;
     line-height: 16px;
@@ -1875,7 +1933,7 @@ a.bread-crumbs__link:hover {
 .select-brand-more {
     display: none;
 }
-/*----------------------------------*/
+
 /************************* catalog *************************/
 .catalog {
     padding: 59px 58px 78px;
@@ -1909,7 +1967,6 @@ a.bread-crumbs__link:hover {
 
 .catalog-item__img {
     position: relative;
-    /*padding-bottom: 73.4%;*/
     border: 1px solid #f2f2f2;
     height: 290px;
     overflow: hidden;
@@ -2001,7 +2058,6 @@ a.bread-crumbs__link:hover {
 
 .catalog-item__title {
     line-height: 20px;
-    /*display: inline;*/
     max-height: 40px;
     overflow: hidden;
     transition: 0.2s;
@@ -2161,11 +2217,6 @@ a.bread-crumbs__link:hover {
 
 .products-promo img {
     float: left;
-    /*margin-right: 126px;*/
-    /*margin-bottom: 30px;*/
-    /*padding-left: 71px;*/
-    /*margin-left: 7px;*/
-    /*margin-top: -7px;*/
     margin: -26px 126px 30px 68px;
 }
 
@@ -2213,9 +2264,7 @@ a.bread-crumbs__link:hover {
 
 .products-item__img {
     position: relative;
-    /*padding-top: 78%;*/
     height: 213px;
-    /*padding: 10px;*/
 }
 
 .products-item__img img {
@@ -2281,12 +2330,10 @@ a.bread-crumbs__link:hover {
     left: 50%;
     letter-spacing: 0.12rem;
     transform: translate(-50%, -50%);
-    /*color: #fff;*/
     text-transform: uppercase;
     height: 45px;
     width: 183px;
     line-height: 41px;
-    /*background-color: #67103a;*/
     color: #67103a;
     border: 2px solid #67103a;
     z-index: 15;
@@ -2369,13 +2416,6 @@ a.bread-crumbs__link:hover {
 }
 
 /************************* card *************************/
-/*.basic_width.card {*/
-    /*max-width: 1302px;*/
-    /*padding-left: 0;*/
-    /*padding-right: 0;*/
-    /*padding-bottom: 70px;*/
-/*}*/
-
 .card {
     display: flex;
     justify-content: space-between;
@@ -2388,13 +2428,9 @@ a.bread-crumbs__link:hover {
 }
 
 .aside {
-    /*min-width: 541px;*/
     flex: none;
     width: 541px;
-    /*width: 29.35431361909929%;*/
     flex-basis: auto;
-    /*max-width: 541px;*/
-    /*min-width: 330px;*/
 }
 
 .aside .bread-crumbs {
@@ -2413,7 +2449,6 @@ a.bread-crumbs__link:hover {
     font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 0;
-    /*margin-bottom: 17px;*/
     text-align: left;
     padding-bottom: 13px;
 }
@@ -2429,11 +2464,9 @@ a.bread-crumbs__link:hover {
 
 .card-image {
     position: relative;
-    /*padding-bottom: 76.5%;*/
     border: 2px solid #e5e5e5;
     margin-bottom: 84px;
     margin-top: -14px;
-    /*padding: 10px;*/
     height: 419px;
 }
 
@@ -2495,7 +2528,6 @@ a.bread-crumbs__link:hover {
 }
 
 .similar-slider {
-    /*height: 201px;*/
     min-height: 201px;
     border: 2px solid #e5e5e5;
     margin-top: 12px;
@@ -2550,11 +2582,8 @@ a.bread-crumbs__link:hover {
 .similar-slider__info {
     font-family: GothamProRegular, sans-serif;
     font-size: 0.875rem;
-    /*width: 135px;*/
     line-height: 16px;
     margin-bottom: 17px;
-    /*max-height: 48px;*/
-    /*overflow: hidden;*/
 }
 
 .similar-slider__info-more {
@@ -2562,9 +2591,6 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
     color: #808080;
     line-height: 16px;
-    /*width: 170px;*/
-    /*max-height: 48px;*/
-    /*overflow: hidden;*/
 }
 
 .similar-slider .slick-dots {
@@ -2599,8 +2625,6 @@ a.bread-crumbs__link:hover {
 .card-main {
     font-size: 0.875rem;
     letter-spacing: -.03rem;
-    /*width: 1302px;*/
-    /*padding-top: 27px;*/
 }
 
 .card-main__features {
@@ -2834,7 +2858,6 @@ a.bread-crumbs__link:hover {
 /************************* learn-more *************************/
 .learn-more {
     margin-top: -80px;
-    padding-bottom: 50px;
     padding: 0 30px 50px;
 }
 
@@ -2888,7 +2911,6 @@ a.bread-crumbs__link:hover {
 
 .learn-more-form__title {
     font-size: 0.98rem;
-    /*text-align: left;*/
 }
 
 .learn-more-form strong, .learn-more__txt strong {
@@ -2961,19 +2983,10 @@ a.bread-crumbs__link:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /*max-height: 100%;*/
-    /*max-width: 100%;*/
 }
-
-/*.learn-more img {*/
-    /*max-width: 580px;*/
-    /*float: left;*/
-    /*width: 44.5468509984639%;*/
-/*}*/
 
 .learn-more-form-wrap {
     float: right;
-    /*width: 52.99539170506912%;*/
     width: 68%;
 }
 
@@ -2985,7 +2998,11 @@ a.bread-crumbs__link:hover {
     text-align: center;
     padding-bottom: 13px;
     white-space: nowrap;
+    position: relative;
+    height: 27px;
 }
+
+
 
 .nav-tab {
     display: inline-block;
@@ -3192,7 +3209,6 @@ a.bread-crumbs__link:hover {
 }
 
 .action-item {
-    /*flex-basis: 390px;*/
     position: relative;
     border-radius: 5px;
     margin-bottom: 2%;
@@ -3307,17 +3323,11 @@ a.bread-crumbs__link:hover {
 .action-more-item-wrap {
     margin-top: 50px;
     display: flex;
-    /*justify-content: center;*/
-    /*flex-wrap: wrap;*/
-    /*padding-left: 1.102941176470588%;*/
-    /*padding-right: 1.102941176470588%;*/
     margin-left: -0.5147058823529412%;
     margin-right: -0.5147058823529412%;
 }
 
 .action-more-item-wrap .card-main-action__half {
-    /*flex-basis: 32.5%;*/
-    /*max-width: 420px;*/
     margin-left: 0.5147058823529412%;
     margin-right: 0.5147058823529412%;
 }
@@ -3417,22 +3427,8 @@ a.bread-crumbs__link:hover {
 .news-item__date {
     font-family: GothamProLight, sans-serif;
     font-size: 0.875rem;
-    /*margin-bottom: 20px;*/
-    /*position: absolute;*/
-    /*top: 17%;*/
-    /*top: 23%;*/
-    /*left: 0;*/
-    /*width: 100%;*/
     text-align: center;
 }
-
-/*.more-news .news-item__date  {*/
-    /*top: 17%;*/
-/*}*/
-
-/*.more-news .news-item__icon-wrap  {*/
-    /*bottom: 11.5%;*/
-/*}*/
 
 .news-item__txt {
     color: #fff;
@@ -3440,11 +3436,7 @@ a.bread-crumbs__link:hover {
     font-size: 1rem;
     text-transform: uppercase;
     line-height: 20px;
-    /*margin-bottom: 12px;*/
     width: 100%;
-    /*max-height: 100px;*/
-    /*overflow: hidden;*/
-
     margin: 17px 0 15px;
     justify-content: center;
     display: flex;
@@ -3452,13 +3444,7 @@ a.bread-crumbs__link:hover {
 }
 
 .news-item__icon-wrap {
-    /*position: absolute;*/
-    /*bottom: 11.5%;*/
-    /*bottom: 22.5%;*/
     display: flex;
-    /*justify-content: center;*/
-    /*width: 100%;*/
-    /*left: 0;*/
     text-align: left;
     align-items: center;
 }
@@ -3651,10 +3637,6 @@ a.bread-crumbs__link:hover {
     font-size: 0.875rem;
     text-transform: none;
     line-height: 16px;
-    /*max-height: 40px;*/
-    /*max-height: 62px;*/
-    /*overflow: hidden;*/
-    /*padding-top: 7px;*/
 }
 
 .more-news-block .news-item:hover .news-item__info {
@@ -4127,7 +4109,6 @@ a.bread-crumbs__link:hover {
 
 .personal-contacts-item {
     display: flex;
-    /*justify-content: space-between;*/
     margin-bottom: 50px;
     align-items: center;
 }
@@ -4211,10 +4192,8 @@ a.bread-crumbs__link:hover {
 .personal-contacts-aside__region {
     padding: 8px 36px 8px 26px;
     border: 1px solid #cccccc;
-    /*display: inline-block;*/
     margin: 23px 0 28px;
     min-height: 40px;
-    /*line-height: 38px;*/
     position: relative;
     font-size: 0.875rem;
     display: inline-flex;
@@ -4374,7 +4353,6 @@ a.bread-crumbs__link:hover {
 
 .career-title {
     font-size: 1.75rem;
-    /*color: #fff;*/
 }
 
 .career-btn {
@@ -4394,7 +4372,6 @@ a.bread-crumbs__link:hover {
 .career-btn:hover {
     background-color: #fff;
     color: #67103a;
-    /*border-color: transparent;*/
 }
 
 /************************* vacancy *************************/
@@ -4693,10 +4670,6 @@ a.bread-crumbs__link:hover {
     border-bottom: 1px solid #67103a;
 }
 
-.shops-tab img {
-    /*margin: 2px 5px 0;*/
-}
-
 .shops-inner {
     padding: 30px 30px 60px;
     display: flex;
@@ -4727,8 +4700,6 @@ a.bread-crumbs__link:hover {
 
 .shops .personal-contacts-aside__region {
     margin-bottom: 31px;
-    /*display: flex;*/
-    /*width: 241px;*/
 }
 
 .shops .personal-contacts__person-post {
@@ -4849,14 +4820,10 @@ a.bread-crumbs__link:hover {
     margin-top: 10px;
     text-transform: uppercase;
     font-family: GothamProMedium, sans-serif;
-    /*max-height: 30px;*/
-    /*overflow: hidden;*/
 }
 
 .products-slider__info {
     margin-top: 19px;
-    /*max-height: 30px;*/
-    /*overflow: hidden;*/
     text-align: center;
 }
 
@@ -5005,7 +4972,6 @@ a.bread-crumbs__link:hover {
 }
 
 .sitemap li {
-    /*margin-bottom: 6px;*/
     padding-left: 9px;
     position: relative;
     line-height: 23px;
@@ -5309,10 +5275,7 @@ a.bread-crumbs__link:hover {
 
 .seminar-img {
     flex: none;
-    /*flex: 1 1 auto;*/
-    /*max-width: 240px;*/
     width: 240px;
-    /*height: 130px;*/
     border: 1px solid #e6e6e6;
     position: relative;
     overflow: hidden;
@@ -5325,7 +5288,6 @@ a.bread-crumbs__link:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    /*max-height: 100%;*/
     max-width: 100%;
 }
 

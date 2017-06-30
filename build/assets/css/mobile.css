@@ -123,7 +123,7 @@
         background-position: 56% 53%;
     }
 
-    .partners .next, .partners .slider-next:hover {
+    .partners .slider-next, .partners .slider-next:hover {
         background-position: 55% 53%;
     }
 
@@ -453,11 +453,6 @@
 
     h1 {
         font-size: 1rem;
-        /*padding-top: 2px;*/
-        /*padding-left: 14px;*/
-        /*padding-right: 14px;*/
-        /*padding-bottom: 11px;*/
-        /*padding: 2px 14px 4px;*/
         padding-top: 2px;
         padding-bottom: 4px;
         margin-left: 0;
@@ -641,7 +636,6 @@
         line-height: 20px;
         bottom: -10px;
         letter-spacing: 0;
-        /*font-family: GothamProMedium, sans-serif;*/
     }
 
     .products-item__img {
@@ -653,7 +647,8 @@
     }
 
     .new-products h1, .products h1 {
-        margin-left: 15px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
     .card {
@@ -713,7 +708,6 @@
         -webkit-flex-direction: row-reverse;
         -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
-        /*justify-content: space-around;*/
     }
 
     .card-main__features-country, .card-main__features-article {
@@ -763,7 +757,6 @@
         height: 20px;
         line-height: 20px;
         bottom: -10px;
-        /*letter-spacing: 0;*/
     }
 
     .download-pdf {
@@ -804,7 +797,6 @@
 
     .card-main > div:not(.card-main__features) {
         padding-top: 7px;
-        /*padding-bottom: 36px;*/
     }
 
     .card-main__half h4 {
@@ -833,7 +825,6 @@
     }
 
     .similar-slider {
-        /*height: 152px;*/
         min-height: 152px;
     }
 
@@ -886,7 +877,6 @@
 
     .learn .shops-tab {
         left: 14px;
-        top: 81px;
     }
 
     .shops-tab {
@@ -917,7 +907,6 @@
 
     .seminar-img {
         width: 100%;
-        /*height: 152px;*/
         padding-top: 52%;
         margin: 0;
         border: none;
@@ -1057,7 +1046,6 @@
     }
 
     .action-more-item-wrap {
-        /*flex-wrap: wrap;*/
         margin-top: 23px;
         display: block;
         padding-left: 20px;
@@ -1066,7 +1054,6 @@
 
     .card-main-action__half {
         width: 100%;
-        /*flex-basis: 100%;*/
     }
 
     .action-more {
@@ -1093,13 +1080,11 @@
     .action-more-item-wrap .slider-prev{
         background: url('../images/slider-arrow.svg') 50% 50% no-repeat;
         background-size: 30px auto;
-        /*width: 50px;*/
     }
 
     .action-more-item-wrap .slider-next {
         background: url('../images/slider-arrow-right.svg') 50% 50% no-repeat;
         background-size: 30px auto;
-        /*width: 50px;*/
     }
 
     .action-more-item-wrap .card-main-action__half {
@@ -1160,9 +1145,6 @@
         width: auto;
         min-width: 0;
         margin-top: 24px;
-        /*margin-left: 0;*/
-        /*margin-right: 0;*/
-        /*max-width: 100%;*/
     }
 
     .more-news-block {
@@ -1248,11 +1230,6 @@
     .cooperation-points {
         margin-top: 0;
         margin-bottom: 13px;
-    }
-
-    .cooperation-points__el:last-of-type {
-        /*padding-top: 10px;*/
-        /*padding-top: 10px;*/
     }
 
     .cooperation-lnk {
@@ -1426,7 +1403,6 @@
 
     .vacancy-list h3::after {
         right: 0;
-        /*left: -15px;*/
         width: auto;
     }
 
@@ -1501,9 +1477,7 @@
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
-        /*justify-content: center;*/
         width: 100%;
-        /*align-items: center;*/
     }
 
     .error-page__lnk {
@@ -1543,7 +1517,7 @@
 
     .popup {
         max-width: 290px;
-        padding: 25px 19px;
+        padding: 25px 16px;
     }
 
     .custom-placeholder {
@@ -1552,7 +1526,6 @@
 
     .field__wrap {
         overflow: hidden;
-        /*box-shadow: inset 0 0px 10px #fff;*/
     }
 
     .price-selection-wrap {
@@ -1570,14 +1543,65 @@
         margin-right: 0;
     }
 
+    .price__you {
+        padding-top: 18px;
+    }
 
+    .price__you label {
+        margin-bottom: 11px;
+    }
 
+    .price__contacts {
+        padding: 24px 0 11px;
+    }
 
+    .price-selection {
+        padding-top: 23px;
+    }
 
+    .price-selection-el {
+        margin-bottom: 42px;
+    }
 
+    .item_margin {
+        margin-bottom: 39px;
+    }
 
+    .price-btns {
+        margin-top: -13px;
+    }
 
+    .price-message {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
 
+    .price-message .checkbox-custom {
+        -webkit-box-flex: 0;
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none;
+    }
+
+    .price-message > label:first-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .price-message > label:first-child .checkbox-custom {
+        margin-right: 11px;
+    }
+
+    .price-message > label:first-child .input-title {
+        margin-top: 3px;
+        line-height: 17px;
+    }
+
+    .price-popup-textarea {
+        margin-top: 26px;
+    }
 }
 
 /************************* 480px *************************/
@@ -1734,7 +1758,6 @@
 
     .photo-page__img {
         height: 185px;
-        /*padding-top: 57.8125%;*/
     }
 
     .photo-page-slider-wrap {
@@ -1767,6 +1790,50 @@
 
     .contacts-map {
         height: 211px;
+    }
+
+    .nav-tabs-scroll-wrap {
+        padding-left: 14px;
+        position: absolute;
+        left: 0;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        display: inline-block;
+    }
+
+    .nav-tabs-wrap {
+        padding-left: 0;
+    }
+
+    .scroll-tabs img {
+        -webkit-transition: .5s;
+        transition: .5s;
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+    }
+
+    .scroll-tabs.active img {
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+    .learn .shops-tab {
+        position: relative;
+        left: 0;
+        top: 65px;
+    }
+
+    .scroll-tabs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .learn .shops-tab {
+        height: 14px;
     }
 
 }

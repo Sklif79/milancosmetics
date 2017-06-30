@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+    $('body').on('click', 'div.scroll-tabs', function () {
+        var elemAnim = $(this).prev('div.nav-tabs-scroll-wrap'),
+
+            animateOption = {
+                duration: 500,
+                easing: 'linear'
+            },
+
+            docWidth = $(document).width() - 50;
+
+        elemAnim.toggleClass('active');
+        $(this).toggleClass('active');
+
+        var widthScroll = +elemAnim.width() - docWidth + 'px';
+
+        if (elemAnim.hasClass('active')) {
+            elemAnim.animate({'left': '-' + widthScroll}, animateOption);
+        } else {
+            elemAnim.animate({'left': '0'}, animateOption);
+        }
+    });
+
     detailsInfo();
 
     if ($(document).width() < 641) {
@@ -43,7 +65,6 @@ $(document).ready(function () {
 
     cropText($('.aside-news__txt'), 300);
     cropText($('.catalog-item__description'), 300);
-    // cropText($('.news-item__txt'), 85);
 
     checkUnccheck();
 
@@ -76,7 +97,7 @@ $(document).ready(function () {
     $('a.palette, a.modalbox').fancybox({
         closeBtn: true,
         padding: 0,
-        margin: [60, 14, 0 ,14],
+        margin: [60, 14, 0, 14],
         helpers: {
             overlay: {
                 css: {
@@ -89,9 +110,7 @@ $(document).ready(function () {
     function resizeWindow() {
         $(window).resize(
             function () {
-                // if ($('.category').length || $('.special-offers').length) {
                 window.location.reload();
-                // }
             }
         );
     }
@@ -215,14 +234,7 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 3
                 }
-            },
-            // {
-            //     breakpoint: 481,
-            //     settings: {
-            //         slidesToShow: 2
-            //     }
-            // }
-
+            }
         ]
     });
 
@@ -249,8 +261,6 @@ $(document).ready(function () {
             // autoplaySpeed: 4000
         });
     }
-
-
 });
 
 
@@ -478,8 +488,8 @@ function mobileMenu() {
 
                 $('div.mobile-menu').removeClass('show-menu');
                 e.preventDefault();
+                e.stopPropagation();
             }
-            e.stopPropagation();
         });
     });
 

@@ -194,7 +194,6 @@
     }
 
     .personal-aside__img {
-        /*float: left;*/
         margin-right: 30px;
         margin-bottom: 0;
     }
@@ -229,12 +228,10 @@
         float: right;
         margin-top: 0;
         margin-bottom: 0;
-        /*margin-left: 23px;*/
         padding: 8px 28px 8px 13px;
     }
 
     .personal-contacts-item-wrap {
-        /*clear: both;*/
         text-align: left;
         margin-top: 18px;
     }
@@ -839,7 +836,6 @@
     }
 
     .card {
-        /*padding: 55px 24px 70px;*/
         padding-left: 23px;
         padding-right: 23px;
     }
@@ -910,25 +906,11 @@
         position: relative;
     }
 
-    /*.aside-calendar, .aside-subscribe, .products-aside-slider, .aside-news {*/
-        /*display: none;*/
-    /*}*/
-
-    /*.shops-aside {*/
-        /*display: block;*/
-        /*flex: none ;*/
-        /*position: absolute;*/
-        /*top: -6px;*/
-        /*width: auto;*/
-        /*margin-right: 0;*/
-    /*}*/
-
     .calendar-btn, .calendar-btn:hover {
         margin-bottom: 0;
         height: 20px;
         line-height: 20px;
         border: none;
-        /*border-bottom: 1px solid rgba(101, 16, 57, 0.4);*/
     }
 
     .calendar-btn:hover {
@@ -1170,10 +1152,6 @@
     }
 
     .news-inner {
-        /*padding-top: 0;*/
-        /*padding-left: 24px;*/
-        /*padding-right: 24px;*/
-        /*padding-bottom: 2px;*/
         padding: 0 24px 2px;
     }
 
@@ -1199,7 +1177,6 @@
     }
 
     .more-news-block .news-item {
-        /*flex-basis: auto;*/
         padding-bottom: 19.5%;
         width: 34%;
         margin-right: 1px;
@@ -1318,15 +1295,9 @@
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .contacts-info-wrap > div {
-        /*width: 49%;*/
-    }
-
     .contacts-info-wrap {
         display: flex;
         flex-wrap: wrap;
-
-        /*justify-content: space-between;*/
     }
 
     .contacts-map {
@@ -1342,7 +1313,6 @@
     }
 
     .contacts-info__el {
-        /*display: inline-flex;*/
         order: 10;
         width: 47%;
         flex-basis: auto;
@@ -1380,7 +1350,6 @@
     }
 
     .shops .personal-contacts-aside__region {
-        /*width: 222px;*/
         margin-bottom: 22px;
     }
 
@@ -1525,10 +1494,6 @@
     .error-page-wrap {
         margin: 18px auto 50px;
     }
-
-
-
-
 }
 
 /************************* 765px *************************/
@@ -1645,20 +1610,12 @@
         width: 100%;
     }
 
-    .contacts-map {
-        /*height: 522px;*/
-    }
-
     .personal-contacts-aside__title {
         float: none;
     }
 
     .personal-contacts-aside__region {
         float: none;
-    }
-
-    .contacts-map-wrap {
-        /*box-shadow: none;*/
     }
 
     .aside-contact {
@@ -1773,9 +1730,6 @@
     .shops .shops-tab {
         top: 43px;
         right: calc(50% - 115px);
-        /*left: 50%;*/
-        /*transform: translateX(-50%);*/
-        /*right: auto;*/
     }
 
     .shops-inner {
@@ -1822,7 +1776,6 @@
     }
 
     .shops .personal-contacts__person-post {
-        /*font-size: 0.75rem;*/
         line-height: 16px;
     }
 
@@ -1844,6 +1797,11 @@
 
     .shops .personal-contacts__person-name::after {
         height: 1px;
+    }
+
+    .learn .shops-tab {
+        left: 24px;
+        top: 81px;
     }
 
 
