@@ -374,8 +374,9 @@
     }
 
     .category-item {
-        padding-top: 59.375%;
+        /*padding-top: 59.375%;*/
         width: 100%;
+        min-height: 189px;
     }
 
     .select-brand .basic_width::after {
@@ -529,6 +530,10 @@
         font-size: 0.625rem;
     }
 
+    .products-promo .more {
+        margin-bottom: 15px;
+    }
+
     .products-promo .elTextHidden {
         font-size: 0.625rem;
         display: inline;
@@ -572,7 +577,7 @@
     }
 
     .products-promo p {
-        padding-left: 82px;
+        /*padding-left: 82px;*/
         margin-top: 13px;
         padding-right: 0;
         line-height: 12px;
@@ -584,7 +589,7 @@
 
     .products-promo img {
         max-width: 68px;
-        margin: 9px 5px 0 1px;
+        margin: 9px 12px 10px 1px;
     }
 
     .products-item__overlay-promo {
