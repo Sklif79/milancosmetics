@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('.product-item__info').setMaxHeights();
     $('.product-item__description').setMaxHeights();
     $('.catalog-item-wrap').setMaxHeights();
-    $('.news-item__txt').setMaxHeights();
+    // $('.news-item__txt').setMaxHeights();
 
     cropText($('.aside-news__txt'), 300);
     cropText($('.catalog-item__description'), 300);
@@ -62,7 +62,7 @@ $(document).ready(function () {
     }
 
 
-    resizeWindow();
+    // resizeWindow();
 
     hoverImages('div.partners-item img');
 
@@ -87,15 +87,13 @@ $(document).ready(function () {
         }
     });
 
-    function resizeWindow() {
-        $(window).resize(
-            function () {
-                window.location.reload();
-            }
-        );
-    }
-
     buttonUp();
+
+    // var selectBrandMargin = $('.news-item').width() ;
+    // // $('.select-brand-item').css({'margin-top':selectBrandMargin});
+    // console.log(selectBrandMargin);
+
+
 
 
     //************************** sliders *********************************
@@ -441,12 +439,14 @@ function catalogShowHidden() {
 function detailsInfo() {
     $('div.contacts-info').on('click', 'div.contacts-details span', function () {
         $(this).next().toggleClass('block');
+        $(this).toggleClass('active');
     });
 
     $(document).on('click', function (e) {
         if (!$(e.target).closest("div.contacts-details").length &&
             $("div.contacts-details__info").hasClass("block")) {
 
+            $('div.contacts-details span').toggleClass('active');
             $("div.contacts-details__info").removeClass("block");
             e.stopPropagation();
             e.preventDefault();
@@ -597,3 +597,18 @@ jQuery.fn.liTextLength = function (options) {
         }
     });
 };
+
+function resizeWindow() {
+    $(window).resize(
+        function () {
+            window.location.reload();
+        }
+    );
+}
+
+//нижний отступ в акциях
+function actionMargin() {
+    var actionMarginBottom = parseFloat($('.action-item').css('margin-left')) * 2 + 'px';
+
+    $('.action-item').css({'margin-bottom':actionMarginBottom});
+}

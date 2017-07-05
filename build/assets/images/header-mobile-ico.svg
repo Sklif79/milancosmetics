@@ -1,0 +1,38 @@
+<svg width="54" height="19" viewBox="0 0 54 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>mobile-ico</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(208 472)">
+<g id="mobile-ico">
+<g id="search">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(-195 -459)" fill="#FFFFFF"/>
+</g>
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(-208 -472)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(-208 -472)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<g id="hamburger">
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="translate(-179 -472)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path3_fill" transform="translate(-179 -464)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path3_fill" transform="translate(-179 -456)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0.707107 -0.707107C 0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C -1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L 0.707107 -0.707107ZM 4.29289 5.70711C 4.68342 6.09763 5.31658 6.09763 5.70711 5.70711C 6.09763 5.31658 6.09763 4.68342 5.70711 4.29289L 4.29289 5.70711ZM -0.707107 0.707107L 4.29289 5.70711L 5.70711 4.29289L 0.707107 -0.707107L -0.707107 0.707107Z"/>
+<path id="path1_fill" d="M 16 8C 16 12.4183 12.4183 16 8 16C 3.58172 16 0 12.4183 0 8C 0 3.58172 3.58172 0 8 0C 12.4183 0 16 3.58172 16 8Z"/>
+<path id="path2_stroke_2x" d="M 14 8C 14 11.3137 11.3137 14 8 14L 8 18C 13.5228 18 18 13.5228 18 8L 14 8ZM 8 14C 4.68629 14 2 11.3137 2 8L -2 8C -2 13.5228 2.47715 18 8 18L 8 14ZM 2 8C 2 4.68629 4.68629 2 8 2L 8 -2C 2.47715 -2 -2 2.47715 -2 8L 2 8ZM 8 2C 11.3137 2 14 4.68629 14 8L 18 8C 18 2.47715 13.5228 -2 8 -2L 8 2Z"/>
+<path id="path3_fill" d="M 0 0L 25 0L 25 2L 0 2L 0 0Z"/>
+</defs>
+</svg>

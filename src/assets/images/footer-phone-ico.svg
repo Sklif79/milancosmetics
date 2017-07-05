@@ -1,0 +1,24 @@
+<svg width="50" height="50" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>phone</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(77 367)">
+<g id="phone">
+<g id="Ellipse 2">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-77 -367)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-77 -367)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(-63 -353)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 50 25C 50 38.8071 38.8071 50 25 50C 11.1929 50 0 38.8071 0 25C 0 11.1929 11.1929 0 25 0C 38.8071 0 50 11.1929 50 25Z"/>
+<path id="path1_stroke_2x" d="M 48 25C 48 37.7025 37.7025 48 25 48L 25 52C 39.9117 52 52 39.9117 52 25L 48 25ZM 25 48C 12.2975 48 2 37.7025 2 25L -2 25C -2 39.9117 10.0883 52 25 52L 25 48ZM 2 25C 2 12.2975 12.2975 2 25 2L 25 -2C 10.0883 -2 -2 10.0883 -2 25L 2 25ZM 25 2C 37.7025 2 48 12.2975 48 25L 52 25C 52 10.0883 39.9117 -2 25 -2L 25 2Z"/>
+<path id="path2_fill" d="M 4.62556 9.95389C 6.46556 13.57 9.43 16.5217 13.0461 18.3744L 15.8572 15.5633C 16.2022 15.2183 16.7133 15.1033 17.1606 15.2567C 18.5917 15.7294 20.1378 15.985 21.7222 15.985C 22.425 15.985 23 16.56 23 17.2628L 23 21.7222C 23 22.425 22.425 23 21.7222 23C 9.72389 23 0 13.2761 0 1.27778C 0 0.575 0.575 0 1.27778 0L 5.75 0C 6.45278 0 7.02778 0.575 7.02778 1.27778C 7.02778 2.875 7.28333 4.40833 7.75611 5.83944C 7.89667 6.28667 7.79444 6.785 7.43667 7.14278L 4.62556 9.95389Z"/>
+</defs>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="14" height="21" viewBox="0 0 14 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>video</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(197 144)">
+<g id="video">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-197 -144)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-197 -144)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 21L 0 0L 14 10.5L 0 21Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0.6 -0.8L -1 -2L -1 0L 0 0ZM 0 21L -1 21L -1 23L 0.6 21.8L 0 21ZM 14 10.5L 14.6 11.3L 15.6667 10.5L 14.6 9.7L 14 10.5ZM -1 0L -1 21L 1 21L 1 0L -1 0ZM 0.6 21.8L 14.6 11.3L 13.4 9.7L -0.6 20.2L 0.6 21.8ZM 14.6 9.7L 0.6 -0.8L -0.6 0.8L 13.4 11.3L 14.6 9.7Z"/>
+</defs>
+</svg>

@@ -233,6 +233,19 @@
 
     .sc-btns__el img {
         margin-right: 0;
+        display: none;
+    }
+    
+    .sc-btns__el.vk {
+        background: url("../images/vk-n.svg") 50% 50% no-repeat;
+    }
+
+    .sc-btns__el.fb {
+        background: url("../images/facebook-n.svg") 50% 50% no-repeat;
+    }
+
+    .sc-btns__el.inst {
+        background: url("../images/insta-n.svg") 50% 50% no-repeat;
     }
 
     .footer-top-wrap {
@@ -263,16 +276,16 @@
     }
 
     .footer-top__adress {
-        background: url("../images/footer-loc.png") -2px 50% no-repeat;
+        background: url("../images/footer-loc.svg") -2px 50% no-repeat;
         justify-content: center;
     }
 
     .footer-top__schedule {
-        background: url("../images/footer-time.png") -2px 50% no-repeat;
+        background: url("../images/footer-time.svg") -2px 50% no-repeat;
     }
 
     .footer-top__phone {
-        background: url("../images/footer-phone-ico.png") -2px 50% no-repeat;
+        background: url("../images/footer-phone-ico.svg") -2px 50% no-repeat;
     }
 
     .subscribe {
@@ -375,15 +388,19 @@
 
     .select-brand-wrap {
         justify-content: space-between;
+        margin-left: 0;
     }
 
     .select-brand-wrapper {
-        width: 81.25%;
+        /*width: 81.25%;*/
+        /*margin-left: 20px;*/
+        margin-left: 0;
     }
 
     .select-brand-item {
-        width: 44%;
+        width: 42%;
         height: 60px;
+        margin-left: 20px;
     }
 
     .select-brand__img img {
@@ -420,6 +437,7 @@
     .select-brand {
         padding-top: 47px;
         padding-bottom: 17px;
+        padding-right: 20px;
     }
 
     .header-mobile-ico {
@@ -604,9 +622,13 @@
         padding-bottom: 29px;
     }
 
-    .new-products h1, .products h1 {
+    .new-products h1, .products h1, .lines h1, .photo-page-wrap h1 {
         padding-left: 14px;
         padding-right: 14px;
+    }
+
+    .new-products h1 {
+        padding-bottom: 19px;
     }
 
     .card {
@@ -1015,8 +1037,9 @@
 
     .news-item {
         width: 100%;
-        padding-bottom: 63.125%;
+        /*padding-bottom: 63.125%;*/
         margin-right: 0;
+        height: 202px;
     }
 
     .news h1 {
@@ -1028,7 +1051,7 @@
     .news-item__txt {
         font-size: 0.875rem;
         line-height: 17px;
-        margin: 41px 0 41px;
+        /*margin: 41px 0 41px;*/
     }
 
     .news-item__info {
@@ -1057,7 +1080,8 @@
     }
 
     .news-inner-video {
-        padding-bottom: 47%;
+        /*padding-bottom: 47%;*/
+        height: 170px;
     }
 
     .video-page h1 {
@@ -1328,8 +1352,6 @@
         padding-right: 14px;
     }
 
-
-
     .search-page .products-wrap {
         padding-bottom: 14px;
     }
@@ -1479,6 +1501,10 @@
 
     .price-popup-textarea {
         margin-top: 26px;
+    }
+
+    .cooperation-lnk {
+        line-height: 38px;
     }
 }
 

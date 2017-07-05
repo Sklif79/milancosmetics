@@ -1,0 +1,21 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>calendar</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(132 272)">
+<g id="calendar">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-132 -271)" fill="#651039"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-129 -272)" fill="#651039"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-120 -272)" fill="#651039"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 14 0L 14 3L 11 3L 11 0L 5 0L 5 3L 2 3L 2 0L 0 0L 0 15L 16 15L 16 0L 14 0ZM 3 14L 1 14L 1 12L 3 12L 3 14ZM 3 11L 1 11L 1 9L 3 9L 3 11ZM 3 8L 1 8L 1 6L 3 6L 3 8ZM 6 14L 4 14L 4 12L 6 12L 6 14ZM 6 11L 4 11L 4 9L 6 9L 6 11ZM 6 8L 4 8L 4 6L 6 6L 6 8ZM 9 14L 7 14L 7 12L 9 12L 9 14ZM 9 11L 7 11L 7 9L 9 9L 9 11ZM 9 8L 7 8L 7 6L 9 6L 9 8ZM 12 14L 10 14L 10 12L 12 12L 12 14ZM 12 11L 10 11L 10 9L 12 9L 12 11ZM 12 8L 10 8L 10 6L 12 6L 12 8ZM 15 14L 13 14L 13 12L 15 12L 15 14ZM 15 11L 13 11L 13 9L 15 9L 15 11ZM 15 8L 13 8L 13 6L 15 6L 15 8Z"/>
+<path id="path1_fill" d="M 0 0L 1 0L 1 3L 0 3L 0 0Z"/>
+</defs>
+</svg>

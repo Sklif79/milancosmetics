@@ -1,0 +1,30 @@
+<svg width="50" height="50" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>clock</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(142 366)">
+<g id="clock">
+<g id="ic_access_time_black_24px">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-132 -356)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-118.5 -348.5)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Ellipse 2">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="translate(-142 -366)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(-142 -366)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 14.985 0C 6.705 0 0 6.72 0 15C 0 23.28 6.705 30 14.985 30C 23.28 30 30 23.28 30 15C 30 6.72 23.28 0 14.985 0ZM 15 27C 8.37 27 3 21.63 3 15C 3 8.37 8.37 3 15 3C 21.63 3 27 8.37 27 15C 27 21.63 21.63 27 15 27Z"/>
+<path id="path1_fill" d="M 2.25 0L 0 0L 0 9L 7.875 13.725L 9 11.88L 2.25 7.875L 2.25 0Z"/>
+<path id="path2_fill" d="M 50 25C 50 38.8071 38.8071 50 25 50C 11.1929 50 0 38.8071 0 25C 0 11.1929 11.1929 0 25 0C 38.8071 0 50 11.1929 50 25Z"/>
+<path id="path3_stroke_2x" d="M 48 25C 48 37.7025 37.7025 48 25 48L 25 52C 39.9117 52 52 39.9117 52 25L 48 25ZM 25 48C 12.2975 48 2 37.7025 2 25L -2 25C -2 39.9117 10.0883 52 25 52L 25 48ZM 2 25C 2 12.2975 12.2975 2 25 2L 25 -2C 10.0883 -2 -2 10.0883 -2 25L 2 25ZM 25 2C 37.7025 2 48 12.2975 48 25L 52 25C 52 10.0883 39.9117 -2 25 -2L 25 2Z"/>
+</defs>
+</svg>
