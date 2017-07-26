@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    scrollMenu();
+
     tabsScroll();
 
     detailsInfo();
@@ -64,7 +66,8 @@ $(document).ready(function () {
 
     // resizeWindow();
 
-    hoverImages('div.partners-item img');
+    // hoverImages('div.partners-item img');
+    hoverImages('div.partners-item');
 
     $('.products-item__title').setMaxHeights();
 
@@ -103,7 +106,9 @@ $(document).ready(function () {
         dots: true,
         nextArrow: '<div class="slider-next"></div>',
         prevArrow: '<div class="slider-prev"></div>',
-        arrows: true
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 4000
     });
 
     $('div.partners-wrap').slick({
@@ -249,21 +254,27 @@ $(document).ready(function () {
     }
 
     //************************** swipe mobile menu *********************************
-    $(document).swipe( {
-        //Generic swipe handler for all directions
-        swipeLeft:function() {
-            $('div.mobile-menu').addClass('show-menu');
-            $('div.body-overlay').addClass('activity');
-        },
+    if ( $(document).width() <= 1041 ) {
+        swipeMove();
+    }
+    function swipeMove() {
+        $(document).swipe({
+            //Generic swipe handler for all directions
+            swipeLeft:function() {
+                $('div.mobile-menu').addClass('show-menu');
+                $('div.body-overlay').addClass('activity');
+            },
 
-        swipeRight:function() {
-            $('div.mobile-menu').removeClass('show-menu');
-            $('div.body-overlay').removeClass('activity');
-        },
+            swipeRight:function() {
+                $('div.mobile-menu').removeClass('show-menu');
+                $('div.body-overlay').removeClass('activity');
+            },
 
-        //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold: 30
-    });
+            //Default is 75px, set to 0 for demo so any distance triggers swipe
+            threshold: 30
+        });
+    }
+
 
 
 });
@@ -272,7 +283,7 @@ $(document).ready(function () {
 //кнопка вверх
 function buttonUp() {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 0) {
             $('#toTop').fadeIn();
         } else {
             $('#toTop').fadeOut();
@@ -286,12 +297,14 @@ function buttonUp() {
 
 //панель поиска header
 function searchHeader() {
-    $('img.search-img').on('click', function () {
+    $('span.search-img').on('click', function () {
         $('form.search-form').toggleClass('show-search-form');
+        $(this).hide();
     });
 
     $('.search-form__close').on('click', function () {
         $(this).parent('form.search-form').removeClass('show-search-form');
+        $('span.search-img').fadeIn(300);
     });
 }
 
@@ -432,6 +445,7 @@ function checkUnccheck() {
 }
 
 //цветные изображения приховере
+/*
 function hoverImages(img) {
     var newSrc, src, oldSrc;
 
@@ -443,6 +457,20 @@ function hoverImages(img) {
 
     $('.partners-wrap').on('mouseleave', img, function () {
         $(this).attr("src", oldSrc);
+    });
+}
+*/
+function hoverImages(el) {
+    var newSrc, src, oldSrc;
+
+    $('.partners-wrap').on('mouseenter', el, function () {
+        newSrc = $(this).find('img').attr("data-src-hover");
+        oldSrc = $(this).find('img').attr("src");
+        src = $(this).find('img').attr("src", newSrc);
+    });
+
+    $('.partners-wrap').on('mouseleave', el, function () {
+        $(this).find('img').attr("src", oldSrc);
     });
 }
 
@@ -639,4 +667,18 @@ function actionMargin() {
     var actionMarginBottom = parseFloat($('.action-item').css('margin-left')) * 2 + 'px';
 
     $('.action-item').css({'margin-bottom':actionMarginBottom});
+}
+
+//скролл меню
+function scrollMenu() {
+    var nav = $('nav.nav');
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() >= 119) {
+            $('nav.nav').addClass('nav-fixed');
+        }
+        else{
+            $('nav.nav').removeClass('nav-fixed');
+        }
+    });
 }

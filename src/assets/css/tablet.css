@@ -281,6 +281,15 @@
 @media screen and (max-width: 1041px){
     .wrapper {
         overflow: hidden;
+        padding-top: 100px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 800;
     }
 
     .basic_width {
@@ -478,9 +487,9 @@
         linear-gradient(to right, transparent, rgba(255, 255, 255, 1));
     }
 
-    .index-news-title-wrap {
-        background: none;
-    }
+    /*.index-news-title-wrap {*/
+        /*background: none;*/
+    /*}*/
 
     .slider-news__date {
         font-family: GothamProRegular, sans-serif;
@@ -1448,10 +1457,10 @@
         border-radius: 0;
     }
 
-    .vacancy-list img {
-        top: 0;
-        right: 25px;
-    }
+    /*.vacancy-list img {*/
+        /*top: 0;*/
+        /*right: 25px;*/
+    /*}*/
 
     .vacancy-description h3 {
         margin-top: 51px;
@@ -1517,6 +1526,15 @@
     .card-main-half-wrap {
         clear: both;
     }
+
+    .mobile-menu-social-wrap {
+        padding-bottom: 40px;
+    }
+
+    .mobile-menu-form__search,
+    .subscribe__mail-input {
+        font-size: 1rem;
+    }
 }
 
 /************************* 765px *************************/
@@ -1524,6 +1542,16 @@
     .footer-top__el {
         width: auto;
         flex-basis: auto;
+    }
+
+    .cooperation-img {
+        background-attachment: scroll;
+    }
+
+    .vacancy-img {
+        background-attachment: scroll;
+        background-size:auto 100%;
+        background-position: 50% 50%;
     }
 
     .subscribe {

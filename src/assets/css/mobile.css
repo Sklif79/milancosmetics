@@ -8,6 +8,10 @@
         display: none;
     }
 
+    .wrapper {
+        padding-top: 67px;
+    }
+
     .header-logo-wrap {
         height: 67px;
         background: none;
@@ -1307,9 +1311,9 @@
         text-align: center;
     }
 
-    .vacancy-list img {
-        display: none;
-    }
+    /*.vacancy-list img {*/
+        /*display: none;*/
+    /*}*/
 
     .vacancy-list {
         border-radius: 0;
@@ -1724,6 +1728,11 @@
 
     .learn .shops-tab {
         height: 14px;
+    }
+
+    #toTop {
+        right: 20px;
+        bottom: 20px;
     }
 
 }
