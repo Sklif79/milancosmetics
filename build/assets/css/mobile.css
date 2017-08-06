@@ -415,7 +415,6 @@
     }
 
     .category-item {
-        /*padding-top: 59.375%;*/
         width: 100%;
         min-height: 189px;
     }
@@ -439,8 +438,6 @@
     }
 
     .select-brand-wrapper {
-        /*width: 81.25%;*/
-        /*margin-left: 20px;*/
         margin-left: 0;
     }
 
@@ -623,7 +620,6 @@
     }
 
     .products-promo p {
-        /*padding-left: 82px;*/
         margin-top: 13px;
         padding-right: 0;
         line-height: 12px;
@@ -1142,7 +1138,6 @@
 
     .news-item {
         width: 100%;
-        /*padding-bottom: 63.125%;*/
         margin-right: 0;
         height: 202px;
     }
@@ -1156,7 +1151,6 @@
     .news-item__txt {
         font-size: 0.875rem;
         line-height: 17px;
-        /*margin: 41px 0 41px;*/
     }
 
     .news-item__info {
@@ -1185,7 +1179,6 @@
     }
 
     .news-inner-video {
-        /*padding-bottom: 47%;*/
         height: 170px;
     }
 
@@ -1417,10 +1410,6 @@
         line-height: 19px;
         text-align: center;
     }
-
-    /*.vacancy-list img {*/
-        /*display: none;*/
-    /*}*/
 
     .vacancy-list {
         border-radius: 0;
