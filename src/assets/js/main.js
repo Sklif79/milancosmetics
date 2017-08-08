@@ -234,9 +234,9 @@ $(document).ready(function () {
 
     //************************** style for android *********************************
     if ( $(document).width() < 680 && device.androidPhone() ) {
-        $('form.vacancy-form input[type="submit"]').css({'line-height':'40px'});
-        $('form.vacancy-form span.file-btn').css({'line-height':'30px'});
-        $('.label-wrap input').css({'line-height':'40px'});
+
+        $('head').append('<link href="assets/css/android.css" rel="stylesheet" type="text/css">');
+
     }
 
     //************************** swipe mobile menu *********************************
@@ -244,9 +244,13 @@ $(document).ready(function () {
         swipeMove();
     }
     function swipeMove() {
+        var topBeforeSwipe;
+
         $(document).swipe({
             //Generic swipe handler for all directions
             swipeLeft:function() {
+                topBeforeSwipe = $(window).scrollTop();
+
                 $('div.mobile-menu').addClass('show-menu');
                 $('div.body-overlay').addClass('activity');
             },
@@ -254,10 +258,12 @@ $(document).ready(function () {
             swipeRight:function() {
                 $('div.mobile-menu').removeClass('show-menu');
                 $('div.body-overlay').removeClass('activity');
+
+                $('html, body').animate({scrollTop: topBeforeSwipe}, 0);
             },
 
             //Default is 75px, set to 0 for demo so any distance triggers swipe
-            threshold: 30
+            threshold: 120
         });
     }
 
@@ -482,7 +488,10 @@ function detailsInfo() {
 
 // мобильное меню
 function mobileMenu() {
+    var topBeforeClick;
+
     $(document).on('click', 'div.header-mobile-ico', function () {
+        topBeforeClick = $(window).scrollTop();
 
         $('div.mobile-menu').addClass('show-menu');
         $('div.body-overlay').addClass('activity');
@@ -506,6 +515,8 @@ function mobileMenu() {
     $('div.mobile-menu-header__backward').on('click', function () {
         $('div.mobile-menu').removeClass('show-menu');
         $('div.body-overlay').removeClass('activity');
+
+        $('html, body').animate({scrollTop: topBeforeClick}, 0);
     });
 }
 

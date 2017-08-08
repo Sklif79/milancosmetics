@@ -1,5 +1,9 @@
 /************************* 640px *************************/
 @media screen and (max-width: 640px) {
+    .products-promo h3 {
+        padding-left: 0;
+    }
+
     .header {
         height: 67px;
     }

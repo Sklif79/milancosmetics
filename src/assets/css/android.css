@@ -1,0 +1,28 @@
+form.vacancy-form input[type="submit"],
+.label-wrap input, .price-popup__submit {
+    line-height: 40px;
+}
+
+form.vacancy-form span.file-btn {
+    line-height: 30px;
+}
+
+.error-page__lnk {
+    line-height: 45px;
+}
+
+.region span::after, .brand-selector span::after {
+    top: 4px;
+}
+
+.custom-placeholder {
+    top: 3px;
+}
+
+.checkbox-custom {
+    margin-top: -3px;
+}
+
+.middle-nav__products {
+    margin-right: 0;
+}
