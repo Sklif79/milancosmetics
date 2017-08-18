@@ -1587,19 +1587,29 @@ a.bread-crumbs__link:hover {
 }
 
 #toTop {
-    width: 42px;
-    height: 42px;
+    width: 62px;
+    height: 62px;
     position: fixed;
     bottom: 30px;
     right: 30px;
     display: none;
-    background: url("../images/toUp2.png") 50% 50% no-repeat #fff;
-    border-radius: 6px;
+
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
     z-index: 1000;
 }
 
-#toTop::after {
+.totop__img {
+    background: url("../images/toUp2.png") 50% 50% no-repeat #fff;
+    position: relative;
+    border-radius: 6px;
+    width: 42px;
+    height: 42px;
+}
+
+.totop__img::after {
     position: absolute;
     content: '';
     background: url("../images/toUp3.png") 50% 50% no-repeat;
@@ -1611,7 +1621,7 @@ a.bread-crumbs__link:hover {
     transition: 0.2s;
 }
 
-#toTop:hover#toTop::after {
+.totop__img:hover::after {
     opacity: 1;
 }
 
@@ -2002,7 +2012,7 @@ a.bread-crumbs__link:hover {
 .catalog-item-wrap {
     position: relative;
     width: 31.4%;
-    min-height: 441px;
+    min-height: 427px;
     margin-bottom: 29px;
 }
 
@@ -2120,7 +2130,6 @@ a.bread-crumbs__link:hover {
     line-height: 20px;
     max-height: 38px;
     font-size: 0.875rem;
-    margin-bottom: 13px;
     margin-top: 13px;
     overflow: hidden;
 }
@@ -2227,7 +2236,7 @@ a.bread-crumbs__link:hover {
 }
 
 .catalog-description__wrap {
-    min-height: 125px;
+    min-height: 111px;
     padding: 21px 22px 31px;
 }
 

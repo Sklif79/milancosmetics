@@ -263,7 +263,7 @@ $(document).ready(function () {
             },
 
             //Default is 75px, set to 0 for demo so any distance triggers swipe
-            threshold: 120
+            threshold: 300
         });
     }
 
@@ -276,7 +276,7 @@ $(document).ready(function () {
 function buttonUp() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
-            $('#toTop').fadeIn();
+            $('#toTop').css({'display':'flex'});
         } else {
             $('#toTop').fadeOut();
         }

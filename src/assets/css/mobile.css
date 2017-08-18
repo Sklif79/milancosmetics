@@ -2,6 +2,8 @@
 @media screen and (max-width: 640px) {
     .products-promo h3 {
         padding-left: 0;
+        margin-bottom: 0;
+        line-height: normal;
     }
 
     .header {
@@ -428,10 +430,6 @@
         line-height: 15px;
     }
 
-    .breadcrumbs-title-wrap {
-        min-height: 27px;
-    }
-
     h1 {
         font-size: 1rem;
         padding-top: 2px;
@@ -447,7 +445,12 @@
     }
 
     .header-mobile-ico {
-        margin-right: 15px;
+        margin-right: 0;
+        align-self: stretch;
+        padding-right: 15px;
+        padding-left: 20px;
+        align-items: center;
+        display: flex;
     }
 
     .select-brand .basic_width::after {
@@ -582,7 +585,7 @@
     }
 
     .products-promo p {
-        margin-top: 13px;
+        margin-top: 8px;
         padding-right: 0;
         line-height: 12px;
     }
@@ -593,7 +596,7 @@
 
     .products-promo img {
         max-width: 68px;
-        margin: 9px 12px 10px 1px;
+        margin: 8px 12px 10px 1px;
     }
 
     .products-item__overlay-promo {
@@ -1725,7 +1728,7 @@
 
     #toTop {
         right: 20px;
-        bottom: 20px;
+        bottom: 50px;
     }
 
 }
