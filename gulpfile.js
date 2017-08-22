@@ -131,7 +131,7 @@ gulp.task('browserSync', function () {
         server: {
             baseDir: "./build"
         },
-        index: 'index-page.html',
+        // index: 'index-page.html',
         port: 8080,
         open: true,
         notify: false

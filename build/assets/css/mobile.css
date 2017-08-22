@@ -88,9 +88,9 @@
         margin: 0 4px;
     }
 
-    .partners-item img {
-        max-height: 40px;
-    }
+    /*.partners-item img {*/
+        /*max-height: 40px;*/
+    /*}*/
 
     .slider-next, .slider-next:hover {
         background-position: 61% 49%;
@@ -110,11 +110,11 @@
     }
 
     .partners {
-        padding: 17px 0 24px;
+        padding: 17px 0 17px;
     }
 
     .partners-wrap {
-        width: 80%;
+        /*width: 80%;*/
     }
 
     .partners .slider-prev {
@@ -141,9 +141,9 @@
         margin-right: 20px;
     }
 
-    .partners {
-        margin-right: -20px;
-    }
+    /*.partners {*/
+        /*margin-right: -20px;*/
+    /*}*/
 
     .middle-nav {
         -webkit-flex-wrap: wrap;
@@ -1833,7 +1833,7 @@
 
     .nav-tabs-scroll-wrap {
         padding-left: 14px;
-        position: absolute;
+        /*position: absolute;*/
         left: 0;
         -webkit-transition: 0.5s;
         transition: 0.5s;
@@ -1842,6 +1842,7 @@
 
     .nav-tabs-wrap {
         padding-left: 0;
+        height: 50px;
     }
 
     .scroll-tabs img {
@@ -1857,11 +1858,11 @@
         transform: rotate(-180deg);
     }
 
-    .learn .shops-tab {
-        position: relative;
-        left: 0;
-        top: 65px;
-    }
+    /*.learn .shops-tab {*/
+        /*position: relative;*/
+        /*left: 0;*/
+        /*top: 65px;*/
+    /*}*/
 
     .scroll-tabs {
         display: -webkit-box;
@@ -1869,16 +1870,53 @@
         display: -ms-flexbox;
         display: flex;
         cursor: pointer;
+        display: none;
     }
 
     .learn .shops-tab {
-        height: 14px;
+        height: 50px;
+        top: 50px;
+    }
+
+    .learn .shops-inner {
+        padding-top: 60px;
     }
 
     #toTop {
         right: 20px;
         bottom: 50px;
     }
+
+
+    .nav-tabs-wrap .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        height: 24px;
+    }
+
+    .shops-tab .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        height: 37px;
+    }
+
+    .nav-tabs-wrap .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+    .shops-tab .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+        width: 100%;
+        height: 4px;
+        margin: 14px auto;
+    }
+
+    .nav-tabs-wrap .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger,
+    .shops-tab .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+        height: 30px;
+        top: -8px;
+    }
+
+    .nav-tabs-wrap .mCSB_scrollTools .mCSB_draggerContainer,
+    .shops-tab .mCSB_scrollTools .mCSB_draggerContainer {
+        top: 8px;
+    }
+
+    /*.shops-tab .mCSB_scrollTools .mCSB_draggerContainer {*/
+        /*top: -18px;*/
+    /*}*/
 
 }
 

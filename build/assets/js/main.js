@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     scrollMenu();
 
-    tabsScroll();
+    // tabsScroll();
 
     detailsInfo();
 
@@ -116,13 +116,35 @@ $(document).ready(function () {
             },
 
             {
-                breakpoint: 780,
+                breakpoint: 1250,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 5
                 }
+            },
+
+            {
+                breakpoint: 769,
+                settings: "unslick"
             }
         ]
     });
+
+    if ( $(window).width() <= 768   ) {
+        $('div.partners').mCustomScrollbar({
+            axis:"x",
+            scrollInertia:400,
+            advanced:{autoExpandHorizontalScroll:true},
+            scrollbarPosition:"inside"
+        });
+
+        $('div.shops-tab, div.nav-tabs-wrap').mCustomScrollbar({
+            axis:"x",
+            scrollInertia:400,
+            advanced:{autoExpandHorizontalScroll:true},
+            scrollbarPosition:"inside",
+            scrollEasing:"easeOut"
+        });
+    }
 
     $('div.similar-slider').slick({
         slidesToShow: 1,
@@ -241,7 +263,7 @@ $(document).ready(function () {
 
     //************************** swipe mobile menu *********************************
     if ( $(document).width() <= 1041 ) {
-        swipeMove();
+        // swipeMove();
     }
     function swipeMove() {
         var topBeforeSwipe;

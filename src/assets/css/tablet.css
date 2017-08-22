@@ -1,5 +1,5 @@
 /************************* 1300px *************************/
-@media screen and (max-width: 1317px){
+@media screen and (max-width: 1317px) {
     .footer-top__schedule span, .footer-top__phone span {
         flex: none;
         display: block;
@@ -273,12 +273,10 @@
         width: 62.294%;
     }
 
-
-
 }
 
 /************************* 1024px *************************/
-@media screen and (max-width: 1041px){
+@media screen and (max-width: 1041px) {
     .wrapper {
         overflow: hidden;
         padding-top: 100px;
@@ -396,12 +394,12 @@
     .slider-index .slick-dots li {
         border-color: rgba(51, 51, 51, .5);
     }
-    
+
     .slider-next, .slider-next:hover {
         background-position: 38% 54%;
     }
 
-    .slider-prev,.slider-prev:hover {
+    .slider-prev, .slider-prev:hover {
         background-position: 65% 54%;
     }
 
@@ -470,7 +468,7 @@
     }
 
     .slider-news .slick-list {
-        padding: 0!important;
+        padding: 0 !important;
     }
 
     .slider-prev-news, .slider-next-news {
@@ -774,7 +772,7 @@
     .breadcrumbs-title-wrap {
         min-height: 37px;
     }
-    
+
     h1 {
         text-align: left;
         margin-left: 23px;
@@ -848,7 +846,7 @@
     .card-image {
         margin-top: 9px;
         height: 300px;
-        padding: 0!important;
+        padding: 0 !important;
     }
 
     .card-main {
@@ -907,7 +905,7 @@
         height: auto;
     }
 
-    .card-image .catalog-item__brand img  {
+    .card-image .catalog-item__brand img {
         position: relative;
     }
 
@@ -923,7 +921,7 @@
         color: #67103a;
     }
 
-    .calendar-btn::before{
+    .calendar-btn::before {
         top: 2px;
         left: 2px;
     }
@@ -1348,7 +1346,6 @@
         order: 3;
     }
 
-
     .shops .shops-tab {
         top: 0;
     }
@@ -1381,9 +1378,6 @@
     .shops-inner {
         padding-bottom: 30px;
     }
-
-
-
 
     .career {
         height: 176px;
@@ -1523,8 +1517,8 @@
     }
 }
 
-/************************* 765px *************************/
-@media screen and (max-width: 785px){
+/************************* 768px *************************/
+@media screen and (max-width: 785px) {
     .footer-top__el {
         width: auto;
         flex-basis: auto;
@@ -1536,7 +1530,7 @@
 
     .vacancy-img {
         background-attachment: scroll;
-        background-size:auto 100%;
+        background-size: auto 100%;
         background-position: 50% 50%;
     }
 
@@ -1551,6 +1545,44 @@
 
     .special-offers-item {
         min-height: 250px;
+    }
+
+    .partners-wrap {
+        margin: 0;
+        width: auto;
+        display: flex;
+    }
+
+    .partners-items-wrap {
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .partners-item {
+        width: 87px;
+        height: 35px;
+    }
+
+    .partners-item img {
+        max-height: 25px;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: rgba(101, 16, 57, .8);
+    }
+
+    .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+        background-color: rgba(101, 16, 57, .8);
+    }
+
+    .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+    .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+        background-color: rgba(101, 16, 57, .8);
+    }
+
+    .partners-item:last-of-type {
+        margin-right: 50px;
     }
 }
 
@@ -1620,7 +1652,7 @@
     }
 
     .more-news-block .slider-prev,
-    .more-news-block .slider-prev:hover{
+    .more-news-block .slider-prev:hover {
         background: url("../images/news-arrow-left.png") 50% 50% no-repeat;
         left: 25px;
     }
@@ -1764,6 +1796,12 @@
         right: calc(50% - 115px);
     }
 
+    /*.learn .shops-tab {*/
+        /*position: relative;*/
+        /*left: 0;*/
+        /*top: 65px;*/
+    /*}*/
+
     .shops-inner {
         padding-top: 44px;
     }
@@ -1833,13 +1871,8 @@
 
     .learn .shops-tab {
         left: 24px;
-        top: 81px;
+        top: 50px;
+        position: relative;
     }
-
-
-
-
-
-
 
 }
