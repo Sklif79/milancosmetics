@@ -1632,6 +1632,10 @@ a.bread-crumbs__link:hover {
     font-size: 0;
 }
 
+.category-wrap {
+    margin-top: -80px;
+}
+
 .category-item, .special-offers-item {
     position: relative;
     width: 20%;

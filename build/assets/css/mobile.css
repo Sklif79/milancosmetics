@@ -425,6 +425,12 @@
         min-height: 189px;
     }
 
+    .category-wrap h1 {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 13px;
+    }
+
     .select-brand .basic_width::after {
         -webkit-transform: none;
         -ms-transform: none;

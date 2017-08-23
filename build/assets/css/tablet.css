@@ -738,6 +738,10 @@
         width: auto;
     }
 
+    .category-wrap {
+        margin-top: 0;
+    }
+
     .select-brand-more {
         display: -webkit-box;
         display: -webkit-flex;

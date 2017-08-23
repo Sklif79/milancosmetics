@@ -669,6 +669,10 @@
         width: auto;
     }
 
+    .category-wrap {
+        margin-top: 0;
+    }
+
     .select-brand-more {
         display: flex;
         padding-bottom: 4px;
