@@ -123,19 +123,27 @@ $(document).ready(function () {
             },
 
             {
-                breakpoint: 769,
-                settings: "unslick"
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
             }
+
+            // {
+            //     breakpoint: 769,
+            //     settings: "unslick"
+            // }
         ]
     });
 
     if ( $(window).width() <= 768   ) {
-        $('div.partners').mCustomScrollbar({
-            axis:"x",
-            scrollInertia:400,
-            advanced:{autoExpandHorizontalScroll:true},
-            scrollbarPosition:"inside"
-        });
+        // $('div.partners').mCustomScrollbar({
+        //     axis:"x",
+        //     scrollInertia:400,
+        //     advanced:{autoExpandHorizontalScroll:true},
+        //     scrollbarPosition:"inside"
+        // });
 
         $('div.shops-tab, div.nav-tabs-wrap').mCustomScrollbar({
             axis:"x",
