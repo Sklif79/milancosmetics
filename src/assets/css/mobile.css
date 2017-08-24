@@ -116,13 +116,11 @@
     }
 
     .partners .slider-prev {
-        /*background-size: 7px auto;*/
         width: 30px;
         left: -12%;
     }
 
     .partners .slider-next {
-        /*background-size: 7px auto;*/
         width: 30px;
         right: -5%;
     }
@@ -1698,7 +1696,6 @@
 
     .nav-tabs-scroll-wrap {
         padding-left: 14px;
-        /*position: absolute;*/
         left: 0;
         transition: 0.5s;
         display: inline-block;
@@ -1717,12 +1714,6 @@
     .scroll-tabs.active img {
         transform: rotate(-180deg);
     }
-
-    /*.learn .shops-tab {*/
-        /*position: relative;*/
-        /*left: 0;*/
-        /*top: 65px;*/
-    /*}*/
 
     .scroll-tabs {
         display: flex;
@@ -1770,10 +1761,6 @@
     .shops-tab .mCSB_scrollTools .mCSB_draggerContainer {
         top: 8px;
     }
-
-    /*.shops-tab .mCSB_scrollTools .mCSB_draggerContainer {*/
-        /*top: -18px;*/
-    /*}*/
 
 }
 
