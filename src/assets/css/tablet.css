@@ -117,38 +117,6 @@
         display: inline;
     }
 
-    .learn-more-info {
-        flex-direction: column;
-        height: 370px;
-    }
-
-    .learn-more-info_el {
-        height: 50%;
-        width: 100%;
-
-    }
-
-    .learn-more-info_el:first-of-type {
-        margin-bottom: 1px;
-    }
-
-    .learn-more-img {
-        width: 49%
-    }
-
-    .learn-more-info {
-        width: 49%;
-    }
-
-    .learn-more__date, .learn-more__loc {
-        background-position: 35px 50%;
-        padding-left: 35px;
-    }
-
-    .learn-more-form-wrap {
-        width: 100%;
-    }
-
     .action-more h1 {
         max-width: 710px;
     }
@@ -1024,32 +992,6 @@
         margin-left: 0;
     }
 
-    .learn-more-info, .learn-more-img {
-        height: 218px;
-    }
-
-    .learn-more-img {
-        width: 48%
-    }
-
-    .learn-more-info {
-        width: 48%;
-    }
-
-    .learn-more-form {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-
-    .learn-more__txt {
-        padding-top: 25px;
-    }
-
-    .learn-more-form .submit-button {
-        color: #333;
-        border-color: #333;
-    }
-
     .hit-products {
         margin-top: 0;
     }
@@ -1519,10 +1461,36 @@
     .soc-bl_link:hover {
         border-color: transparent;
     }
+
+    .learn-more__content img {
+        margin-right: 15px;
+        margin-bottom: 19px;
+    }
+
+    .learn-more__date:after {
+        display: none;
+    }
+
+    .learn-more__date {
+        margin-right: 0;
+        padding-right: 20px;
+    }
+
+    .learn-more-info {
+        display: flex;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 12px;
+    }
+    
+    .learn-more__content-inner {
+        clear: both;
+    }
 }
 
 /************************* 768px *************************/
 @media screen and (max-width: 785px) {
+
+
     .footer-top__el {
         width: auto;
         flex-basis: auto;
@@ -1864,6 +1832,31 @@
         left: 24px;
         top: 50px;
         position: relative;
+    }
+
+    .learn-more__content {
+        padding-top: 0;
+    }
+
+    .learn-more__content img {
+        max-width: none;
+        margin-left: -23px;
+        margin-right: -23px;
+        width: calc(100% + 46px);
+        margin-bottom: 13px;
+    }
+
+    .learn-more__content h3 {
+        margin-left: -23px;
+        margin-right: -23px;
+        padding-left: 23px;
+        padding-right: 23px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 20px;
+    }
+    
+    .learn-more-info {
+        clear: both;
     }
 
 }

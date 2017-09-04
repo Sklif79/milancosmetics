@@ -2956,124 +2956,122 @@ h4 a {
     padding-right: 17px;
 }
 
-.learn-more-info {
-    display: flex;
-    justify-content: space-between;
-    float: right;
-    width: 68%;
-}
-
-.learn-more-info_el {
-    width: 50%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    font-family: GothamProBold, sans-serif;
-    color: #ffffff;
-    font-size: 1.125rem;
-    text-shadow: 0 0 1px #000;
-    text-align: left;
-}
-
-.learn-more__date {
-    padding-left: 34px;
-    background: url('../images/learn-more-calendar.png') 12% 40% no-repeat rgba(113,72,92,0.5);
-    margin-right: 1px;
-}
-
-.learn-more__loc {
-    padding-left: 22px;
-    background: url('../images/learn-more-loc.png') 8% 47% no-repeat rgba(113,72,92,0.5);
-}
-
-.learn-more-form {
-    font-size: 0.875rem;
-    border: 1px solid #e6e6e6;
-    margin-top: 30px;
-    padding: 24px 29px 27px;
-    line-height: 19px;
-    text-align: center;
-}
-
-.learn-more-form__title {
-    font-size: 17px;
-}
-
-.learn-more-form strong, .learn-more__txt strong {
-    font-family: GothamProBold, sans-serif;
-}
-
-.learn-more-form-inputs {
-    margin-top: 27px;
-    margin-bottom: 15px;
-}
-
-.learn-more__txt {
+.learn-more__content {
     font-size: 0.875rem;
     line-height: 19px;
     clear: both;
-    padding-top: 53px;
-}
-
-.learn-more-form .submit-button {
-    display: block;
-    width: 100%;
-    margin-bottom: 27px;
-    height: 40px;
-    line-height: 36px;
-    border: 2px solid #67103a;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-family: GothamProMedium, sans-serif;
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: 0.2s;
-    color: #67103a;
-}
-
-.learn-more-form .submit-button:hover {
-    background-color: #67103a;
-    color: #fff;
-    border-color: transparent;
-}
-
-.learn-more-form-inputs {
-    display: flex;
-    justify-content: space-between;
-}
-
-.learn-more-form-input {
-    width: 49%;
-    height: 40px;
-    line-height: 38px;
-    border: 1px solid #e5e5e5;
-    padding: 0 16px;
-    font-family: GothamProRegular, sans-serif;
-    font-size: 0.875rem;
+    padding-top: 17px;
+    margin-bottom: 20px;
 }
 
 .learn-more ol {
-    list-style: decimal;
-    padding-left: 15px;
+    list-style-position: inside;
 }
 
-.learn-more-img {
-    position: relative;
-    width: 31%;
-    height: 370px;
+.learn-more li {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    line-height: 19px;
+}
+
+.learn-more__content img {
     float: left;
-    overflow: hidden;
-}
-.learn-more img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin-right: 27px;
+    margin-bottom: 45px;
+    max-width: 48%;
 }
 
-.learn-more-form-wrap {
-    float: right;
-    width: 68%;
+.learn-more__content h3 {
+    font-family: GothamProBold, sans-serif;
+    line-height: 23px;
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.learn-more__content strong {
+    font-family: GothamProBold, sans-serif;
+    margin-top: 10px;
+    display: block;
+}
+
+.sign-up {
+    display: inline-block;
+    padding-left: 75px;
+    padding-right: 75px;
+    height: 40px;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border: 2px solid #67103a;
+    color: #67103a;
+    font-family: GothamProMedium, sans-serif;
+    transition: 0.2s;
+}
+
+.sign-up:hover {
+    background-color: #67103a;
+    color: #fff;
+}
+
+.learn-more__content b {
+    display: block;
+    font-weight: bold;
+    color: #5d0f35;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.learn-more__content span {
+    color: #737373;
+}
+
+.learn-more__bottom {
+    clear: both;
+}
+
+.learn-more-info {
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.learn-more-info_el {
+    color: #8f8f8f;
+    font-size: 13px;
+    display: inline-block;
+    padding-left: 34px;
+    line-height: 16px;
+}
+
+.learn-more__date {
+    background: url("../images/calendar-more.png") 0 10% no-repeat;
+    padding-right: 40px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.learn-more__date:after {
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: #ececec;
+    right: 0;
+    position: absolute;
+    top: calc(50% - 10px);
+}
+
+.learn-more__loc {
+    background: url("../images/loc-more.png") 6% 10% no-repeat;
+}
+
+#sign-up.popup {
+    max-width: 320px;
+
+}
+
+#sign-up .price-popup__submit {
+    display: block;
+    width: 100%;
 }
 
 /************************* tabs *************************/

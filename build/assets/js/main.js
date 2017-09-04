@@ -2,8 +2,6 @@ $(document).ready(function () {
 
     scrollMenu();
 
-    // tabsScroll();
-
     detailsInfo();
 
     if ($(document).width() < 641) {
@@ -18,7 +16,6 @@ $(document).ready(function () {
         $('div.action-more-item-wrap').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            // dots: true,
             nextArrow: '<div class="slider-next"></div>',
             prevArrow: '<div class="slider-prev"></div>',
             arrows: true
@@ -29,7 +26,6 @@ $(document).ready(function () {
         $('div.more-news-block').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            // dots: true,
             nextArrow: '<div class="slider-next"></div>',
             prevArrow: '<div class="slider-prev"></div>',
             arrows: true
@@ -129,21 +125,10 @@ $(document).ready(function () {
                     slidesToScroll: 3
                 }
             }
-
-            // {
-            //     breakpoint: 769,
-            //     settings: "unslick"
-            // }
         ]
     });
 
     if ( $(window).width() <= 768   ) {
-        // $('div.partners').mCustomScrollbar({
-        //     axis:"x",
-        //     scrollInertia:400,
-        //     advanced:{autoExpandHorizontalScroll:true},
-        //     scrollbarPosition:"inside"
-        // });
 
         $('div.shops-tab, div.nav-tabs-wrap').mCustomScrollbar({
             axis:"x",
@@ -166,7 +151,6 @@ $(document).ready(function () {
 
     $('div.slider-news').slick({
         slidesToShow: 8,
-        // centerMode: true,
         slidesToScroll: 1,
         dots: false,
         nextArrow: '<div class="slider-next-news"></div>',
@@ -211,7 +195,6 @@ $(document).ready(function () {
         nextArrow: '<div class="slider-next-news"></div>',
         prevArrow: '<div class="slider-prev-news"></div>',
         infinite: true,
-        //autoplay: true,
         autoplaySpeed: 4000,
         asNavFor: '.photo-page-slider__nav'
     });
@@ -226,7 +209,6 @@ $(document).ready(function () {
         infinite: true,
         focusOnSelect: true,
         centerMode: true,
-        //autoplay: true,
         autoplaySpeed: 4000,
         asNavFor: '.photo-page-slider',
         responsive: [
@@ -247,8 +229,6 @@ $(document).ready(function () {
         infinite: true,
         nextArrow: '<div class="slider-next-aside"></div>',
         prevArrow: '<div class="slider-prev-aside"></div>'
-        // autoplay: true,
-        // autoplaySpeed: 4000
     });
 
     if ($(document).width() > 1042) {
@@ -270,9 +250,7 @@ $(document).ready(function () {
     }
 
     //************************** swipe mobile menu *********************************
-    if ( $(document).width() <= 1041 ) {
-        // swipeMove();
-    }
+
     function swipeMove() {
         var topBeforeSwipe;
 
