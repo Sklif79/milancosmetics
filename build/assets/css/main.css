@@ -718,8 +718,12 @@ h1 {
 }
 
 .bread-crumbs__list {
-    float: left;
     padding-top: 29px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 310px;
 }
 
 .bread-crumbs__item {
@@ -744,6 +748,12 @@ h1 {
 
 .bread-crumbs__item:last-child::after {
     display: none;
+}
+
+.bread-crumbs__item.active {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .bread-crumbs__link {
